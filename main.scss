@@ -4,10 +4,17 @@ $color-dos:#69656f;
 $color-tres:#aca1a1;
 $color-cuatro:#ded2cf;
 
-$letra-1: "Rubik,sans-serif";
-$letra-2: "Roboto Slab, sans-serif";
+// $letra-1: "Rubik,sans-serif";
+// $letra-2: "Roboto Slab, sans-serif";
 
 *{margin:0px;
 padding:0px;
-background-color: $color-texto;
+box-sizing: border-box;
+}
+
+#btns{
+    @extend %flex_row;
+    width: 100%;
+    .bt1{@include button ($color:$color-uno, $width:15%); }
+    .bt2{@include button ($color:$color-cuatro, $width:15%); }
 }
