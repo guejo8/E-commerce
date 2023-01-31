@@ -9,6 +9,7 @@ $color-cuatro:#ded2cf;
 
 *{margin:0px;
 padding:0px;
+<<<<<<< HEAD
 box-sizing: border-box;
 }
 
@@ -18,3 +19,10 @@ box-sizing: border-box;
     .bt1{@include button ($color:$color-uno, $width:15%); }
     .bt2{@include button ($color:$color-cuatro, $width:15%); }
 }
+=======
+
+}
+.bg-image{
+    background-image: url('./imagenes/producto/fotoportada.png');
+}
+>>>>>>> 04407950a9e0012ebc7303ecbd5354f0de81fbc4
