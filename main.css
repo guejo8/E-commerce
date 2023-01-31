@@ -1,5 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  background-color: #fff;
+}
+
+.bg-image {
+  background-image: url("./imagenes/producto/fotoportada.png");
 }/*# sourceMappingURL=main.css.map */

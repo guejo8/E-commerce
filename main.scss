@@ -9,5 +9,8 @@ $letra-2: "Roboto Slab, sans-serif";
 
 *{margin:0px;
 padding:0px;
-background-color: $color-texto;
+
+}
+.bg-image{
+    background-image: url('./imagenes/producto/fotoportada.png');
 }
