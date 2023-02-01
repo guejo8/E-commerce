@@ -1,16 +1,35 @@
-
+//VARIABLES
 $color-uno:#293249;
 $color-dos:#69656f;
 $color-tres:#aca1a1;
 $color-cuatro:#ded2cf;
 
-// $letra-1: "Rubik,sans-serif";
-// $letra-2: "Roboto Slab, sans-serif";
+//MIXIN
+
+@mixin btn ($color:red, $width:35%, $padding: 0.8 5rem){
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+    padding: $padding;
+    font-weight:bolder;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    background-color: $color;
+    width: $width;
+}
+
+
 
 *{margin:0px;
 padding:0px;
-
+box-sizing: border-box;
 }
+
 .bg-image{
     background-image: url('./imagenes/producto/fotoportada.png');
 }
+
+
+//EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
+// .btn2{@include btn ($color:$color-uno, $width:15%); }
