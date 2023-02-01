@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //VARIABLES
 $color-uno:#293249;
 $color-dos:#69656f;
@@ -28,19 +29,9 @@ box-sizing: border-box;
 
 .bg-image{
     background-image: url('./imagenes/producto/fotoportada.png');
-    width: auto;
-    height: 50vh;
-
-}
-nav{
-    background-color: hotpink;
 }
 
-span img{
-    width: 20px;
-    height: 12px;
-    margin: 5px;
-}
+
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width:15%); }
 
@@ -52,3 +43,24 @@ span img{
 }
 
 
+=======
+//VARIABLES
+@import "_parcial";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik&display=swap');
+
+
+*{margin:0px;
+padding:0px;
+box-sizing: border-box;
+font-family: 'Roboto Slab','Rubik',sans-serif;
+}
+
+.bg-image{
+    background-image: url('./imagenes/producto/fotoportada.png');
+}
+
+
+//EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
+// .btn2{@include btn ($color:$color-uno, $width:15%); }
+>>>>>>> eaa35d17e4bee439923f6869b82e5f1cdffdb3e2
