@@ -28,8 +28,18 @@ box-sizing: border-box;
 
 .bg-image{
     background-image: url('./imagenes/producto/fotoportada.png');
+    width: auto;
+    height: 50vh;
+
+}
+nav{
+    background-color: hotpink;
 }
 
-
+span img{
+    width: 20px;
+    height: 12px;
+    margin: 5px;
+}
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width:15%); }

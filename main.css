@@ -6,4 +6,16 @@
 
 .bg-image {
   background-image: url("./imagenes/producto/fotoportada.png");
+  width: auto;
+  height: 50vh;
+}
+
+nav {
+  background-color: hotpink;
+}
+
+span img {
+  width: 20px;
+  height: 12px;
+  margin: 5px;
 }/*# sourceMappingURL=main.css.map */
