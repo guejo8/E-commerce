@@ -1,29 +1,13 @@
 //VARIABLES
-$color-uno:#293249;
-$color-dos:#69656f;
-$color-tres:#aca1a1;
-$color-cuatro:#ded2cf;
+@import "_parcial";
 
-//MIXIN - Botón
-
-@mixin btn ($color-dos, $width:35%, $padding: 0.8 5rem){
-    color: white;
-    height: 3rem;
-    border-radius: 5px;
-    padding: $padding;
-    font-weight:bolder;
-    font-size: large;
-    border: none;
-    cursor: pointer;
-    background-color: $color;
-    width: $width;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik&display=swap');
 
 
 *{margin:0px;
 padding:0px;
 box-sizing: border-box;
+font-family: 'Roboto Slab','Rubik',sans-serif;
 }
 
 .bg-image{
@@ -33,12 +17,3 @@ box-sizing: border-box;
 
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width:15%); }
-
-
-//Footer
-
-.footer{
-    background-color: $color-uno;
-}
-
-
