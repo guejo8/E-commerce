@@ -1,0 +1,18 @@
+$color-uno:#293249;
+$color-dos:#69656f;
+$color-tres:#aca1a1;
+$color-cuatro:#ded2cf;
+
+@mixin btn ($color:#293249, $width:35%, $padding: 0.8 5rem){
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+    padding: $padding;
+    font-weight:bolder;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    background-color: $color;
+    width: $width;
+}
+

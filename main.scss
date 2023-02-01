@@ -4,9 +4,9 @@ $color-dos:#69656f;
 $color-tres:#aca1a1;
 $color-cuatro:#ded2cf;
 
-//MIXIN
+//MIXIN - Botón
 
-@mixin btn ($color:red, $width:35%, $padding: 0.8 5rem){
+@mixin btn ($color-dos, $width:35%, $padding: 0.8 5rem){
     color: white;
     height: 3rem;
     border-radius: 5px;
@@ -43,3 +43,12 @@ span img{
 }
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width:15%); }
+
+
+//Footer
+
+.footer{
+    background-color: $color-uno;
+}
+
+
