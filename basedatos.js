@@ -3,40 +3,41 @@ let listUsers=[
         idUser: 0,
         name: "Administrador",
         email: "admin@papelycosas.com",
+        phone: "+34600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "12",
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
-        defaultShipment:"recoger"
     },
 
     {
         idUser: 1,
         name: "Usuario1",
         email: "usuario@gmail.com",
+        phone: "+34600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "10",
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
-        defaultShipment:"tienda"
     },
     {
         idUser: 2,
         name: "Usuario2",
         email: "usuario@yahoo.com",
+        phone: "+34600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "10",
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
-        defaultShipment:"tienda"
     }
 ]
+
 let listProducts=[
     {
         idProd: 0,
@@ -135,6 +136,7 @@ let listProducts=[
 
     }
 ]
+
 let listCategories= [
     {
         idCateg: 0,
@@ -149,9 +151,12 @@ let listCategories= [
         name: "Escolar"
     }
 ]
+
+
 let listUsersStringfied = JSON.stringify(listUsers);
 let listProductsStringfied = JSON.stringify(listProducts);
 let listCategoriesStringfied = JSON.stringify(listCategories);
+
 // si no tiene datos los carga
 let lsUsers = localStorage.getItem("UsersLS")
         console.log(lsUsers);
@@ -168,5 +173,6 @@ let lsCategories = localStorage.getItem("CategoriesLS")
     if (lsCategories==null){
         localStorage.setItem("CategoriesLS", listCategoriesStringfied);
     }     
+
 //si tiene datos, los respeta
 
