@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Roboto Slab", "Rubik", sans-serif;
 }
 
 .bg-image {
+  background-image: url("./imagenes/producto/fotoportada.png");
+}
+
+bg-image {
   background-image: url("./imagenes/producto/fotoportada.png");
   width: auto;
   height: 50vh;
 }
 
 nav {
-  background-color: hotpink;
+  background-color: #ded2cf;
 }
 
 span img {
