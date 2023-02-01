@@ -13,7 +13,25 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
 .bg-image{
     background-image: url('./imagenes/producto/fotoportada.png');
 }
-
+bg-image {
+    background-image: url("./imagenes/producto/fotoportada.png");
+    width: auto;
+    height: 50vh;
+  }
+  
+  nav {
+    background-color:$color-cuatro; 
+  }
+  
+  span img {
+    width: 20px;
+    height: 12px;
+    margin: 5px;
+  }
+  
+  .footer {
+    background-color: #293249;
+  }
 
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
-// .btn2{@include btn ($color:$color-uno, $width:15%); }
+// .btn2{@include btn ($color:$color-uno, $width
