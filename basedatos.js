@@ -42,16 +42,16 @@ let listProducts=[
         idProd: 0,
         name: "Bolígrafo",
         idCategoria: 0,
-        description: "",
-        foto: "img/foto0",
+        description: "Caja de bolígrafos con varios colores",
+        foto: "imagenes/producto/boligrafos2.jpg",
         precio: 13.99
 
     },{
         idProd: 1,
         name: "Rotuladores",
         idCategoria: 0,
-        description: "",
-        foto: "img/foto1",
+        description: "Caja de rotuladores con varios colores",
+        foto: "imagenes/producto/rotuladores.jpg",
         precio: 13.99
     },{
         idProd: 2,
@@ -156,17 +156,17 @@ let listCategoriesStringfied = JSON.stringify(listCategories);
 let lsUsers = localStorage.getItem("UsersLS")
         console.log(lsUsers);
          if (lsUsers==null){
-            localStorage.setItem("listUser", listUsersStringfied);
+            localStorage.setItem("UsersLS", listUsersStringfied);
         }
 let lsProducts = localStorage.getItem("ProductsLS")
     console.log(lsProducts);
     if (lsProducts==null){
-        localStorage.setItem("listProducts", listProductsStringfied);
+        localStorage.setItem("ProductsLS", listProductsStringfied);
     }            
 let lsCategories = localStorage.getItem("CategoriesLS")
     console.log(lsCategories);
     if (lsCategories==null){
-        localStorage.setItem("listCategories", listCategoriesStringfied);
+        localStorage.setItem("CategoriesLS", listCategoriesStringfied);
     }     
 //si tiene datos, los respeta
 
