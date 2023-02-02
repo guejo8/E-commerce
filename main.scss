@@ -10,10 +10,8 @@ box-sizing: border-box;
 font-family: 'Roboto Slab','Rubik',sans-serif;
 }
 
-.bg-image{
-    background-image: url('./imagenes/producto/fotoportada.png');
-}
-bg-image {
+
+.bg-image {
     background-image: url("./imagenes/producto/fotoportada.png");
     width: auto;
     height: 50vh;
@@ -30,8 +28,21 @@ bg-image {
   }
   
   .footer {
-    background-color: #293249;
+    background-color: $color-uno;
   }
 
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width
+
+
+//Botón cantidad de producto 
+
+input{
+  padding: 0.2em 0.4em;
+  border: 1px solid $color-tres;
+  width: 20%;
+}
+
+table input[type='number'] {
+  max-width: 4em;
+}
