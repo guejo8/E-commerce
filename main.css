@@ -24,4 +24,14 @@ span img {
 
 .footer {
   background-color: #293249;
+}
+
+input {
+  padding: 0.2em 0.4em;
+  border: 1px solid #aca1a1;
+  width: 20%;
+}
+
+table input[type=number] {
+  max-width: 4em;
 }/*# sourceMappingURL=main.css.map */
