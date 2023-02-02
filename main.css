@@ -8,10 +8,6 @@
 
 .bg-image {
   background-image: url("./imagenes/producto/fotoportada.png");
-}
-
-bg-image {
-  background-image: url("./imagenes/producto/fotoportada.png");
   width: auto;
   height: 50vh;
 }
