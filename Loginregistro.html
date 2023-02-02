@@ -1,310 +1,67 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Registro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link rel="shortcut icon" href="imagenes/logo/logo.png" type="image/png">
+     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  </head>
+    <script src="basedatos.js"></script>
+</head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-      <img src="./imagenes/logo/logo.png" alt="logo" width="100" >
-    </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Catalogo</button> </a>
-            
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus"><button type="button" class="btn ">Acerca de nosotros</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Registro</button></a>
-          </li> 
-          
-        </ul>
-                            <!-- boton de login -->
-
-        <span class="nav-item">
-          <a class="nav-link" href="#/home/oem/Escritorio/E-commerce/Loginregistro.html"><button type="button" class="btn btn-dark btn-sm"><img src="imagenes/lenguajes/España.png" />login</button></a>
-          
-        
-        </span> 
-                                   <!--Selector de idioma-->
-
-        <span class="nav-item dropdown"> 
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <button type="button" class="btn ">Idioma</button>
-              </a>
-              <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"> <img src="imagenes/lenguajes/España.png" />  Español</a></li>
-
-                  <li><a class="dropdown-item" href="#"><img src="imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
-
-                  <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item" href="#"><img src="imagenes/lenguajes/England.jpeg" />Ingles</a></li>
-
-              </ul>
-            </span>
-        <span class="nav-item"> <!--Imagen Carrito-->
-          <a class="nav-link "><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
-            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-          </svg></a>
-        </span>
-       
-        </form>     
-      </div>
-    </div>
-  </nav>
-  
-  
-</header>
-<div class="bg-image" > </div>
-  
-    
-    <main>
-        <div id="encabezadoDeCatalogo" class="row"> <!--Encabezado de Catálogo-->
-            <span id="date" class="col-4">Categoria</span><!--Escribir la fecha desde index,js-->
-            <span class="mb-3 col-8 row"> <!--Boton Select de Bootstrap-->
-                <select class="form-select form-select-lg col-3" name="category" id="categorySelect">
-                    <option value="all" selected>Todos</option>
-                    <option value="0">Escritura</option>
-                    <option value="1">Cuadernos</option>
-                    <option value="2">Escolar</option>
-                </select>
-            </span>
-        </div><!--Encabezado de Catálogo-->
-       <div class="row container text-center"> <!--  Contenedor de tarjetas -->
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0 text-center productCard"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top p-md-56 p-sm-1" alt="Boli">
-        
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
+   <!-- Aquí empieza el header -->
+   <header> 
+    <nav class="navbar navbar-expand-lg ">
+       <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./imagenes/logo/logo.png" alt="logo" width="100" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Catalogo</button> </a>  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus"><button type="button" class="btn ">Acerca de nosotros</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Registro</button></a>
+              </li> 
+            </ul>
+                           <!-- boton de login -->
+            <span class="nav-item">
+              <a class="nav-link" href="#/home/oem/Escritorio/E-commerce/Loginregistro.html"><button type="button" class="btn btn-dark btn-sm"><img src="imagenes/lenguajes/España.png" />login</button></a>
+            </span> 
+                                      <!--Selector de idioma-->
+            <span class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn ">Idioma</button>
+                </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"> <img src="imagenes/lenguajes/España.png" />  Español</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#"><img src="imagenes/lenguajes/England.jpeg" />Ingles</a></li>
+                  </ul>
+                </span>
+                <span class="nav-item"> <!--Imagen Carrito-->
+                  <a class="nav-link "><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg></a>
+                </span>    
           </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p>199,99€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
-          <div class="card m-md-2 m-sm-1">
-            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
-            <div class="card-body">
-              <h5 class="card-title">Boligrafos</h5>
-              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
-              <td class="cantidad">
-                <p>Cantidad</p>
-                <input type="number" value="1" min="1" placeholder="Cantidad" />
-              </td>
-              <p><span>199,99</span>€</p>
-              <a href="#" class="btn btn-primary">Pa la saca</a>
-            </div>
-          </div>
-        </div>
-          
-        </div>
-        <div id="aboutus">
-          
-        </div>
-    </main>
-    <div class="contenedor-login">
-    <form>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
-          </div>
-        </div>
-       
-        <div class="row mb-3">
-          <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                 Aceptame
-              </label>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Registrarse</button>
-      </form> 
-    </div>  
+       </div>
+    </nav>
+  </header>
+  <!-- Aquí termina el header -->
 
 
 
