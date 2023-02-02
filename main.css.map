@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAuBA;EAAE,WAAA;EACF,YAAA;EACA,sBAAA;ACrBA;;ADyBA;EACI,4DAAA;ACtBJ","file":"main.css"}
-=======
-{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAuBA;EAAE,WAAA;EACF,YAAA;EACA,sBAAA;ACrBA;;ADwBA;EACI,4DAAA;EACA,WAAA;EACA,YAAA;ACrBJ;;ADwBA;EACI,yBAAA;ACrBJ;;ADwBA;EACI,WAAA;EACA,YAAA;EACA,WAAA;ACrBJ;;AD6BA;EACI,yBAjDO;ACuBX","file":"main.css"}
->>>>>>> 3e12cb4bb6a04ea8ac0f808c5c90d1b0b412e905
-=======
 {"version":3,"sources":["main.scss","main.css","_parcial.scss"],"names":[],"mappings":"AAGQ,6FAAA;AAGR;EAAE,WAAA;EACF,YAAA;EACA,sBAAA;EACA,+CAAA;ACHA;;ADMA;EACI,4DAAA;ACHJ;;ADKA;EACI,4DAAA;EACA,WAAA;EACA,YAAA;ACFJ;;ADKE;EACE,yBEnBU;ADiBd;;ADKE;EACE,WAAA;EACA,YAAA;EACA,WAAA;ACFJ;;ADKE;EACE,yBAAA;ACFJ","file":"main.css"}
->>>>>>> 69f3b5026e4c150c925f8cc556bf046b5f2db6af
