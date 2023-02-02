@@ -41,98 +41,98 @@ let listUsers=[
 let listProducts=[
     {
         idProd: 0,
-        name: "Bolígrafo",
+        name: "Bolígrafos",
         idCategoria: 0,
-        description: "Caja de bolígrafos con varios colores",
-        foto: "imagenes/producto/boligrafos2.jpg",
-        precio: 13.99
+        description: "Bolígrafos de tinta de gel, punta redonda de 0,7 mm, retráctil, sujeción de caucho. Tres colores: azul, negro y rojo.",
+        foto: "imagenes/producto/boligrafo.jpg",
+        precio: 3.59
 
     },{
         idProd: 1,
-        name: "Rotuladores",
+        name: "Lapices grafito",
         idCategoria: 0,
-        description: "Caja de rotuladores con varios colores",
-        foto: "imagenes/producto/rotuladores.jpg",
-        precio: 13.99
-    },{
-        idProd: 2,
-        name: "Pinturas",
-        idCategoria: 0,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: " Lápices de madera con grafito en diferentes colores, nº 2 HB. Su forma hexagonal facilita el agarre. Incluye goma de borra.",
+        foto: "imagenes/producto/lapices.jpg",
+        precio: 5.29
 
     },{
-        idProd: 3,
-        name: "Borradores",
+        idProd: 2,
+        name: "Set de 10 rotuladores ecoline brushpen tonos brillantes.",
         idCategoria: 0,
-        description: "",
-        foto: "img/foto0",
+        description: "Talens Ecoline Estuche de Brush Pen 10 - Brillante está hecho en base de colorantes y goma arábiga. Los colores de Talens Ecoline son de una transparencia y lucidez impredecible. ",
+        foto: "imagenes/producto/rotuladores.jpg",
+        precio: 22.99
+    },{
+        idProd: 3,
+        name: "Lápices de colores, caja de 12 colores",
+        idCategoria: 0,
+        description: "Caja de 12 lápices Alpino Festival. Formato ideal para escuelas. Mina resistente de 3 mm.",
+        foto: "imagenes/producto/colores.png",
         precio: 13.99
 
     },{
         idProd: 4,
-        name: "Folios",
+        name: "Papel expression 90 gr",
         idCategoria: 1,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Papel estándar, funcionalidad de 90gr, excelente calidad de impresión. No traspasa el papel. Din-A4, Paquete x500 Hojas",
+        foto: "imagenes/producto/folios.jpg",
+        precio: 32.55
 
     },{
         idProd: 5,
-        name: "Carpeta",
+        name: "Carpeta de gomas plástico solapas A4 opaco negro",
         idCategoria: 1,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Carpeta con cierre de gomas elásticas a juego. 3 solapas. Fabricada de plástico polipropileno de 400 micras opaco y flexible.",
+        foto: "imagenes/producto/carpetas.jpg",
+        precio: 14.69
 
     },{
         idProd: 6,
-        name: "Cuaderno 1",
+        name: "Oxford cuaderno",
         idCategoria: 1,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Bloc espiral, tamaño A4, tapa dura, 80 hojas de 90 gr, cuadrícula de 5 mm, sin margen, microperforado.",
+        foto: "imagenes/producto/cuaderno.jpg",
+        precio: 5.29
 
     },{
         idProd: 7,
-        name: "Cuaderno 2",
+        name: "Libreta Liderpapel 360 A5",
         idCategoria: 1,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Tapa de plastico A5 48hojas 90g/M2. Cuadro 4mm con margen. Colores surtidos",
+        foto: "imagenes/producto/libreta.jpg",
+        precio: 6.39
 
     },{
         idProd: 8,
-        name: "Mochila",
+        name: "Mochila Escolar Ready To Play.",
         idCategoria: 2,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Mochila Oxford B-READY con 12 compartimentos. Medidas: 42x30x15 cm.(28 ltr.)",
+        foto: "imagenes/producto/mochila.jpg",
+        precio: 22.19
 
     },{
         idProd: 9,
-        name: "estuches",
+        name: "Estuche Escolar Anchor Club",
         idCategoria: 2,
-        description: "",
-        foto: "img/foto0",
+        description: "Contenido del estuche: triple compartimento, 1 bolígrafo azul, 1 bolígrafo rojo, 2 lápices, 1 goma, 1 sacapuntas, 1 regla, 1 tijeras, 18 lápices Julian Ross de color 3,00 mm, 18 rotuladores Giotto.",
+        foto: "imagenes/producto/estuche.jpg",
         precio: 13.99
 
     },{
         idProd: 10,
-        name: "plastilina",
+        name: "Liderpapel Plastilina en Barra 150gr.",
         idCategoria: 2,
-        description: "",
-        foto: "img/foto0",
+        description: "La caja de 15 unidades en 15 colores surtidos. La plastilina está hecha de pasta vegetal coloreada muy moldeable, adecuada a partir de los 3 años. Colores que se pueden mezclar entre sí. No mancha ni ensucia y se desmolda con gran facilidad.",
+        foto: "imagenes/producto/plastilina.jpg",
         precio: 13.99
 
     },{
         idProd: 11,
-        name: "agenda",
+        name: "Agenda Escolar (2022-23) DOHE SIGMA",
         idCategoria: 2,
-        description: "",
-        foto: "img/foto0",
-        precio: 13.99
+        description: "Agenda Escolar (2022-23) dohe sigma espiral extradura A5",
+        foto: "imagenes/producto/agendas.jpg",
+        precio: 16.79
 
     }
 ]
