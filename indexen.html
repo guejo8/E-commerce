@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imagenes/logo/logo.png" type="image/png">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="basedatos.js"></script>
+</head>
+<body>
+    <!-- Aquí empieza el header -->
+<header> 
+  <nav class="navbar navbar-expand-lg ">
+     <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./imagenes/logo/logo.png" alt="logo" width="100" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Catalogs</button> </a>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus"><button type="button" class="btn ">About Us</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn ">Register</button></a>
+            </li> 
+          </ul>
+                         <!-- boton de login -->
+          <span class="nav-item">
+            <a class="nav-link" href="#/home/oem/Escritorio/E-commerce/Loginregistro.html"><button type="button" class="btn btn-dark btn-sm"><img src="imagenes/lenguajes/España.png" />login</button></a>
+          </span> 
+                                    <!--Selector de idioma-->
+          <span class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button type="button" class="btn ">Languaje</button>
+              </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html"> <img src="imagenes/lenguajes/España.png" />  Español</a></li>
+                    <li><a class="dropdown-item" href="indexeu.html"><img src="imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                    <li><a class="dropdown-item" href="indexen.html"><img src="imagenes/lenguajes/England.jpeg" />Ingles</a></li>
+                </ul>
+              </span>
+              <span class="nav-item"> <!--Imagen Carrito-->
+                <a class="nav-link "><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg></a>
+              </span>    
+        </div>
+     </div>
+  </nav>
+</header>
+<!-- Aquí termina el header -->
+
+<div class="bg-image" > </div>
+  
+    
+    <main>
+        <div id="encabezadoDeCatalogo" class="row"> <!--Encabezado de Catálogo-->
+            <span id="date" class="col-4">Categoria</span><!--Escribir la fecha desde index,js-->
+            <span class="mb-3 col-8 row"> <!--Boton Select de Bootstrap-->
+                <select class="form-select form-select-lg col-3" name="category" id="categorySelect">
+                    <option value="all" selected>Todos</option>
+                    <option value="0">Escritura</option>
+                    <option value="1">Cuadernos</option>
+                    <option value="2">Escolar</option>
+                </select>
+            </span>
+        </div><!--Encabezado de Catálogo-->
+       <div class="row container text-center"> <!--  Contenedor de tarjetas -->
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0 text-center productCard"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top p-md-56 p-sm-1" alt="Boli">
+        
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p>199,99€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 mb-sm-0"> <!-- Tarjeta -->
+          <div class="card m-md-2 m-sm-1">
+            <img src="imagenes/producto/boligrafos2.jpg" class="card-img-top" alt="Boli">
+            <div class="card-body">
+              <h5 class="card-title">Boligrafos</h5>
+              <p class="card-text">Peaso bolis que escribe en papel y en textiles varios. Del papel, puede que lo borres, de la camisa tan chula, nunca jamas lo sacarás</p>
+              <td class="cantidad">
+                <p>Cantidad</p>
+                <input type="number" value="1" min="1" placeholder="Cantidad" />
+              </td>
+              <p><span>199,99</span>€</p>
+              <a href="#" class="btn btn-primary">Pa la saca</a>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <div id="aboutus">
+          
+        </div>
+    </main>
+
+
+
+
+
+
+
+    
+ <!-- Footer -->
+ <footer class="text-center" style="background-color: #293249" >
+  <!-- Grid container -->
+  <div class="container p-1 pb-0">
+    <!-- Section: Links -->
+    <section class="text-white">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-1">
+            <a href="index.html">
+              <img src="./imagenes/logo/logo.png" alt="logo" width="100" class="mx-auto d-block mt-1 mb-3">
+            </a>
+          <p class="text-center"> Todo lo que necesitas de papelería lo puedes encontrar en nuestra tienda, y si no lo tenemos lo buscamos para ti. </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+          <div class="mx-auto d-block mt-3" class="mapouter">
+          <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=247&amp;height=99&amp;hl=en&amp;q=bilbao&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://pdflist.com/" alt="pdflist.com">Pdflist.com</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:99px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:99px;border-radius: 40px;}.gmap_iframe {height:99px!important;} </style></div>
+              <p class="mb-1"><i class="fas fa-home mt-4"></i> &nbsp; Bilbo, Bb 48002, Vz</p>
+              <p class="mb-1"><i class="fas fa-envelope"></i> &nbsp; papely@papel.com</p>
+              <p class="mb-1"><i class="fas fa-phone"></i> &nbsp; + 34 234 567 88 00</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="my-1">
+
+    <!-- Section: Copyright -->
+    <section class="p-2 pt-0">
+      <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <!-- Copyright -->
+          <div>
+            <p class="text-white">  © 2023 Copyright: Papel y Cosas</p>
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" class="text-white" role="button" ><i class="fab fa-facebook-f"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" class="text-white" role="button" ><i class="fab fa-google"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" class="text-white" role="button" ><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- Grid column -->
+      </div>
+    </section>
+    <!-- Section: Copyright -->
+  </div>
+  <!-- Grid container -->
+</footer>
+
+ <!-- Código de JavaSCript -->
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
