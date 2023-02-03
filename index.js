@@ -15,13 +15,13 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
     cardContainer.innerHTML=""; //borra las tarjetas
     let lsProducts = localStorage.getItem("ProductsLS");//recupera de LS la lista de productos
     let productsArray= JSON.parse(lsProducts); //lo convierte en un array de objetoJS
-    /* console.log(productsObject); */
+    /* console.log(productsArray); */
     let listaEnseñar="";
     productsArray.forEach((productObjet) => {
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
     listaEnseñar+=`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
-                        <img src=${productObjet.foto} class="card-img-top" alt="Boli">
+                        <img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name}>
                              <div class="card-body">
                           <h5 class="card-title">${productObjet.name}</h5>
                           <p class="card-text">${productObjet.precio}</p>

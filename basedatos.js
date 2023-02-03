@@ -154,8 +154,11 @@ let listCategories= [
 
 
 let listUsersStringfied = JSON.stringify(listUsers);
+console.log(listUsersStringfied);
 let listProductsStringfied = JSON.stringify(listProducts);
+console.log(listProductsStringfied);
 let listCategoriesStringfied = JSON.stringify(listCategories);
+console.log(listCategoriesStringfied);
 
 // si no tiene datos los carga
 let lsUsers = localStorage.getItem("UsersLS")
