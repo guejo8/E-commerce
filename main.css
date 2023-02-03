@@ -26,7 +26,7 @@ span img {
   background-color: #293249;
 }
 
-td > input {
+#input-cantidad {
   padding: 0.2em 0.4em;
   border: 1px solid #aca1a1;
   width: 20%;
