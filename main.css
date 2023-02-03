@@ -26,7 +26,7 @@ span img {
   background-color: #293249;
 }
 
-input {
+td > input {
   padding: 0.2em 0.4em;
   border: 1px solid #aca1a1;
   width: 20%;
@@ -34,4 +34,25 @@ input {
 
 table input[type=number] {
   max-width: 4em;
+}
+
+#contacto {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 10rem;
+  padding-bottom: 2rem;
+  background-color: #ded2cf;
+  width: 80%;
+}
+
+#perfil-nombre {
+  margin-left: 1rem;
+}
+
+.h4 {
+  font-size: 1.3rem;
+}
+
+#formulario-contacto {
+  padding-left: 2rem;
 }/*# sourceMappingURL=main.css.map */
