@@ -71,12 +71,13 @@
         <div class="text-center">
           <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
           <h6>Sube tu foto</h6>
-          <button class="btn"><input class="btn" type="file" class="text-center center-block file-upload"></button>
+          <input class="btn" type="file" class="text-center center-block file-upload" value="">
+          <button class="btn" type="submit">Enviar</button>
         </div> 
       </div><!--/col-3-->
     	<div class="col-sm-9"> 
           <div class="tab-content" id="formulario-contacto">
-                  <form class="form" action="##" method="post" id="registrationForm">
+                  <form class="form" action="##" method="post" id="registrationForm" enctype="multipart/form-data">
                       <div class="form-group">
                           <div class="col-xs-6">
                               <label for="phone"><h4 class="h4">Teléfono: </h4></label>
@@ -178,5 +179,6 @@
 
      <!-- Código de JavaSCript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="perfil.js"></script>
+  </body>
 </html>
