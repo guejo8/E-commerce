@@ -10,7 +10,7 @@ box-sizing: border-box;
 font-family: 'Roboto Slab','Rubik',sans-serif;
 }
 
-
+//HEADER
 .bg-image {
     background-image: url("./imagenes/producto/fotoportada.png");
     width: auto;
@@ -26,7 +26,38 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
     height: 12px;
     margin: 5px;
   }
+
+//BOTONES
+
+.btn1 {
+  @include btn1;
   
+}
+
+.btn1:hover {
+  @include btn1($color:$color-uno,$font-size:initial, $padding:.5rem)
+}
+.btn2 {
+  @include btn1($width:80%)
+  
+}
+.btn2:hover {
+  @include btn1($color-uno,$width:80%)
+  
+}
+ .btn3 {
+   @include btn1($color:$color-uno,$font-size:initial, $padding:.5rem)
+  
+ }
+
+a.btn3:hover {
+  @include btn1($color:$color-tres,$font-size:medium, $padding:0.3rem, $margin:0px 0.5rem)
+}
+a.btn3 {
+  @include btn1($color:$color-uno,$font-size:medium, $padding:0.3rem, $margin:0px 0.5rem)
+}
+
+  //FOOTER
   .footer {
     background-color: $color-uno;
   }

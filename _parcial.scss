@@ -1,18 +1,39 @@
+//VARIABLES
 $color-uno:#293249;
 $color-dos:#69656f;
 $color-tres:#aca1a1;
 $color-cuatro:#ded2cf;
 
-@mixin btn ($color:#293249, $width:35%, $padding: 0.8 5rem){
-    color: white;
-    height: 3rem;
-    border-radius: 5px;
-    padding: $padding;
+//RESPONSIVE
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  
+@mixin mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+//MIXIN BOTONES
+
+ @mixin btn1 ($color:$color-tres, $font-size:medium, $width:100%,$margin:1rem, $padding:0px,){
+     color: white;
+    height: 2.5rem;
+    border-radius: 7px;
+   margin:$margin;
+    font-family: 'Roboto Slab';
     font-weight:bolder;
-    font-size: large;
+    font-size: $font-size;
     border: none;
-    cursor: pointer;
+   cursor: pointer;
+    text-decoration: none;
     background-color: $color;
-    width: $width;
-}
+     width: $width;
+    padding:$padding;
+ }
+
 
