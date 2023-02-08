@@ -25,20 +25,22 @@ $color-cuatro:#ded2cf;
 
 //MIXIN BOTONES
 
- @mixin btn1 ($color:$color-tres, $font-size:medium, $width:100%,$margin:1rem, $padding:0px,){
-     color: white;
+ @mixin btn1 ($color:white, $colorbackground:$color-tres, $font-size:medium, $width:100%, $margin:1rem, $padding:0px, $border:0px solid white, $border-radius: 7px, $font-weight:bold){
+    color: $color;
     height: 2.5rem;
-    border-radius: 7px;
-   margin:$margin;
+    border-radius: $border-radius;
+    border: $border;
+    margin:$margin;
     font-family: 'Roboto Slab';
-    font-weight:bolder;
+    font-weight: $font-weight;
     font-size: $font-size;
     border: none;
-   cursor: pointer;
+    cursor: pointer;
     text-decoration: none;
-    background-color: $color;
-     width: $width;
+    background-color: $colorbackground;
+    width: $width;
     padding:$padding;
+    outline: none;
  }
 
 

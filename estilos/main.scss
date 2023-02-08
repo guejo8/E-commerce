@@ -45,18 +45,34 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
   @include btn1($color-uno,$width:80%)
   
 }
- .btn3 {
-   @include btn1($color:$color-uno,$font-size:initial, $padding:.5rem)
+.btn3 {
+   @include btn1($colorbackground:$color-uno,$font-size:initial, $padding:.5rem)
   
- }
+}
 
 a.btn3:hover {
-  @include btn1($color:$color-tres,$font-size:medium, $padding:0.3rem)
-}
-a.btn3 {
-  @include btn1($color:$color-uno,$font-size:medium, $padding:0.3rem)
+  @include btn1($colorbackground:$color-tres,$font-size:medium, $padding:0.3rem)
 }
 
+a.btn3 {
+  @include btn1($colorbackground:$color-uno,$font-size:medium, $padding:0.3rem)
+}
+
+.btn4{
+  @include btn1($colorbackground:$color-dos,$font-size: medium, $padding:0.1rem, $width:50%, $border:3px solid white)
+}
+
+.btn4:hover{
+  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.1rem, $width:50%)
+}
+.btn5{
+  
+  @include btn1($color: $color-dos, $colorbackground:$color-cuatro, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
+}
+
+.btn5:disabled{  
+  @include btn1($color: $color-uno, $colorbackground:white, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
+}
   //FOOTER
   .footer {
     background-color: $color-uno;
@@ -181,13 +197,11 @@ table input[type='number'] {
 
 main{
   background-color:$color-cuatro; 
-  width: 100%;
-  padding: 2rem;
-  margin: 4rem;
+  padding: 10rem;
+  margin: 3rem;
 }
 
 .contenedor__todo{
- 
   width: 100%;
   max-width: 55rem;
   margin: auto;
@@ -198,7 +212,7 @@ main{
 
 .caja__trasera{
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   -webkit-backdrop-filter: blur(10px);
@@ -214,9 +228,8 @@ main{
 }
 
 
-.caja__trasera div p,
-.caja__trasera button{
-  margin-top: 30px; // Espaciado entre ¿?, texto y botón
+.caja__trasera div p{
+  margin-top: 30px; 
 }
 
 .caja__trasera div h3{
@@ -229,17 +242,12 @@ main{
   font-weight: 300;
 }
 
-.caja__trasera button{
-  outline: none; // quitar la linea negra que aparece en el border
-  transition: all 300ms; // Para implementar :hover
-}
-
-.caja__trasera button:hover{
-  background:$color-tres;
-  color: white;
-}
 
 /*Formularios*/
+
+#btnIngresar{
+  color: $color-dos;
+}
 
 .contenedor__login-register{
   display: flex;
@@ -281,22 +289,11 @@ main{
   outline: none;
 }
 
-/* IMPORTANTE: Cambiar este estilo de botón */
-.contenedor__login-register form button{
-  padding: 10px 40px;
-  margin-top: 40px;
-  border: none;
-  font-size: 14px;
-  background: $color-tres;
-  font-weight: 600;
-  cursor: pointer;
-  color: white;
-  outline: none;
-}
 
 .formulario__login{
   opacity: 1;
   display: block;
+  margin-left: 1.2rem;
 }
 .formulario__register{  //para que no aparezca el formulario de resgistro
   display: none;
@@ -319,7 +316,7 @@ main{
 
 /* IMPORTANTE: Falta cambiar versión responsive */
 
-@media screen and (max-width: 850px){
+@include tablet{
 
   main{
       margin-top: 50px;
@@ -334,10 +331,57 @@ main{
   }
 
   .caja__trasera div{
-      margin: 0px;
+      margin: 1px;
       position: absolute;
   }
 
+
+  /*Formularios*/
+
+  .contenedor__login-register{
+      top: -10px;
+      left: -5px;
+      margin: auto;
+  }
+
+  .contenedor__login-register form{
+      position: relative;
+      margin-left: 1rem;
+  }
+}
+
+@include mobile{
+
+  main{
+    margin:0;
+  }
+
+  .contenedor__login-register form input {
+    width: 100%;
+    margin-top: 0.1rem;
+    padding: 0.3rem;
+    border: none;
+    background: $color-cuatro;
+    font-size: 0.8rem;
+    outline: none;
+  }
+
+  .iniciarSesion-form{
+    font-size: 0.8rem;
+  }
+  
+  .caja__trasera{
+      max-width: 350px;
+      height: 300px;
+      flex-direction: column;
+      margin: auto;
+      
+  }
+  
+  .caja__trasera div{
+      margin: 0px;
+      position: absolute;
+  }
 
   /*Formularios*/
 
