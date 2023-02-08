@@ -5,20 +5,28 @@
 
 
 *{margin:0px;
-padding:0px;
-box-sizing: border-box;
-font-family: 'Roboto Slab','Rubik',sans-serif;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab','Rubik',sans-serif;
 }
 
 //HEADER
 .bg-image {
-    background-image: url("./imagenes/producto/fotoportada.png");
-    width: auto;
-    height: 50vh;
+    background-image: url("../imagenes/producto/fotoportada.png");
+    width: 100%;
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10rem;
+    
   }
   
   nav {
-    background-color:$color-cuatro; 
+    background-color:$color-uno; 
+  }
+  
+  svg{
+    fill: $color-cuatro;
   }
   
   span img {
@@ -35,7 +43,7 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
 }
 
 .btn1:hover {
-  @include btn1($color:$color-uno,$font-size:initial, $padding:.5rem)
+  @include btn1($color:$color-cuatro, $colorbackground:$color-dos, $font-size:initial, $padding:.5rem)
 }
 .btn2 {
   @include btn1($width:80%)
@@ -46,8 +54,7 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
   
 }
 .btn3 {
-   @include btn1($colorbackground:$color-uno,$font-size:initial, $padding:.5rem)
-  
+   @include btn1($color:white, $colorbackground:$color-uno, $font-weight:200, $font-size:initial, $padding:.5rem, $width: 73%)
 }
 
 a.btn3:hover {
@@ -81,14 +88,38 @@ a.btn3 {
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width
 
+//HOME
+
+//Fecha
+
+#date{
+  background-color: $color-uno;
+  width: 19rem;
+  margin: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 3.5rem;
+  color: $color-cuatro;
+  align-content: center;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: large;
+
+}
+
+//Selector
+
+#categorySelect{
+  width: 25%;
+  
+}
 
 //Botón cantidad de producto 
 
-#input-cantidad {
-  padding: 0.2em 0.4em;
-  border: 1px solid $color-tres;
-  width: 20%;
+.cantidad{
+  margin-right: 1rem;
 }
+
 
 table input[type='number'] {
   max-width: 4em;
@@ -194,11 +225,14 @@ table input[type='number'] {
 }
 
 //Página login-registro-- Aquí empieza
-
 main{
   background-color:$color-cuatro; 
-  padding: 10rem;
-  margin: 3rem;
+  padding: 3rem 10rem;
+}
+
+.main-loginregistro{
+  background-color:$color-cuatro; 
+  padding: 15rem;
 }
 
 .contenedor__todo{
@@ -212,7 +246,8 @@ main{
 
 .caja__trasera{
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
+  
   display: flex;
   justify-content: center;
   -webkit-backdrop-filter: blur(10px);
@@ -222,14 +257,14 @@ main{
 }
 
 .caja__trasera div{
-  margin: 100px 40px;
+  margin: 9rem 3rem;
   color: white;
   transition: all 500ms; //Nos muestra una transición cuando vayamos hacer algún movimiento
 }
 
 
 .caja__trasera div p{
-  margin-top: 30px; 
+  margin-top: 2rem; 
 }
 
 .caja__trasera div h3{
@@ -317,7 +352,16 @@ main{
 /* IMPORTANTE: Falta cambiar versión responsive */
 
 @include tablet{
-
+  //Home - fecha y selector
+  #date{
+    margin-left: 2rem;
+    width: 39rem;
+  }
+  .mb-4{
+    margin-left: 2rem !important;
+  }
+   //Home - fecha y selector //
+  
   main{
       margin-top: 50px;
   }
@@ -348,10 +392,25 @@ main{
       position: relative;
       margin-left: 1rem;
   }
+
+  #categorySelect{
+    width: 25%;   
+  }
 }
 
 @include mobile{
+   //Home - fecha y selector
+   #date{
+    margin-left: 2rem;
+  }
+  .mb-4{
+    margin-left: 2rem !important;
+  }
 
+  #categorySelect{
+    width: 60%;   
+  }
+   //Home - fecha y selector //
   main{
     margin:0;
   }
