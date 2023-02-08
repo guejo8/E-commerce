@@ -62,6 +62,15 @@ let palasaca=cajaClick.addEventListener('click', (eventoClick)=> {
     console.log(eventoClick.target.parentElement.childNodes[7].value);
     console.log(linea_pedido);
     console.log(eventoClick);
-});      
+    listaProducto= localStorage.getItem('pedido')
+    console.log(listaProducto);
+    lista_json=JSON.parse(listaProducto)
+    console.log(lista_json);
+    lista_json.splice(linea_pedido.idProduct,1,linea_pedido)
+    console.log(lista_json);
+    listaCarrols=JSON.stringify(lista_json)
+    console.log(listaCarrols);
+    localStorage.setItem("pedido",listaCarrols)
 
-       
+
+});      
