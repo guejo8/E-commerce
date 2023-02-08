@@ -5,13 +5,12 @@
 
    let listaUsers = JSON.parse(localStorage.getItem("UsersLS"))
    
-   function obtenerListaUsuarios(){
+ function obtenerListaUsuarios(){
    
     if (listaUsers === null){
        return "Usuario no encontrado, por favor registrate para seguir con la compra"
     }
-     
-    return listaUsers
+        return listaUsers
     
    }
    
@@ -21,25 +20,20 @@
    //paso como argumento emai y password para validar que están en mi base de datos.
    
    function validarCredenciales(pemail, cpassword){
-   
-      listaUsers = obtenerListaUsuarios(); // Esta función nos devuelve la lista de usuarios
-      console.log(listaUsers)
-      
-      var acceso = false;
-           
+       listaUsers = obtenerListaUsuarios(); // Esta función nos devuelve la lista de usuarios
+       console.log(listaUsers)
+       
+       var acceso = false;
+       
+       console.log(listaUsers)
+       
        for(let i =  0; i < listaUsers.length; i++){
-           if((pemail === listaUsers[i].email) && (cpassword === listUsers[i].password)){          
+           console.log(cpassword);
+        console.log(listUsers[i].password);
+        console.log((pemail == listaUsers[i].email) && (cpassword == listUsers[i].password));
+           if((pemail == listaUsers[i].email) && (cpassword == listUsers[i].password)){          
                 acceso = true
-                
-                sessionStorage.setItem("usuarioName" , listaUsers[i].name) //Capturamos con sessionStorage el nombre de la persona que inicia sesión.
-                sessionStorage.setItem("usuarioEmail" , listaUsers[i].email)
-                sessionStorage.setItem("usuarioPhone" , listaUsers[i].phone)
-                sessionStorage.setItem("usuarioPassword" , listaUsers[i].password)
-                sessionStorage.setItem("usuarioCalle" , listaUsers[i].street)
-                sessionStorage.setItem("usuarioPortal" , listaUsers[i].portal)
-                sessionStorage.setItem("usuarioCP" , listaUsers[i].CP)
-                sessionStorage.setItem("usuarioCiudad" , listaUsers[i].city)
-                
+                sessionStorage.setItem("cliente", JSON.stringify(listaUsers[i]))               
                 //si tuvieramos rol: sessionStorage.setItem("rolactivo",listaUsers[i][a])
            } 
        }
@@ -48,31 +42,37 @@
 
 
 
-
 // Esta logica es la que va a interactuar con el botón de inicio de sesión
 
-let botonSession = document.querySelector("#btnIngresar")
-botonSession.addEventListener("click" , iniciarSession)
+    let botonSession = document.getElementById("btnIngresar")
 
-function iniciarSession(){
-    var emailSession  = "";
-    var passwordSession = ""; 
-    var acceso = false;
+    if(botonSession){ // se escribe este if para que no nos de error en la consola (no puede leer addEventListener)
+       botonSession.addEventListener("click" , iniciarSessionUsuario)
+    }
+    
 
-    emailSession = document.querySelector("#email").value
-    passwordSession = document.querySelector("#password").value
+        function iniciarSessionUsuario(){
+            var emailSession  = "";
+            var passwordSession = ""; 
+            var acceso = false;
 
-    console.log(emailSession)
-    console.log(passwordSession)
+            emailSession = document.querySelector("#email").value
+            passwordSession = document.querySelector("#password").value
 
-    acceso = validarCredenciales(emailSession, passwordSession);
-    console.log(acceso)
+            console.log(emailSession)
+            console.log(passwordSession)
 
-    if(acceso === true){
-        ingresar()
-}
-}
+            acceso = validarCredenciales(emailSession, passwordSession);
+            console.log(acceso)
 
-function ingresar(){
-    window.location.href= "perfil.html" //Esta función redirige a la página de perfil
-}
+            if(acceso === true){
+                ingresar()
+            } // Y sino incluir un mensaje de usuario no registrado o datos no correctos
+            else{
+                alert("No hay usuario con esos datos")
+            }
+        }
+
+        function ingresar(){
+            window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil
+        }

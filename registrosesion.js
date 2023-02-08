@@ -1,7 +1,10 @@
 
-let registro = document.getElementById("registro")
+let registro = document.getElementById("registro");
 
-registro.addEventListener("click", registroCliente)
+//if(registro){ // se escribe este if para que no nos de error en la consola (no puede leer addEventListener)
+  registro.addEventListener("click", registroCliente) //registroUsuario
+
+//}
 
 
 //Necesito trasformar el objeto en string - JSON
@@ -13,14 +16,13 @@ function registroCliente(){
 
     // IMPORTANTE! idUser = id ++ cada vez que se cree un usuario
 
-    
-
     // console.log(newUser) 
     let lsUsers = localStorage.getItem("UsersLS"); //recoge LS
     
     let usersArray= JSON.parse(lsUsers); //lo convierte en un array de objetoJS
     console.log(usersArray);
     console.log(usersArray.length);
+
     let newUser = {
       idUser: usersArray.length,
       name: document.getElementById("nombre").value,
@@ -34,12 +36,12 @@ function registroCliente(){
       defaultLang: "es",
   }
 
-
     usersArray.push(newUser); //añades usuario
     console.log(usersArray)
     let listUsersStringfied = JSON.stringify(usersArray); //Lo preparas para LS
-    localStorage.setItem("UsersLS", listUsersStringfied); //Y mandas la lista actualizada
+    localStorage.setItem("UsersLS", listUsersStringfied); //Y mandas la lista actualizada   
+   
 
-    
+    sessionStorage.setItem("cliente", JSON.stringify(newUser))
+
 }
-

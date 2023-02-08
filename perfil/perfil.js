@@ -1,29 +1,24 @@
-let nombreCliente = document.getElementById("nombPersona")
-let telefonoForm = document.getElementById("telefono-form")
-let emailForm = document.getElementById("email-form")
-let calleForm = document.getElementById("calle-form")
-let portalForm = document.getElementById("portal-form")
-let cpForm = document.getElementById("cp-form")
-let ciudadForm = document.getElementById("ciudad-form")
+ let nombreCliente = document.getElementById("nombPersona")
+ let telefonoForm = document.getElementById("telefono-form")
+ let emailForm = document.getElementById("email-form")
+ let calleForm = document.getElementById("calle-form")
+ let portalForm = document.getElementById("portal-form")
+ let cpForm = document.getElementById("cp-form")
+ let ciudadForm = document.getElementById("ciudad-form")
 
+let usuarioSTring= sessionStorage.getItem("cliente")
+console.log(usuarioSTring);
+let usuarioLogeado = JSON.parse(usuarioSTring)
 
-let sesionClienteName = sessionStorage.getItem("usuarioName" )
-let sesionClienteEmail = sessionStorage.getItem("usuarioEmail")
-let sesionClientePhone = sessionStorage.getItem("usuarioPhone")
-let sesionClientePassword = sessionStorage.getItem("usuarioPassword")
-let sesionClienteCalle = sessionStorage.getItem("usuarioCalle")
-let sesionClientePortal = sessionStorage.getItem("usuarioPortal")
-let sesionClienteCP = sessionStorage.getItem("usuarioCP")
-let sesionClienteCuidad = sessionStorage.getItem("usuarioCiudad")
+console.log(usuarioLogeado)
 
-
-nombreCliente.innerHTML = sesionClienteName
-telefonoForm.innerHTML = sesionClientePhone
-emailForm.innerHTML =  sesionClienteEmail
-calleForm.innerHTML = sesionClienteCalle  
-portalForm.innerHTML = sesionClientePortal
-cpForm.innerHTML = sesionClienteCP
-ciudadForm.innerHTML = sesionClienteCuidad
+        nombreCliente.innerText = usuarioLogeado.name
+        telefonoForm.innerText = usuarioLogeado.phone
+        emailForm.innerText =  usuarioLogeado.email
+        calleForm.innerText = usuarioLogeado.street 
+        portalForm.innerText = usuarioLogeado.portal
+        cpForm.innerText = usuarioLogeado.CP
+        ciudadForm.innerText = usuarioLogeado.city
 
 
 
@@ -31,7 +26,7 @@ ciudadForm.innerHTML = sesionClienteCuidad
 
 let archivo = document.getElementById("archivo")
 
-archivo.addEventListener("change" ,  procesarArchivo, false ) //cada vez que cambiar el archivo
+archivo.addEventListener("change" , procesarArchivo, false ) //cada vez que cambiar el archivo
 
 // Función para procesar el archivo
 
