@@ -211,7 +211,7 @@ table input[type=number] {
     margin-top: 2rem;
   }
   #aboutus .d-flex.justify-content-center.align-items-center img {
-    margin-left: 5rem !important;
+    margin-left: 6rem !important;
   }
 }
 @media (max-width: 767px) {
@@ -223,7 +223,7 @@ table input[type=number] {
     margin-top: 2rem;
   }
   #aboutus .d-flex.justify-content-center.align-items-center img {
-    margin-left: 6rem !important;
+    margin-left: 14rem !important;
   }
 }
 
@@ -341,6 +341,19 @@ main {
 
 .formulario__register {
   display: none;
+}
+
+.checkbox-formulario {
+  display: flex;
+}
+
+#checkbox {
+  width: 1rem;
+}
+
+.politica-privacidad {
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 /* IMPORTANTE: Falta cambiar versión responsive */

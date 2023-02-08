@@ -105,14 +105,7 @@ table input[type='number'] {
 
 
 // Parte About us 
-// #aboutus{
-//   padding-bottom: 3rem;
-// }
 
-// #aboutustexto{
-//   padding-bottom: 4rem;
-//   color:$color-dos;
-// }
 #aboutus {
   h3.text-center#aboutustexto {
     text-align: center;
@@ -131,8 +124,8 @@ table input[type='number'] {
       img {
         width: 100px;
         height: 100px;
-        border-radius: 50%;
-        margin-left: 9rem;
+        border-radius: 50%; 
+        margin-left: 9rem;       
       }
 
       p {
@@ -161,7 +154,7 @@ table input[type='number'] {
       }
 
       img {
-        margin-left: 5rem !important;
+        margin-left: 6rem !important;
       }
 
     }
@@ -178,7 +171,7 @@ table input[type='number'] {
 
 
       img {
-        margin-left: 6rem !important;
+        margin-left: 14rem !important;
       }
     }
   }
@@ -301,7 +294,6 @@ main{
   outline: none;
 }
 
-
 .formulario__login{
   opacity: 1;
   display: block;
@@ -310,6 +302,20 @@ main{
   display: none;
 }
 
+//Div política privacidad
+
+.checkbox-formulario{
+  display: flex;
+}
+#checkbox{
+ width: 1rem;
+
+}
+.politica-privacidad{
+  margin-top: 1rem;
+  padding-left: 1rem;
+ 
+}
 
 /* IMPORTANTE: Falta cambiar versión responsive */
 

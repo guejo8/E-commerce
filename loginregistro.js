@@ -90,3 +90,20 @@ anchoPage(); // Se ejecuta la función cuando se recarga la página
 
 
 
+//Aceptar la política de privacidad 
+
+let checkBox = document.getElementById("checkbox")
+checkBox.addEventListener("click", clicado)
+
+function clicado(){
+        
+    if(checkBox.checked){
+
+    document.getElementById('registro').disabled = false;
+
+    } else {
+    
+    document.getElementById('registro').disabled = true;
+
+    }
+}
