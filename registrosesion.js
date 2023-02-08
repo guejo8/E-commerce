@@ -40,12 +40,6 @@ function registroCliente(){
     let listUsersStringfied = JSON.stringify(usersArray); //Lo preparas para LS
     localStorage.setItem("UsersLS", listUsersStringfied); //Y mandas la lista actualizada
 
-
-
-    //Subir a la bbdd en js el nuevo usuario (array + Objeto)
-
-    // listUsers.push(newUser)
-    // jsonStoreList(listUsers)
     
 }
 

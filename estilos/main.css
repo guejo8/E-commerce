@@ -7,7 +7,7 @@
 }
 
 .bg-image {
-  background-image: url("../imagenes/producto/fotoportada.png");
+  background-image: url("./imagenes/producto/fotoportada.png");
   width: auto;
   height: 50vh;
 }
@@ -167,4 +167,13 @@ table input[type=number] {
 
 #formulario-contacto {
   padding-left: 2rem;
+}
+
+#aboutus {
+  padding-bottom: 3rem;
+}
+
+#aboutustexto {
+  padding-bottom: 4rem;
+  color: #69656f;
 }/*# sourceMappingURL=main.css.map */
