@@ -51,10 +51,10 @@ font-family: 'Roboto Slab','Rubik',sans-serif;
  }
 
 a.btn3:hover {
-  @include btn1($color:$color-tres,$font-size:medium, $padding:0.3rem, $margin:0px 0.5rem)
+  @include btn1($color:$color-tres,$font-size:medium, $padding:0.3rem)
 }
 a.btn3 {
-  @include btn1($color:$color-uno,$font-size:medium, $padding:0.3rem, $margin:0px 0.5rem)
+  @include btn1($color:$color-uno,$font-size:medium, $padding:0.3rem)
 }
 
   //FOOTER

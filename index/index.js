@@ -4,7 +4,8 @@ let fechaHoy= new Date();
 console.log(fechaHoy);
 cajaFecha.innerText=`Hoy es: ${fechaHoy.toLocaleDateString('es-ES')}`;
 
-let cardContainer=document.getElementById('CardContainer');//poner tarjetas
+//poner tarjetas
+let cardContainer=document.getElementById('CardContainer');
 let selectCategory=document.getElementById('categorySelect');
 let changeCategory=selectCategory.addEventListener('change', ()=> {
     changeCardContainer(selectCategory.value);
@@ -25,17 +26,42 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
                              <div class="card-body">
                           <h5 class="card-title">${productObjet.name}</h5>
                           <p class="card-text">${productObjet.precio}</p>
-                          <td class="cantidad"><p>Cantidad</p><input id="input-cantidad" type="number" value="1" min="1" placeholder="Cantidad" /></td>                    
-                          <a href="#" class="btn3">Añadir al carrito</a>
+                          <p class="cantidad"><p>Cantidad</p><input id="cantidad${productObjet.idProd}" type="number" value="1" min="1"/></p>                   
+                          <p href="#" class="btn3" producto=${productObjet.idProd}>Añadir al carrito</p>
                       </div>
                   </div>
               </div>`;
             
         }
         cardContainer.innerHTML=listaEnseñar; //pinta las tarjetas
+
+
     });
 };
+//crear carrito
+let listCarrito=[]
+let listaProducto= localStorage.getItem('ProductsLS')
+let lista_json=JSON.parse(listaProducto)
+//console.log(lista_json);
+lista_json.forEach(producto => {
+    //console.log(producto);
+    let linea_pedido={idProduct:producto.idProd,cantidad:0}
+    listCarrito.push(linea_pedido)
+});
+//console.log(listCarrito);
+let listaCarrols=JSON.stringify(listCarrito)
+localStorage.setItem("pedido",listaCarrols)
 
-        
+//modificar
+
+let cajaClick=document.getElementById('CardContainer');
+let palasaca=cajaClick.addEventListener('click', (eventoClick)=> {
+    let linea_pedido={idProduct:0,cantidad:0};
+    linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
+    linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[7].value
+    console.log(eventoClick.target.parentElement.childNodes[7].value);
+    console.log(linea_pedido);
+    console.log(eventoClick);
+});      
 
        
