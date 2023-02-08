@@ -105,12 +105,82 @@ table input[type='number'] {
 
 
 // Parte About us 
-#aboutus{
-  padding-bottom: 3rem;
-}
+// #aboutus{
+//   padding-bottom: 3rem;
+// }
 
-#aboutustexto{
-  padding-bottom: 4rem;
-  color:$color-dos;
+// #aboutustexto{
+//   padding-bottom: 4rem;
+//   color:$color-dos;
+// }
+#aboutus {
+  h3.text-center#aboutustexto {
+    text-align: center;
+  }
+
+  .d-flex.justify-content-center.align-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+      width: calc(20% - 2rem);
+      margin: 1rem;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 9rem;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+    @include pc {
+      div {
+        width: calc(33.33% - 4rem);
+      }
+
+      div:nth-child(6) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+    @include tablet {
+      div {
+        width: calc(33.33% - 2rem);
+      }
+
+      div:nth-child(6) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      img {
+        margin-left: 5rem !important;
+      }
+
+    }
+
+    @include mobile {
+      div {
+        width: 100%;
+      }
+
+      div:nth-child(3),
+      div:nth-child(5) {
+        margin-top: 2rem;
+      }
+
+
+      img {
+        margin-left: 6rem !important;
+      }
+    }
+  }
 }
 
