@@ -328,7 +328,7 @@ table input[type=number] {
     width: 100%;
   }
   #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(3),
-#aboutus .d-flex.justify-content-center.align-items-center div:nth-child(5) {
+  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(5) {
     margin-top: 2rem;
   }
   #aboutus .d-flex.justify-content-center.align-items-center img {
