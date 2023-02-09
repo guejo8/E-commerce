@@ -27,13 +27,19 @@
   
   svg{
     fill: $color-cuatro;
+    margin: 0 2rem;
   }
   
-  span img {
+  .dropdown-item img, span img {
     width: 20px;
     height: 12px;
     margin: 5px;
   }
+
+  .dropdown-toggle::after {
+    content: none;
+}
+
 
 //BOTONES
 
@@ -65,11 +71,11 @@ a.btn3 {
   @include btn1($colorbackground:$color-uno,$font-size:medium, $padding:0.3rem)
 }
 
-.btn4{
-  @include btn1($colorbackground:$color-dos,$font-size: medium, $padding:0.1rem, $width:50%, $border:3px solid white)
+.btn4:hover{
+  @include btn1($colorbackground:$color-dos,$font-size: medium, $padding:0.1rem, $width:50%)
 }
 
-.btn4:hover{
+.btn4{
   @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.1rem, $width:50%)
 }
 .btn5{
@@ -80,6 +86,7 @@ a.btn3 {
 .btn5:disabled{  
   @include btn1($color: $color-uno, $colorbackground:white, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
 }
+
   //FOOTER
   .footer {
     background-color: $color-uno;
@@ -94,9 +101,9 @@ a.btn3 {
 
 #date{
   background-color: $color-uno;
-  width: 19rem;
+  width: 15rem;
   margin: 2rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
   margin-bottom: 3.5rem;
   color: $color-cuatro;
   align-content: center;
@@ -355,7 +362,7 @@ main{
   //Home - fecha y selector
   #date{
     margin-left: 2rem;
-    width: 39rem;
+    
   }
   .mb-4{
     margin-left: 2rem !important;

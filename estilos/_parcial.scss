@@ -25,11 +25,10 @@ $color-cuatro:#ded2cf;
 
 //MIXIN BOTONES
 
- @mixin btn1 ($color:$color-uno, $colorbackground:$color-cuatro, $font-size:medium, $width:100%, $margin:1rem, $padding:0px, $border:0px solid white, $border-radius: 7px, $font-weight:bold){
+ @mixin btn1 ($color:$color-uno, $colorbackground:$color-cuatro, $font-size:medium, $width:100%, $margin:1rem, $padding:0px, $border-radius: 7px, $font-weight:bold){
     color: $color;
     height: 2.5rem;
     border-radius: $border-radius;
-    border: $border;
     margin:$margin;
     font-family: 'Roboto Slab';
     font-weight: $font-weight;

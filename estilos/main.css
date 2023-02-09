@@ -22,19 +22,23 @@ nav {
 
 svg {
   fill: #ded2cf;
+  margin: 0 2rem;
 }
 
-span img {
+.dropdown-item img, span img {
   width: 20px;
   height: 12px;
   margin: 5px;
+}
+
+.dropdown-toggle::after {
+  content: none;
 }
 
 .btn1 {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -52,7 +56,6 @@ span img {
   color: #ded2cf;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -70,7 +73,6 @@ span img {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -88,7 +90,6 @@ span img {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -106,7 +107,6 @@ span img {
   color: white;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: 200;
@@ -124,7 +124,6 @@ a.btn3:hover {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -142,7 +141,6 @@ a.btn3 {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -156,11 +154,10 @@ a.btn3 {
   outline: none;
 }
 
-.btn4 {
+.btn4:hover {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 3px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -174,11 +171,10 @@ a.btn3 {
   outline: none;
 }
 
-.btn4:hover {
+.btn4 {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
-  border: 0px solid white;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
@@ -196,7 +192,6 @@ a.btn3 {
   color: #69656f;
   height: 2.5rem;
   border-radius: 0px;
-  border: 0px solid white;
   margin: 0px;
   font-family: "Roboto Slab";
   font-weight: 200;
@@ -214,7 +209,6 @@ a.btn3 {
   color: #293249;
   height: 2.5rem;
   border-radius: 0px;
-  border: 0px solid white;
   margin: 0px;
   font-family: "Roboto Slab";
   font-weight: 200;
@@ -234,9 +228,9 @@ a.btn3 {
 
 #date {
   background-color: #293249;
-  width: 19rem;
+  width: 15rem;
   margin: 2rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
   margin-bottom: 3.5rem;
   color: #ded2cf;
   align-content: center;
@@ -328,7 +322,7 @@ table input[type=number] {
     width: 100%;
   }
   #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(3),
-#aboutus .d-flex.justify-content-center.align-items-center div:nth-child(5) {
+  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(5) {
     margin-top: 2rem;
   }
   #aboutus .d-flex.justify-content-center.align-items-center img {
@@ -453,7 +447,6 @@ main {
 @media (min-width: 768px) and (max-width: 1024px) {
   #date {
     margin-left: 2rem;
-    width: 39rem;
   }
   .mb-4 {
     margin-left: 2rem !important;
