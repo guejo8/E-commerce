@@ -16,24 +16,23 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
     cardContainer.innerHTML=""; //borra las tarjetas
     let lsProducts = localStorage.getItem("ProductsLS");//recupera de LS la lista de productos
     let productsArray= JSON.parse(lsProducts); //lo convierte en un array de objetoJS
-    //  console.log(productsArray); 
+    /* console.log(productsArray); */
     let listaEnseñar="";
     productsArray.forEach((productObjet) => {
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
     listaEnseñar+=`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
                         <img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name}>
-                             <div class="card-body">
-                          <h5 class="card-title">${productObjet.name}</h5>
-                          <p class="card-text">${productObjet.precio}</p>
-                          <p class="cantidad">Cantidad</p><input id="cantidad${productObjet.idProd}" type="number" value="1" min="1"/>                   
-                          <p href="#" class="btn3" producto=${productObjet.idProd}>Añadir</p>
+                          <div class="card-body">
+                            <h5 class="card-title">${productObjet.name}</h5>
+                            <p class="card-text">${productObjet.precio} €</p>
+                            <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
+                            <p href="#" class="btn3" producto=${productObjet.idProd}>Añadir al carrito</p>
                       </div>
                   </div>
               </div>`;
-           console.log(listaEnseñar); 
+            
         }
-
         cardContainer.innerHTML=listaEnseñar; //pinta las tarjetas
 
 
