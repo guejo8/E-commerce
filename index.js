@@ -38,6 +38,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
 
     });
 };
+
 //crear carrito
 let listCarrito=[]
 let listaProducto= localStorage.getItem('ProductsLS')
@@ -54,8 +55,8 @@ localStorage.setItem("pedido",listaCarrols)
 
 //modificar
 
-let cajaClick=document.getElementById('CardContainer');
-let palasaca=cajaClick.addEventListener('click', (eventoClick)=> {
+ let cajaClick = document.getElementById('CardContainer');
+ let palasaca = cajaClick.addEventListener('click', (eventoClick)=> {
     let linea_pedido={idProduct:0,cantidad:0};
     linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
     linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[7].value
@@ -74,3 +75,22 @@ let palasaca=cajaClick.addEventListener('click', (eventoClick)=> {
 
 
 });      
+
+//Cambio Icono carrito
+//Hay elementos
+
+let hayElementos = false;
+lista_json.forEach((item) => {
+    if(item.cantidad > 0){
+        hayElementos = true;
+    }
+})
+
+// Cambiar color
+
+let iconoCarrito = document.getElementById("icono-carrito")
+if(hayElementos = true){
+    iconoCarrito.style.fill = "red";
+} else {
+    iconoCarrito
+}
