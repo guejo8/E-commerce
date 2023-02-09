@@ -112,12 +112,29 @@ a.btn3 {
   text-align: center;
   font-size: large;
 
+  @include tablet{
+    margin-left: 2rem;
+  }
+  @include mobile {
+    margin-left: 2rem;
+  }
+
 }
 
 //Selector
 
 #categorySelect{
   width: 25%;
+
+  @include tablet{
+    width: 25%;
+
+  }
+  @include mobile {
+    width: 60%; 
+
+  }
+
   
 }
 
@@ -356,18 +373,18 @@ main{
  
 }
 
-/* IMPORTANTE: Falta cambiar versión responsive */
 
-@include tablet{
-  //Home - fecha y selector
-  #date{
-    margin-left: 2rem;
-    
-  }
-  .mb-4{
+.mb-4{
+  @include tablet{
     margin-left: 2rem !important;
   }
-   //Home - fecha y selector //
+  @include mobile{
+    margin-left: 2rem !important;
+
+  }
+
+}
+
   
   main{
       margin-top: 50px;
@@ -400,23 +417,10 @@ main{
       margin-left: 1rem;
   }
 
-  #categorySelect{
-    width: 25%;   
-  }
-}
+
 
 @include mobile{
-   //Home - fecha y selector
-   #date{
-    margin-left: 2rem;
-  }
-  .mb-4{
-    margin-left: 2rem !important;
-  }
-
-  #categorySelect{
-    width: 60%;   
-  }
+   
    //Home - fecha y selector //
   main{
     margin:0;
