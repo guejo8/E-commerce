@@ -28,7 +28,7 @@ function anchoPage(){
 
     //Esta parte es para la parte de la caja trasera para se muestre dos en mas de 850 y solo una u otra en los demás tamaños
 
-    if (window.innerWidth > 768){ // si el ancho de la ventana es mayor
+    if (window.innerWidth > 850){ // si el ancho de la ventana es mayor
         caja_register.style.display = "block";
         caja_login.style.display = "block";
     }else{
