@@ -22,7 +22,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
     listaEnseñar+=`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
-                     <a href="#" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
+                     <a href="producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
                           <div class="card-body">
                             <h5 class="card-title">${productObjet.name}</h5>
                             <p class="card-text">${productObjet.precio} €</p>
@@ -53,38 +53,28 @@ lista_json.forEach(producto => {
 let listaCarrols=JSON.stringify(listCarrito)
 localStorage.setItem("pedido",listaCarrols)
 
-//Consguir producto - id
-//  let cogerProducto = []
-//  lista_json.forEach(producto => {
-//      let linea_producto={idProduct:producto.idProd}
-//      cogerProducto.push(linea_producto)
-//  })
 
-//  let productoObjeto = JSON.stringify(cogerProducto)
-//  localStorage.setItem("producto", productoObjeto)
 
 //modificar
 
  let cajaClick = document.getElementById('CardContainer');
-//  let palasaca = cajaClick.addEventListener('click', (eventoClick)=> {
-//     let linea_pedido={idProduct:0,cantidad:0};
-//     linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
-//     linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[7].value
-//     console.log(eventoClick.target.parentElement.childNodes[5].value);
-//     console.log(linea_pedido);
-//     console.log(eventoClick);
-//     listaProducto= localStorage.getItem('pedido')
-//     console.log(listaProducto);
-//     lista_json=JSON.parse(listaProducto)
-//     console.log(lista_json);
-//     lista_json.splice(linea_pedido.idProduct,1,linea_pedido)
-//     console.log(lista_json);
-//     listaCarrols=JSON.stringify(lista_json)
-//     console.log(listaCarrols);
-//     localStorage.setItem("pedido",listaCarrols)
-
-
-// });      
+  let palasaca = cajaClick.addEventListener('click', (eventoClick)=> {
+     let linea_pedido={idProduct:0,cantidad:0};
+     linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
+     linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[7].value
+     console.log(eventoClick.target.parentElement.childNodes[5].value);
+     console.log(linea_pedido);
+     console.log(eventoClick);
+     listaProducto= localStorage.getItem('pedido')
+     console.log(listaProducto);
+     lista_json=JSON.parse(listaProducto)
+     console.log(lista_json);
+     lista_json.splice(linea_pedido.idProduct,1,linea_pedido)
+     console.log(lista_json);
+     listaCarrols=JSON.stringify(lista_json)
+     console.log(listaCarrols);
+     localStorage.setItem("pedido",listaCarrols)
+ });      
 
 //Cambio Icono carrito
 //Hay elementos
@@ -110,12 +100,12 @@ if(hayElementos = true){
 //poner tarjetas
 
 let añadirProducto = cajaClick.addEventListener("click", (eventoClick) => {
-   console.log(eventoClick);
-   console.log(eventoClick.target.attributes.producto.value);
+//    console.log(eventoClick);
+//    console.log(eventoClick.target.attributes.producto.value);
     let lineaProducto;
     lineaProducto = eventoClick.target.attributes.producto.value;
     localStorage.setItem("productoAtributo", lineaProducto)
 })
 
-console.log(añadirProducto)
+
 
