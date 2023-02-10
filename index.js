@@ -98,8 +98,8 @@ if(hayElementos = true){
 //poner tarjetas
 
 let añadirProducto = cajaClick.addEventListener("click", (eventoClick) => {
-   console.log(eventoClick);
-   console.log(eventoClick.target.attributes.producto.value);
+//    console.log(eventoClick);
+//    console.log(eventoClick.target.attributes.producto.value);
     let lineaProducto;
     lineaProducto = eventoClick.target.attributes.producto.value;
     localStorage.setItem("productoAtributo", lineaProducto)

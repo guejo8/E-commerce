@@ -1,19 +1,16 @@
 let cardContainerProducto = document.getElementById('CardContainerProducto');
 
-cardContainerProducto.addEventListener("click", changeCardContainerProducto)
 
 function changeCardContainerProducto(){
 
             let consigueProducto = localStorage.getItem("ProductsLS")
-            let productosArray = JSON.parse(consigueProducto)
+            let productosArray= JSON.parse(consigueProducto)
             let consigueIdProducto = localStorage.getItem("productoAtributo")
-            let productosIdArray = JSON.parse(consigueIdProducto)
-
-            let enseñaProducto ="";
+            let productosId = JSON.parse(consigueIdProducto)
 
             productosArray.forEach((producto) => {
-                if(guardadoProducto.idProduct === productosIdArray){
-                    enseñaProducto+=`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
+                if( producto.idProd === productosId){
+                    cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                     <div class="card m-md-2 m-sm-1">
                     <a href="producto.html"><img src=${producto.foto} class="card-img-top" alt=${producto.name}></a>
                         <div class="card-body">
@@ -26,7 +23,8 @@ function changeCardContainerProducto(){
             </div>`;
         
                 }
-                cardContainerProducto.innerHTML = enseñaProducto
             })
+        }
 
-}
+changeCardContainerProducto()
+    
