@@ -27,13 +27,19 @@
   
   svg{
     fill: $color-cuatro;
+    margin: 0 2rem;
   }
   
-  span img {
+  .dropdown-item img, span img {
     width: 20px;
     height: 12px;
     margin: 5px;
   }
+
+  .dropdown-toggle::after {
+    content: none;
+}
+
 
 //BOTONES
 
@@ -50,7 +56,7 @@
   
 }
 .btn2:hover {
-  @include btn1($color-uno,$width:80%)
+  @include btn1($colorbackground:$color-dos,$color:$color-cuatro,$width:80%)
   
 }
 .btn3 {
@@ -65,11 +71,11 @@ a.btn3 {
   @include btn1($color:white, $colorbackground:$color-uno,$font-size:medium, $padding:0.3rem,  $width: 73%)
 }
 
-.btn4{
-  @include btn1($colorbackground:$color-dos,$font-size: medium, $padding:0.1rem, $width:50%, $border:3px solid white)
+.btn4:hover{
+  @include btn1($colorbackground:$color-dos,$font-size: medium, $padding:0.1rem, $width:50%)
 }
 
-.btn4:hover{
+.btn4{
   @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.1rem, $width:50%)
 }
 .btn5{
@@ -80,6 +86,13 @@ a.btn3 {
 .btn5:disabled{  
   @include btn1($color: $color-uno, $colorbackground:white, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
 }
+
+a.btn6{
+  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.5rem, $width:22%)
+}
+a.btn6:hover{
+  @include btn1($color: $color-cuatro, $colorbackground:$color-dos,$font-size: medium, $padding:0.6rem, $width:22%)
+}
   //FOOTER
   .footer {
     background-color: $color-uno;
@@ -87,16 +100,15 @@ a.btn3 {
 
 //EJEMPLO PARA QUE VEAIS COMO HACER CAMBIOS BOTON (UTILIZACION MIXIN)
 // .btn2{@include btn ($color:$color-uno, $width
-
-//HOME
+// //HOME
 
 //Fecha
 
 #date{
   background-color: $color-uno;
-  width: 19rem;
+  width: 15rem;
   margin: 2rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
   margin-bottom: 3.5rem;
   color: $color-cuatro;
   align-content: center;
@@ -105,12 +117,29 @@ a.btn3 {
   text-align: center;
   font-size: large;
 
+  @include tablet{
+    margin-left: 2rem;
+  }
+  @include mobile {
+    margin-left: 2rem;
+  }
+
 }
 
 //Selector
 
 #categorySelect{
   width: 25%;
+
+  @include tablet{
+    width: 25%;
+
+  }
+  @include mobile {
+    width: 60%; 
+
+  }
+
   
 }
 
@@ -125,9 +154,82 @@ table input[type='number'] {
   max-width: 4em;
 }
 
-//Perfil 
+//Parte About us 
 
-//Esto necesita responsive
+ #aboutus {
+   h3.text-center#aboutustexto {
+     text-align: center;
+   }
+
+   .d-flex.justify-content-center.align-items-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+
+     div {
+       width: calc(20% - 2rem);
+       margin: 1rem;
+
+       img {
+         width: 100px;
+         height: 100px;
+         border-radius: 50%; 
+         margin-left: 9rem;       
+       }
+
+       p {
+         text-align: center;
+         margin-top: 1rem;
+       }
+     }
+     @include pc {
+       div {
+         width: calc(33.33% - 4rem);
+       }
+
+       div:nth-child(6) {
+         width: 100%;
+         margin-top: 2rem;
+       }
+     }
+     @include tablet {
+       div {
+         width: calc(33.33% - 2rem);
+       }
+
+       div:nth-child(6) {
+         width: 100%;
+         margin-top: 2rem;
+       }
+
+       img {
+         margin-left: 6rem !important;
+       }
+
+     }
+
+     @include mobile {
+       div {
+         width: 100%;
+       }
+
+       div:nth-child(3),
+       div:nth-child(5) {
+         margin-top: 2rem;
+       }
+
+
+       img {
+         margin-left: 14rem !important;
+       }
+     }
+   }
+ }
+
+ //Perfil 
+
+ //Esto necesita responsive
 
  #contacto{
    margin-top: 2rem;
@@ -151,306 +253,186 @@ table input[type='number'] {
 }
 
 
-// Parte About us 
 
-#aboutus {
-  h3.text-center#aboutustexto {
-    text-align: center;
-  }
-
-  .d-flex.justify-content-center.align-items-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    div {
-      width: calc(20% - 2rem);
-      margin: 1rem;
-
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; 
-        margin-left: 9rem;       
-      }
-
-      p {
-        text-align: center;
-        margin-top: 1rem;
-      }
-    }
-    @include pc {
-      div {
-        width: calc(33.33% - 4rem);
-      }
-
-      div:nth-child(6) {
-        width: 100%;
-        margin-top: 2rem;
-      }
-    }
-    @include tablet {
-      div {
-        width: calc(33.33% - 2rem);
-      }
-
-      div:nth-child(6) {
-        width: 100%;
-        margin-top: 2rem;
-      }
-
-      img {
-        margin-left: 6rem !important;
-      }
-
-    }
-
-    @include mobile {
-      div {
-        width: 100%;
-      }
-
-      div:nth-child(3),
-      div:nth-child(5) {
-        margin-top: 2rem;
-      }
-
-
-      img {
-        margin-left: 14rem !important;
-      }
-    }
-  }
-}
 
 //Página login-registro-- Aquí empieza
-main{
-  background-color:$color-cuatro; 
-  padding: 3rem 10rem;
-}
+ main{
+   background-color:$color-cuatro; 
+   width: 100%;
+ }
 
-.main-loginregistro{
-  background-color:$color-cuatro; 
-  padding: 15rem;
-}
+ .main-loginregistro{
+   background-color:$color-cuatro; 
+   padding: 12rem;
+   @include tablet {
+     padding: 3rem;
+   }
+   @include mobile{
+     padding: 0;
+   }
+ }
 
-.contenedor__todo{
-  width: 100%;
-  max-width: 55rem;
-  margin: auto;
-  position: relative; // vamos a tener posiciones absolutas por lo que necesitamos posiciones realtivas para que sus elementos se relacionen con él.
-}
+ .contenedor__todo{
+   width: 100%;
+   max-width: 55rem;
+   margin: auto;
+   position: relative; // vamos a tener posiciones absolutas por lo que necesitamos posiciones realtivas para que sus elementos se relacionen con él.
+ }
 
-/*Caja trasera*/
+ /*Caja trasera*/
 
-.caja__trasera{
-  width: 100%;
-  padding: 0rem 2rem;
+ .caja__trasera{
+   width: 100%;
+   padding: 1rem 3rem;
+   display: flex;
+   justify-content: center;
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+   background-color: $color-dos;
+
+   @include tablet {
+       max-width: 450px;
+       height: 300px;
+       flex-direction: column;
+       margin: auto;
+   }
+
+   @include mobile{
+     padding: 0.2rem;
+     max-width: 350px;
+     height: 300px;
+     flex-direction: column;
+     margin: auto;
+   }
+
+ }
+
+ .caja__trasera div{
+   margin: 100px 40px;
+   color: white;
+   transition: all 500ms; //Nos muestra una transición cuando vayamos hacer algún movimiento
+   @include tablet{
+     margin: 0px;
+     position: absolute;
+   }
+   @include mobile {
+     margin: 0px;
+     position: absolute;
+   }
+
+ }
+
+
+ .caja__trasera div p{
+   margin-top: 2rem; 
+   font-size: 16px;
+   font-weight: 300;
+ }
+
+ .caja__trasera div h3{
+   font-weight: 400;
+   font-size: 26px;
+ }
+
+
+ /*Formularios*/
+
+ #btnIngresar{
+   color: $color-dos;
+ }
+
+ .contenedor__login-register{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   max-width: 25rem;
+   position: relative; //Posición del formulario absoluta - Relación
+   top: -13rem; //Posicionarlo en el centro 
+   left: 2rem;
+
+   /*La transicion va despues del codigo JS*/
   
-  display: flex;
-  justify-content: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: $color-dos;
+   transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+   //Transición para el efecto rebote de un lado a otro
 
-}
+   @include tablet{
+     top: -10px;
+     left: -5px;
+     margin: auto;
+   }
 
-.caja__trasera div{
-  margin: 9rem 3rem;
-  color: white;
-  transition: all 500ms; //Nos muestra una transición cuando vayamos hacer algún movimiento
-}
+   @include mobile{
+     top: -10px;
+     left: -5px;
+     margin: auto;
+   }
 
+ }
 
-.caja__trasera div p{
-  margin-top: 2rem; 
-}
+ .contenedor__login-register form{
+   width: 100%;
+   padding: 2rem;
+   background: white;
+   position: absolute;
+   border-radius: 2rem;
 
-.caja__trasera div h3{
-  font-weight: 400;
-  font-size: 26px;
-}
+   @include tablet{
+     position: relative;
+   }
 
-.caja__trasera div p{
-  font-size: 16px;
-  font-weight: 300;
-}
+   @include mobile {
+     position: relative;
+   }
+ }
 
+ .contenedor__login-register form h2{
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   color: $color-dos;
+ }
 
-/*Formularios*/
-
-#btnIngresar{
-  color: $color-dos;
-}
-
-.contenedor__login-register{
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 25rem;
-  position: relative; //Posición del formulario absoluta - Relación
-  top: -13rem; //Posicionarlo en el centro 
-  left: 2rem;
-
-  /*La transicion va despues del codigo JS*/
-  
-  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  //Transición para el efecto rebote de un lado a otro
-}
-
-.contenedor__login-register form{
-  width: 100%;
-  padding: 2rem;
-  background: white;
-  position: absolute;
-  border-radius: 2rem;
-}
-
-.contenedor__login-register form h2{
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: $color-dos;
-}
-
-.contenedor__login-register form input{
-  width: 100%;
-  margin-top: 0.1rem;
-  padding: 1rem;
-  border: none;
-  background: $color-cuatro;
-  font-size: 1rem;
-  outline: none;
-}
+ .contenedor__login-register form input{
+   width: 100%;
+   margin-top: 0.1rem;
+   padding: 1rem;
+   border: none;
+   background: $color-cuatro;
+   font-size: 1rem;
+   outline: none;
+ }
 
 
-.formulario__login{
-  opacity: 1;
-  display: block;
-  margin-left: 1.2rem;
-}
-.formulario__register{  //para que no aparezca el formulario de resgistro
-  display: none;
-}
+ .formulario__login{
+   opacity: 1;
+   display: block;
+ }
 
-//Div política privacidad
+ .formulario__register{ // para que no aparezca el formulario de resgistro
+   display: none;
+ }
 
-.checkbox-formulario{
-  display: flex;
-}
-#checkbox{
- width: 1rem;
+ Div política privacidad
 
-}
+ .checkbox-formulario{
+   display: flex;
+ }
+ #checkbox{
+  width: 1rem;
+
+ }
 .politica-privacidad{
   margin-top: 1rem;
   padding-left: 1rem;
  
 }
 
-/* IMPORTANTE: Falta cambiar versión responsive */
 
-@include tablet{
-  //Home - fecha y selector
-  #date{
-    margin-left: 2rem;
-    width: 39rem;
-  }
-  .mb-4{
+.mb-4{
+  @include tablet{
     margin-left: 2rem !important;
   }
-   //Home - fecha y selector //
-  
-  main{
-      margin-top: 50px;
-  }
-
-  .caja__trasera{
-      max-width: 350px;
-      height: 300px;
-      flex-direction: column;
-      margin: auto;
-      
-  }
-
-  .caja__trasera div{
-      margin: 1px;
-      position: absolute;
-  }
-
-
-  /*Formularios*/
-
-  .contenedor__login-register{
-      top: -10px;
-      left: -5px;
-      margin: auto;
-  }
-
-  .contenedor__login-register form{
-      position: relative;
-      margin-left: 1rem;
-  }
-
-  #categorySelect{
-    width: 25%;   
-  }
-}
-
-@include mobile{
-   //Home - fecha y selector
-   #date{
-    margin-left: 2rem;
-  }
-  .mb-4{
+  @include mobile{
     margin-left: 2rem !important;
-  }
-
-  #categorySelect{
-    width: 60%;   
-  }
-   //Home - fecha y selector //
-  main{
-    margin:0;
-  }
-
-  .contenedor__login-register form input {
-    width: 100%;
-    margin-top: 0.1rem;
-    padding: 0.3rem;
-    border: none;
-    background: $color-cuatro;
-    font-size: 0.8rem;
-    outline: none;
-  }
-
-  .iniciarSesion-form{
-    font-size: 0.8rem;
-  }
-  
-  .caja__trasera{
-      max-width: 350px;
-      height: 300px;
-      flex-direction: column;
-      margin: auto;
-      
-  }
-  
-  .caja__trasera div{
-      margin: 0px;
-      position: absolute;
-  }
-
-  /*Formularios*/
-
-  .contenedor__login-register{
-      top: -10px;
-      left: -5px;
-      margin: auto;
-  }
-
-  .contenedor__login-register form{
-      position: relative;
   }
 }

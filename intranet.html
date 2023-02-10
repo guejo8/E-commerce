@@ -8,9 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/main.css">
     <link rel="shortcut icon" href="./imagenes/logo/logo.png" type="image/png">
-
      <!-- Font Awesome -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="base datos/basedatos.js"></script>
 </head>
@@ -37,7 +35,7 @@
               <a class="nav-link active" aria-current="page" href="Loginregistro.html"><button type="button" class="btn1">Registro</button></a>
             </li> 
             <li class="nav-item dropdown"> 
-              <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <button type="button" class="btn1">Idioma</button>
               </a>
                 <ul class="dropdown-menu">
@@ -51,12 +49,12 @@
           <!--Selector de idioma-->
                <!-- boton de login -->
             <span class="nav-item">
-              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn2"><img src="./imagenes/lenguajes/España.png" />login</button></a>
+              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn2 btn-dark btn-sm"><img src="./imagenes/lenguajes/España.png" />login</button></a>
             </span> 
         
               
               <span class="nav-item"> <!--Imagen Carrito-->
-                <a class="nav-link" href="./carrito/Carrito.html">
+                <a class="nav-link">
                   <svg id="icono-carrito" xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
                   <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                   </svg>
@@ -69,22 +67,7 @@
         <div class="bg-image" > </div>
 <!-- Aquí termina el header -->
 
-    <main class="container-fluid justify-content-center align-content-center">
-        <div id="encabezadoDeCatalogo" class="row align-items-lg-center"> <!--Encabezado de Catálogo-->
-            <span id="date" class="col-4"></span><!--Escribir la fecha desde index,js-->
-            <span class="mb-4 col-8 row align-content-end col-md-offset-3"> <!--Boton Select de Bootstrap-->
-                <select class="form-select form-select-lg col-3 " name="category" id="categorySelect">
-                    <option value="all" selected>Todos</option>
-                    <option value="0">Escritura</option>
-                    <option value="1">Cuadernos</option>
-                    <option value="2">Escolar</option>
-                </select>
-            </span>
-        </div><!--Encabezado de Catálogo-->
-        <div class="row cards" style="width: 80%; margin: 5% auto;" id="CardContainer">
-        <!-- <div class="container row align-items-lg-center" >  Contenedor de tarjetas -->
-          <!--Aqui van las tarjetas-->
-        </div>
+    
         <div id="aboutus">
           <h3 class="text-center" id="aboutustexto">Sobre nosotros</h3>
             <div class="d-flex justify-content-center align-items-center" >
@@ -113,54 +96,8 @@
       
     </main>
 
-<!-- Pop-Up
-    <button type="button" class="mt-5 mx-5 btn btn-primary"data-bs-toggle="modal" data-bs-target="#miModal">mostr</button> -->
-    <!--data-bs-backdrop=static hace que al clicsr fuera no se cierre  -->
-  <div class="modal fade" id="miModal" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle" data-bs-backdrop="static">
-    <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"id="modalTitle">Mensaje</h5>
-            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
-          </div>
-          <div class="modal-body">
-             <P>
-              Has añadido productos al carrito
-           </P>
-             
-             
-          </div> 
-          <div class="modal-footer"> 
-             
-             <a href="carrito/Carrito.html" class="btn6">Ir al carrito</a>
-          </div>          
-      </div>
-    </div> 
-  </div>  
-  
-  <!-- segundo modal  -->
-  <div class="modal fade" id="modal2" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle2" data-bs-backdrop="static">
-    <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"id="modalTitle2">Prueba pop-up</h5>
-            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
-          </div>
-          <div class="modal-body">
-             
-              
-             
-          </div> 
-          <div class="modal-footer"> 
-             <!-- <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button> -->
-             <a class="btn btn-primary"href="#miModal"data-bs-toggle="modal"data-bs-dismiss="modal" role="button">regresar</a>
-          </div>          
-      </div>
-    </div> 
-  </div>       
-    
+
+
 
 
 
