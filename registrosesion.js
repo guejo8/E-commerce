@@ -34,6 +34,8 @@ function registroCliente(){
       CP: document.getElementById("cp").value,
       city: document.getElementById("ciudad").value,
       defaultLang: "es",
+      rol:"user",
+      
   }
 
     usersArray.push(newUser); //añades usuario

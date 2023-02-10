@@ -10,6 +10,7 @@ let listUsers=[
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
+        rol:"admin",
     },
 
     {
@@ -23,6 +24,7 @@ let listUsers=[
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
+        rol:"user",
     },
     {
         idUser: 2,
@@ -35,6 +37,7 @@ let listUsers=[
         CP: "48002",
         city: "Bilbao",
         defaultLang: "es",
+        rol:"user",
     }
 ]
 
