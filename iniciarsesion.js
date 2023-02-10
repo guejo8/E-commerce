@@ -77,9 +77,9 @@
             let rol = JSON.parse(sessionStorage.getItem("rolactivo"))
             console.log(rol)
             if(rol === "admin"){
-                window.location.href="intranet.html"
+                window.location.href="intranet.html" //Esta función redirige a la página de perfil del administrador
 
             } else if(rol === "user"){
-                window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil
+                window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil del usuario 
             }
         }
