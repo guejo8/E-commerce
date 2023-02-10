@@ -56,7 +56,7 @@
   
 }
 .btn2:hover {
-  @include btn1($colorbackground:$color-uno,$width:80%)
+  @include btn1($colorbackground:$color-dos,$color:$color-cuatro,$width:80%)
   
 }
 .btn3 {
@@ -87,6 +87,12 @@ a.btn3 {
   @include btn1($color: $color-uno, $colorbackground:white, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
 }
 
+a.btn6{
+  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.5rem, $width:22%)
+}
+a.btn6:hover{
+  @include btn1($color: $color-cuatro, $colorbackground:$color-dos,$font-size: medium, $padding:0.6rem, $width:22%)
+}
   //FOOTER
   .footer {
     background-color: $color-uno;
