@@ -86,7 +86,7 @@ svg {
 }
 
 .btn2:hover {
-  color: #293249;
+  color: #ded2cf;
   height: 2.5rem;
   border-radius: 7px;
   margin: 1rem;
@@ -96,7 +96,7 @@ svg {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  background-color: #293249;
+  background-color: #69656f;
   width: 80%;
   padding: 0px;
   outline: none;

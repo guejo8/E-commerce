@@ -56,7 +56,7 @@
   
 }
 .btn2:hover {
-  @include btn1($colorbackground:$color-uno,$width:80%)
+  @include btn1($colorbackground:$color-dos,$color:$color-cuatro,$width:80%)
   
 }
 .btn3 {
