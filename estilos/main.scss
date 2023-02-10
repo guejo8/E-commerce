@@ -346,6 +346,16 @@ main{
   background: $color-cuatro;
   font-size: 1rem;
   outline: none;
+
+  @include mobile {
+      width: 100%;
+      margin-top: 0.1rem;
+      padding: 0.3rem;
+      border: none;
+      background: $color-cuatro;
+      font-size: 0.8rem;
+      outline: none;
+  }
 }
 
 
@@ -380,14 +390,14 @@ main{
   }
   @include mobile{
     margin-left: 2rem !important;
-
   }
-
 }
 
-  
   main{
       margin-top: 50px;
+      @include mobile{
+          margin:0;
+      }
   }
 
   .caja__trasera{
@@ -395,12 +405,23 @@ main{
       height: 300px;
       flex-direction: column;
       margin: auto;
+
+      @include mobile{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+      }
       
   }
 
   .caja__trasera div{
       margin: 1px;
       position: absolute;
+      @include mobile {
+        margin: 0px;
+        position: absolute;
+      }
   }
 
 
@@ -410,58 +431,28 @@ main{
       top: -10px;
       left: -5px;
       margin: auto;
+      @include mobile{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+
+      }
   }
 
   .contenedor__login-register form{
       position: relative;
       margin-left: 1rem;
-  }
-
-
-
-@include mobile{
+      @include mobile{
+        position: relative;
+      }
    
-   //Home - fecha y selector //
-  main{
-    margin:0;
   }
-
-  .contenedor__login-register form input {
-    width: 100%;
-    margin-top: 0.1rem;
-    padding: 0.3rem;
-    border: none;
-    background: $color-cuatro;
-    font-size: 0.8rem;
-    outline: none;
-  }
+  
 
   .iniciarSesion-form{
-    font-size: 0.8rem;
+    @include mobile{
+      font-size: 0.8rem;
+    }
+
   }
   
-  .caja__trasera{
-      max-width: 350px;
-      height: 300px;
-      flex-direction: column;
-      margin: auto;
-      
-  }
-  
-  .caja__trasera div{
-      margin: 0px;
-      position: absolute;
-  }
-
-  /*Formularios*/
-
-  .contenedor__login-register{
-      top: -10px;
-      left: -5px;
-      margin: auto;
-  }
-
-  .contenedor__login-register form{
-      position: relative;
-  }
-}
