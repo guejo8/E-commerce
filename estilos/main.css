@@ -96,7 +96,7 @@ svg {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  background-color: #ded2cf;
+  background-color: #293249;
   width: 80%;
   padding: 0px;
   outline: none;
@@ -233,7 +233,7 @@ a.btn6 {
   cursor: pointer;
   text-decoration: none;
   background-color: #ded2cf;
-  width: 25%;
+  width: 22%;
   padding: 0.5rem;
   outline: none;
 }
@@ -390,7 +390,6 @@ main {
 
 .main-loginregistro {
   background-color: #ded2cf;
-  padding: 15rem;
 }
 
 .contenedor__todo {

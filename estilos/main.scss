@@ -88,7 +88,7 @@ a.btn3 {
 }
 
 a.btn6{
-  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.5rem, $width:25%)
+  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.5rem, $width:22%)
 }
 a.btn6:hover{
   @include btn1($color: $color-cuatro, $colorbackground:$color-dos,$font-size: medium, $padding:0.6rem, $width:22%)
