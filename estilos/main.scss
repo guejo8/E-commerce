@@ -56,7 +56,7 @@
   
 }
 .btn2:hover {
-  @include btn1($color-uno,$width:80%)
+  @include btn1($colorbackground:$color-uno,$width:80%)
   
 }
 .btn3 {
@@ -256,7 +256,6 @@ main{
 
 .main-loginregistro{
   background-color:$color-cuatro; 
-  padding: 15rem;
 }
 
 .contenedor__todo{

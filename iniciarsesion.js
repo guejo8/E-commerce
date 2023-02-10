@@ -34,7 +34,7 @@
            if((pemail == listaUsers[i].email) && (cpassword == listUsers[i].password)){          
                 acceso = true
                 sessionStorage.setItem("cliente", JSON.stringify(listaUsers[i]))               
-                //si tuvieramos rol: sessionStorage.setItem("rolactivo",listaUsers[i][a])
+                sessionStorage.setItem("rolactivo",JSON.stringify(listaUsers[i].rol))
            } 
        }
        return acceso
@@ -74,5 +74,12 @@
         }
 
         function ingresar(){
-            window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil
+            let rol = JSON.parse(sessionStorage.getItem("rolactivo"))
+            console.log(rol)
+            if(rol === "admin"){
+                window.location.href="index.html"
+
+            } else if(rol === "user"){
+                window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil
+            }
         }
