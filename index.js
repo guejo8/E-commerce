@@ -26,7 +26,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
                           <div class="card-body">
                             <h5 class="card-title">${productObjet.name}</h5>
                             <p class="card-text">${productObjet.precio} €</p>
-                            <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
+                            <p class="cantidad">Cantidad &nbsp;&nbsp;<input min ="0" id="cantidad${productObjet.idProd}" style="width:3rem" type="number"/></p>                   
                             <p href="#" class="btn3" producto=${productObjet.idProd}>Añadir al carrito</p>
                       </div>
                   </div>
@@ -52,14 +52,15 @@ lista_json.forEach(producto => {
 let listaCarrols=JSON.stringify(listCarrito)
 localStorage.setItem("pedido",listaCarrols)
 
-//modificar
+//guardar idProducto
 
 let cajaClick=document.getElementById('CardContainer');
 let palasaca=cajaClick.addEventListener('click', (eventoClick)=> {
+    console.log(eventoClick);
     let linea_pedido={idProduct:0,cantidad:0};
     linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
-    linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[7].value
-    console.log(eventoClick.target.parentElement.childNodes[7].value);
+    linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[5].childNodes[1].value
+    console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1].value);
     console.log(linea_pedido);
     console.log(eventoClick);
     listaProducto= localStorage.getItem('pedido')

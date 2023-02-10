@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <script src="../base datos/basedatos.js"></script>
+   
 </head>
 <body>
    <!-- Aquí empieza el header -->
@@ -120,39 +120,13 @@
     </header>
     <div class="bg-image"></div>
     <!-- Aquí termina el header -->
-    <body>
-      <div class=" border" id="CardContainer">
-        <div class="w-75 row border">
-          <!-- Tarjeta -->
-          <div class="col-sm-6 col-md-4 col-xl-2 border">
-            <img
-              src="../imagenes/producto/agendas.jpg"
-              class="card-img-top "
-              alt="Agendas"
-            />
-            <p>Nombre del producto</p>
-          </div>
-
-          <input
-            id="cantidad${productObjet.idProd}"
-            type="number"
-            value="1"
-            min="1"
-            class=" col-sm-6 col-md-4 col-xl-2 border"
-          />
-          <p class="card-text  col-sm-6 col-md-4 col-xl-2 border">Precio</p>
-          <p
-            href="#"
-            class="btn3  col-sm-6 col-md-4 col-xl-2 border"
-            producto="${productObjet.idProd}"
-            >Eliminar del carrito</p
-          >
-
-          <p class="card-title  col-sm-6 col-md-4 col-xl-2 border"
-            >Precio Total</p
-          >
-        </div>
-        <!--Aqui van las tarjetas-->
+ 
+      <div class=" border">      
+          <table class="w-100 h-auto">
+            <tbody  id="CardContainer">
+             <!--Aqui van las tarjetas-->
+            </tbody>
+          </table>
       </div>
     </body>
 
@@ -291,5 +265,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./carrito.js"></script>
   </body>
 </html>

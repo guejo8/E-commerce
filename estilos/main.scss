@@ -58,11 +58,11 @@
 }
 
 a.btn3:hover {
-  @include btn1($colorbackground:$color-tres,$font-size:medium, $padding:0.3rem)
+  @include btn1($colorbackground:$color-tres,$font-size:medium, $padding:0.3rem,  $width: 73%)
 }
 
 a.btn3 {
-  @include btn1($colorbackground:$color-uno,$font-size:medium, $padding:0.3rem)
+  @include btn1($color:white, $colorbackground:$color-uno,$font-size:medium, $padding:0.3rem,  $width: 73%)
 }
 
 .btn4{
