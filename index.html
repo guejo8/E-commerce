@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/main.css">
     <link rel="shortcut icon" href="./imagenes/logo/logo.png" type="image/png">
+
      <!-- Font Awesome -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="base datos/basedatos.js"></script>
 </head>
@@ -111,8 +113,54 @@
       
     </main>
 
-
-
+<!-- Pop-Up
+    <button type="button" class="mt-5 mx-5 btn btn-primary"data-bs-toggle="modal" data-bs-target="#miModal">mostr</button> -->
+    <!--data-bs-backdrop=static hace que al clicsr fuera no se cierre  -->
+  <div class="modal fade" id="miModal" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle" data-bs-backdrop="static">
+    <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"id="modalTitle">Mensaje</h5>
+            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+             <P>
+              Has añadido productos al carrito
+           </P>
+             
+             
+          </div> 
+          <div class="modal-footer"> 
+             
+             <a href="carrito/Carrito.html" class="btn1">Ir al carrito</a>
+          </div>          
+      </div>
+    </div> 
+  </div>  
+  
+  <!-- segundo modal  -->
+  <div class="modal fade" id="modal2" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"id="modalTitle2">Prueba pop-up</h5>
+            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+             
+              
+             
+          </div> 
+          <div class="modal-footer"> 
+             <!-- <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button> -->
+             <a class="btn btn-primary"href="#miModal"data-bs-toggle="modal"data-bs-dismiss="modal" role="button">regresar</a>
+          </div>          
+      </div>
+    </div> 
+  </div>       
+    
 
 
 
