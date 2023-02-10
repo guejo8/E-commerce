@@ -221,6 +221,40 @@ a.btn3 {
   outline: none;
 }
 
+a.btn6 {
+  color: #293249;
+  height: 2.5rem;
+  border-radius: 7px;
+  margin: 1rem;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ded2cf;
+  width: 25%;
+  padding: 0.5rem;
+  outline: none;
+}
+
+a.btn6:hover {
+  color: #ded2cf;
+  height: 2.5rem;
+  border-radius: 7px;
+  margin: 1rem;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #69656f;
+  width: 22%;
+  padding: 0.6rem;
+  outline: none;
+}
+
 .footer {
   background-color: #293249;
 }
@@ -438,6 +472,17 @@ main {
   font-size: 1rem;
   outline: none;
 }
+@media (max-width: 767px) {
+  .contenedor__login-register form input {
+    width: 100%;
+    margin-top: 0.1rem;
+    padding: 0.3rem;
+    border: none;
+    background: #ded2cf;
+    font-size: 0.8rem;
+    outline: none;
+  }
+}
 
 .formulario__login {
   opacity: 1;
@@ -476,6 +521,11 @@ main {
 main {
   margin-top: 50px;
 }
+@media (max-width: 767px) {
+  main {
+    margin: 0;
+  }
+}
 
 .caja__trasera {
   max-width: 350px;
@@ -483,10 +533,24 @@ main {
   flex-direction: column;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .caja__trasera {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+}
 
 .caja__trasera div {
   margin: 1px;
   position: absolute;
+}
+@media (max-width: 767px) {
+  .caja__trasera div {
+    margin: 0px;
+    position: absolute;
+  }
 }
 
 /*Formularios*/
@@ -495,45 +559,26 @@ main {
   left: -5px;
   margin: auto;
 }
-
-.contenedor__login-register form {
-  position: relative;
-  margin-left: 1rem;
-}
-
 @media (max-width: 767px) {
-  main {
-    margin: 0;
-  }
-  .contenedor__login-register form input {
-    width: 100%;
-    margin-top: 0.1rem;
-    padding: 0.3rem;
-    border: none;
-    background: #ded2cf;
-    font-size: 0.8rem;
-    outline: none;
-  }
-  .iniciarSesion-form {
-    font-size: 0.8rem;
-  }
-  .caja__trasera {
-    max-width: 350px;
-    height: 300px;
-    flex-direction: column;
-    margin: auto;
-  }
-  .caja__trasera div {
-    margin: 0px;
-    position: absolute;
-  }
-  /*Formularios*/
   .contenedor__login-register {
     top: -10px;
     left: -5px;
     margin: auto;
   }
+}
+
+.contenedor__login-register form {
+  position: relative;
+  margin-left: 1rem;
+}
+@media (max-width: 767px) {
   .contenedor__login-register form {
     position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .iniciarSesion-form {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
