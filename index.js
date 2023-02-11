@@ -62,17 +62,17 @@ localStorage.setItem("pedido",listaCarrols)
      let linea_pedido={idProduct:0,cantidad:0};
      linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
      linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[5].childNodes[1].value
-     console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1]);
-     console.log(linea_pedido);
-     console.log(eventoClick);
+    //  console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1]);
+    //  console.log(linea_pedido);
+    //  console.log(eventoClick);
      listaProducto= localStorage.getItem('pedido')
-     console.log(listaProducto);
+    //  console.log(listaProducto);
      lista_json=JSON.parse(listaProducto)
-     console.log(lista_json);
+    //  console.log(lista_json);
      lista_json.splice(linea_pedido.idProduct,1,linea_pedido)
-     console.log(lista_json);
+    //  console.log(lista_json);
      listaCarrols=JSON.stringify(lista_json)
-     console.log(listaCarrols);
+    //  console.log(listaCarrols);
      localStorage.setItem("pedido",listaCarrols)
  });      
 
