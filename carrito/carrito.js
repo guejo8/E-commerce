@@ -49,8 +49,8 @@ quitarProducto();
 function quitarProducto() {
    
     cardContainer.addEventListener('click', (eventoCambio)=>{
-        // console.log(eventoCambio);
-         if(eventoCambio.target.attributes[1].value){
+        // console.log(eventoCambio.target.attributes[1]);
+         if(eventoCambio.target.attributes.borra.value){
             // console.log(eventoCambio.target.parentElement.parentElement.attributes[0].value);
             posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
              eventoCambio.target.parentElement.parentElement.innerHTML="";
