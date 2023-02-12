@@ -20,7 +20,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
     let listaEnseñar="";
     productsArray.forEach((productObjet) => {
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
-    listaEnseñar+=`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
+    listaEnseñar+=`<div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
                      <a href="producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
                           <div class="card-body">
