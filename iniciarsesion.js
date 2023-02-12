@@ -29,9 +29,9 @@
        
        for(let i =  0; i < listaUsers.length; i++){
            console.log(cpassword);
-        console.log(listUsers[i].password);
-        console.log((pemail == listaUsers[i].email) && (cpassword == listUsers[i].password));
-           if((pemail == listaUsers[i].email) && (cpassword == listUsers[i].password)){          
+            console.log(listaUsers[i].password);
+            console.log((pemail == listaUsers[i].email) && (cpassword == listaUsers[i].password));
+           if((pemail == listaUsers[i].email) && (cpassword == listaUsers[i].password)){          
                 acceso = true
                 sessionStorage.setItem("cliente", JSON.stringify(listaUsers[i]))               
                 sessionStorage.setItem("rolactivo",JSON.stringify(listaUsers[i].rol))
@@ -50,7 +50,6 @@
        botonSession.addEventListener("click" , iniciarSessionUsuario)
     }
     
-
         function iniciarSessionUsuario(){
             var emailSession  = "";
             var passwordSession = ""; 
@@ -67,10 +66,10 @@
 
             if(acceso === true){
                 ingresar()
-            } // Y sino incluir un mensaje de usuario no registrado o datos no correctos
-            else{
-                alert("No hay usuario con esos datos")
             }
+            else {
+                document.querySelector(".formulario__input-error-loguin").classList.add('formulario__input-error-loguin-activo')
+            } // Y sino incluir un mensaje de usuario no registrado o datos no correctos
         }
 
         function ingresar(){

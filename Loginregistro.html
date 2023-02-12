@@ -89,24 +89,82 @@
             <!--Login-->
             <form action="" class="formulario__login">
                 <h2 class="iniciarSesion-form">Iniciar Sesión</h2>
-                <input type="text" placeholder="Correo Electronico" id="email">
-                <input type="password" placeholder="Contraseña" id="password">
+                <input type="text" placeholder="Correo Electronico" id="email" name="email_loguin">
+                <input type="password" placeholder="Contraseña" id="password" name="password_loguin">
                 <input type="button" value="Ingresar" id="btnIngresar"></input>
+                <p class="formulario__input-error-loguin">El usuario y/o la contraseña no existen. Sino tienes cuenta, registrate.</p>
             </form>
 
             <!--Register-->
-            <form action="./perfil/Perfil.html" class="formulario__register">
+            <form action="./perfil/Perfil.html" class="formulario__register" id="formulario-validacion">
                 <h2>Regístrarse</h2>
-                <input type="text" placeholder="Nombre" id="nombre" value="">
-                <input type="text" placeholder="Correo Electronico" id="Correo Electronico" value="">
-                <input type="text" placeholder="Teléfono" id="telefono" value="">
-                <input type="text" placeholder="Calle" id="calle" value="">
-                <input type="text" placeholder="Portal" id="portal" value="">
-                <input type="text" placeholder="CP" id="cp" value="">
-                <input type="text" placeholder="Ciudad" id="ciudad" value="">
-                <input type="password" placeholder="Contraseña" id="passwordCliente" value="">
-                <div class="checkbox-formulario">
-                  <input id="checkbox" type="checkbox">
+                <div class="formulario__grupo" id="grupo__nombre">
+                  <div class="formulario__grupo-input">
+                    <label for="nombre" class="formulario__label"></label>
+                     <input type="text" class="formulario__input" placeholder="Nombre" id="nombre" value="" name="nombre">
+                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre tiene que contener letras y espacios, pueden llevar acentos.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__email">
+                  <div class="formulario__grupo-input">
+                      <input type="text" placeholder="Correo Electronico" class="formulario__input" id="Correo Electronico" value="" name="email">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El email tiene que ser real.</p>
+                </div>            
+                
+                <div class="formulario__grupo" id="grupo__telefono">
+                  <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Teléfono" class="formulario__input" id="telefono" value="" name="telefono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                   <p class="formulario__input-error">El telefono tiene que contener 9 números.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__calle">
+                  <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Calle" class="formulario__input" id="calle" value="" name="calle">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                    <p class="formulario__input-error">La calle tiene que contener letras y espacios, pueden llevar acentos.</p>
+                </div>
+                
+                <div class="formulario__grupo" id="grupo__portal">
+                  <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Portal" class="formulario__input"  id="portal" value="" name="portal">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                    <p class="formulario__input-error">El portal tiene que contener letras y números.</p>
+              </div>
+
+                <div class="formulario__grupo" id="grupo__CP">
+                  <div class="formulario__grupo-input">
+                    <input type="text" placeholder="CP" id="cp" value="" name="CP">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                      <p class="formulario__input-error">El Código Postal tiene que contener 5 números.</p>
+                </div>
+                  
+              <div class="formulario__grupo" id="grupo__ciudad">
+                <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Ciudad" class="formulario__input" id="ciudad" value="" name="ciudad">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error">La ciudad tiene que contener letras.</p>
+              </div>
+                
+                <div class="formulario__grupo" id="grupo__password">
+                  <div class="formulario__grupo-input">
+                      <input type="password" placeholder="Contraseña" class="formulario__input" id="passwordCliente" value="" name="password">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                       <p class="formulario__input-error">La contraseña tiene que contener al menos un número 0-9, una mayúscula, una minúscula, un carácter especial (.,*!?¿¡/#$%&) con longitud mínima de 8 caracteres, 64 máxima. No acepta espacios.</p>
+                </div>
+                
+                <div class="checkbox-formulario" class="formulario__grupo" id="grupo__terminos">
+                  <input id="checkbox" type="checkbox" class="formulario__checkbox">
                   <p class="politica-privacidad">Política de privacidad</p>
                 </div>
                 
