@@ -45,30 +45,51 @@
 
 .btn1 {
   @include btn1;
-  
+  @include mobile {
+    width: 80%;
+    font-size: smaller;
+    margin-left: 2rem;
+  }
+  @include tablet {
+    width: 50%;
+    font-size: medium;
+    margin-left: 12rem;
+  }
 }
 
 .btn1:hover {
-  @include btn1($color:$color-cuatro, $colorbackground:$color-dos, $font-size:initial, $padding:.5rem)
+ @include btn1($color:$color-cuatro, $colorbackground:$color-dos);
+ @include mobile {
+  width: 80%;
+  font-size: smaller;
+  margin-left: 2rem;
 }
-.btn2 {
-  @include btn1($width:80%)
+@include tablet {
+  width: 50%;
+  font-size: medium;
+  margin-left: 12rem
+
+}
+}
+
+// .btn2 {
+//   @include btn1;
   
-}
-.btn2:hover {
-  @include btn1($colorbackground:$color-dos,$color:$color-cuatro,$width:80%)
+// }
+// .btn2:hover {
+//   @include btn1($colorbackground:$color-dos,$color:$color-cuatro,$width:80%)
   
-}
+// }
 .btn3 {
-   @include btn1($color:white, $colorbackground:$color-uno, $font-weight:200, $font-size:initial, $padding:.5rem, $width: 73%)
+   @include btn1($color:white, $colorbackground:$color-uno, $font-weight:200, $padding:.5rem, $margin:.5rem, $width: 45%)
 }
 
 a.btn3:hover {
-  @include btn1($colorbackground:$color-tres,$font-size:medium, $padding:0.3rem,  $width: 73%)
+  @include btn1($colorbackground:$color-tres, $padding:0.5rem, $margin:.5rem, $width:45%)
 }
 
 a.btn3 {
-  @include btn1($color:white, $colorbackground:$color-uno,$font-size:medium, $padding:0.3rem,  $width: 73%)
+  @include btn1($color:white, $colorbackground:$color-uno,$font-size:medium, $margin:.5rem, $width:45%)
 }
 
 .btn4:hover{

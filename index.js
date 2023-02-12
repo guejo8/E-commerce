@@ -27,7 +27,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
                             <h5 class="card-title">${productObjet.name}</h5>
                             <p class="card-text">${productObjet.precio} €</p>
                             <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
-                            <p href="#" class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir al carrito</p>
+                            <p href="#" class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
                       </div>
                   </div>
               </div>`;
