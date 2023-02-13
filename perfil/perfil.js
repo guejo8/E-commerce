@@ -45,6 +45,16 @@ function mostrarImagen(event){
     let imagenSource = event.target.result
     let imagenCargada = document.getElementById("preview")
 
-    imagenCargada.setAttribute("src", imagenSource)
-
+    // let imagenguardada = imagenCargada.setAttribute("src", imagenSource)
+    // sessionStorage.setItem("imagen", JSON.stringify(imagenguardada))
 }
+
+// let enviarImagen = document.getElementById("enviar")
+
+// enviarImagen.addEventListener("click", guardarImagen)
+
+// function guardarImagen(){
+//     let imagenSTring = sessionStorage.getItem("imagen")
+//     let imagenGuardar = JSON.parse(imagenSTring)
+    
+// }
