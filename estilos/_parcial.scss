@@ -6,7 +6,7 @@ $color-cuatro:#ded2cf;
 
 //RESPONSIVE
 @mixin pc {
-  @media  (min-width: 1024px) {
+  @media  (min-width: 1025px) {
     @content;
   }
 }
@@ -25,21 +25,21 @@ $color-cuatro:#ded2cf;
 
 //MIXIN BOTONES
 
- @mixin btn1 ($color:$color-uno, $colorbackground:$color-cuatro, $font-size:medium, $width:100%, $margin:1rem, $padding:0px, $border-radius: 7px, $font-weight:bold){
-    color: $color;
-    height: 2.5rem;
-    border-radius: $border-radius;
-    margin:$margin;
-    font-family: 'Roboto Slab';
-    font-weight: $font-weight;
-    font-size: $font-size;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: $colorbackground;
-    width: $width;
-    padding:$padding;
-    outline: none;
+  @mixin btn1 ($color:$color-uno, $colorbackground:$color-cuatro, $font-size:medium, $width:100%, $margin:1rem, $padding:0px, $border-radius: 7px, $font-weight:bold){
+     color: $color;
+     height: 2.5rem;
+     border-radius: $border-radius;
+     margin:$margin;
+     font-family: 'Roboto Slab';
+     font-weight: $font-weight;
+     font-size: $font-size;
+     border: none;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     background-color: $colorbackground;
+     width: $width;
+     padding:$padding;
+     outline: none;
  }
-
 
