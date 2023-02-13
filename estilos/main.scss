@@ -655,3 +655,22 @@ a.btn6:hover{
 .formulario__input-error-loguin-activo{
   display: block;
 }
+//-------------------POLITICA DE PRIVACIDAD ----------------
+
+.politica {
+  text-align: center;
+  background-color: $color-cuatro;
+  border: 2px solid $color-cuatro;
+}
+
+
+.texto-politica {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+.politica h3{
+  padding-top: 2rem;
+  font-weight: bold;
+}

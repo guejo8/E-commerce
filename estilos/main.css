@@ -753,4 +753,21 @@ Div política privacidad .checkbox-formulario {
 
 .formulario__input-error-loguin-activo {
   display: block;
+}
+
+.politica {
+  text-align: center;
+  background-color: #ded2cf;
+  border: 2px solid #ded2cf;
+}
+
+.texto-politica {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+.politica h3 {
+  padding-top: 2rem;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
