@@ -45,8 +45,8 @@ let listProducts=[
     {
         idProd: 0,
         name: "Bolígrafos",
-        mameeu:"Boligrafoak",
-        nameen:"pens",
+        nameeu:"Boligrafoak",
+        nameen:"Pens",
         idCategoria: 0,
         description: "Bolígrafos de tinta de gel, punta redonda de 0,7 mm, retráctil, sujeción de caucho. Tres colores: azul, negro y rojo.",
         descriptioneu:"Geleko tintazko boligrafoak, 0,7 mm-ko rollerball punta, erretiragarriak, gomazko heldulekua. Hiru kolore: urdina, beltza eta gorria.",
@@ -57,6 +57,8 @@ let listProducts=[
     },{
         idProd: 1,
         name: "Lapices grafito",
+        nameeu:"Grafitozko arkatza",
+        nameen:"Pencil",
         idCategoria: 0,
         description: " Lápices de madera con grafito en diferentes colores, nº 2 HB. Su forma hexagonal facilita el agarre. Incluye goma de borra.",
         descriptioneu:"Kolore ezberdinetako grafitodun egurrezko arkatzak, HB 2. zenbakia. Bere forma hexagonalak erraz hartzen du. borragoma barne.",
@@ -77,7 +79,7 @@ let listProducts=[
     },{
         idProd: 3,
         name: "Lápices de colores, caja de 12 colores",
-        ameeu:"Koloretako arkatzak, 12 koloreko kaxa.",
+        nameeu:"Koloretako arkatzak, 12 koloreko kaxa.",
         nameen:"Colored pencils, box of 12 colors.",
         idCategoria: 0,
         description: "Caja de 12 lápices Alpino Festival. Formato ideal para escuelas. Mina resistente de 3 mm.",

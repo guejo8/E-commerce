@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,22 +35,22 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Loginregistro.html"><button type="button" class="btn1">Registro</button></a>
             </li> 
-            <li class="nav-item dropdown"> 
+            <li class="nav-item dropdown" id="menu-desplegable"> 
               <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <button type="button" class="btn1">Idioma</button>
               </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> <img src="./imagenes/lenguajes/España.png" /> Español</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
+                    <li><a class="dropdown-item" href="index.html" id="idiomaEspanol" value="es"> <img src="./imagenes/lenguajes/España.png" /> Español</a></li>
+                    <li><a class="dropdown-item" href="./index/indexeu.html" id="idiomaEuskera" value="eu"><img src="./imagenes/lenguajes/euskadi.jpeg" />Euskera</a></li>
                     <!-- <li><hr class="dropdown-divider"></li> -->
-                    <li><a class="dropdown-item" href="#"><img src="./imagenes/lenguajes/England.jpeg" />Inglés</a></li>
+                    <li><a class="dropdown-item" href="./index/indexen.html" id="idiomaIngles" value="en"><img src="./imagenes/lenguajes/England.jpeg" />Inglés</a></li>
                 </ul>
             </li>   
           </ul>
           <!--Selector de idioma-->
                <!-- boton de login -->
             <span class="nav-item">
-              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn1"><img src="./imagenes/lenguajes/España.png" />login</button></a>
+              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn1"><img src="./imagenes/lenguajes/España.png" />Acceso</button></a>
             </span> 
         
               
@@ -228,6 +228,7 @@
 
  <!-- Código de JavaSCript -->
  <script type="module" src="index.js"></script>
+ <script type="module" src="idioma.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  
 </body>
