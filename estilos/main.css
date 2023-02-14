@@ -770,4 +770,67 @@ Div política privacidad .checkbox-formulario {
 .politica h3 {
   padding-top: 2rem;
   font-weight: bold;
+}
+
+#my_popup {
+  width: 40rem;
+  height: 28rem;
+  border: 2px solid #ded2cf;
+  box-sizing: border-box;
+  padding: 3rem;
+  text-align: center;
+  background-color: #293249;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup {
+    width: 26rem;
+    height: 18rem;
+    padding: 1.5rem;
+  }
+}
+
+#my_popup h3 {
+  margin: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup h3 {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup h3 {
+    margin: 0.8rem;
+  }
+}
+
+#my_popup svg {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup svg {
+    width: 20%;
+    height: 20%;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup svg {
+    width: 15%;
+    height: 15%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -107,3 +107,21 @@ let añadirProducto = cajaClick.addEventListener("click", (eventoClick) => {
 })
 
 
+
+//POP UP FUNCIONALIDAD
+
+var my_modal = document.getElementById("my_popup")
+
+
+function showModal(){
+    my_modal.style.display = "block";
+}
+
+setTimeout(showModal, 1000)
+
+function closeModal(){
+    my_modal.style.display = "none";
+}
+
+setTimeout(closeModal, 10000)
+
