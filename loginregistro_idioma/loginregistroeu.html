@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="eu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="../estilos/main.css">
     <link rel="shortcut icon" href="./imagenes/logo/logo.png" type="image/png">
      <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="./base datos/basedatos.js"></script>
+    <script src="../base datos/basedatos.js"></script>
 </head>
 <body>
 <!-- Aquí empieza el header -->
 <header> 
   <nav class="navbar navbar-expand-lg ">
      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./imagenes/logo/logo.png" alt="logo" width="100" >
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/logo/logo.png" alt="logo" width="100" >
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,27 +30,27 @@
               <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn1">Catalogo</button> </a>  
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#aboutus"><button type="button" class="btn1">Guri buruz</button></a>
+              <a class="nav-link" href="../index.html#aboutus"><button type="button" class="btn1">Guri buruz</button></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Loginregistro.html"><button type="button" class="btn1">Erregistro</button></a>
+              <a class="nav-link active" aria-current="page" href="../Loginregistro.html"><button type="button" class="btn1">Erregistro</button></a>
             </li> 
             <li class="nav-item dropdown"> 
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <button type="button" class="btn1">Hezkunta</button>
               </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> <img src="./imagenes/lenguajes/España.png" /> Gaztelania</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
+                    <li><a class="dropdown-item" href="../Loginregistro.html"> <img src="../imagenes/lenguajes/España.png" /> Gaztelania</a></li>
+                    <li><a class="dropdown-item" href="loginregistroeu.html"><img src="../imagenes/lenguajes/euskadi.jpeg" />Euskara</a></li>
                     <!-- <li><hr class="dropdown-divider"></li> -->
-                    <li><a class="dropdown-item" href="#"><img src="./imagenes/lenguajes/England.jpeg" />Ingelésa</a></li>
+                    <li><a class="dropdown-item" href="Loginregistroen.html"><img src="../imagenes/lenguajes/England.jpeg" />Ingelésa</a></li>
                 </ul>
             </li>   
           </ul>
           <!--Selector de idioma-->
                <!-- boton de login -->
             <span class="nav-item">
-              <a class="nav-link" href="Loginregistroeu.html"><button type="button" class="btn1"><img src="./imagenes/lenguajes/euskadi.jpeg" />Erregistro</button></a>
+              <a class="nav-link" href="Loginregistroeu.html"><button type="button" class="btn1"><img src="../imagenes/lenguajes/euskadi.jpeg" />Erregistro</button></a>
             </span> 
         
               
@@ -107,7 +107,7 @@
                 <input type="password" placeholder="Pasahitza" id="passwordCliente" value="">
                 <div class="checkbox-formulario">
                   <input id="checkbox" type="checkbox">
-                  <p class="politica-privacidad">Pribatutasun-politika</p>
+                  <p class="politica-privacidad" href="politicadeprivacidad.html">Pribatutasun-politika</p>
                 </div>
                 
                 <button class="btn5" id="registro" disabled>Erregistratu</button>
@@ -182,9 +182,10 @@
 
      <!-- Código de JavaSCript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <script src="iniciarsesion.js"></script>
-     <script src="registrosesion.js"></script>
-     <script src="loginregistro.js"></script>
+     <script src="../iniciarsesion.js"></script>
+     <script src="../registrosesion.js"></script>
+     <script src="../loginregistro.js"></script>
+
 
   </body>
 </html>
