@@ -17,8 +17,8 @@ function changeCardContainerProducto(){
                     case "en":
                         productosArray.forEach((producto) => {
                             if(producto.idProd === productosId){
-                                cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" style= "width:40%"> <!-- Tarjeta -->
-                                <div class="card m-md-2 m-sm-1">
+                                cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" id="tarjeta-detalle"> <!-- Tarjeta -->
+                                <div class="card m-md-2 m-sm-1" id="tarjeta-detalle">
                                 <a href="producto.html"><img src=${producto.foto} class="card-img-top" alt=${producto.name}></a>
                                     <div class="card-body">
                                     <h5 class="card-title">${producto.nameen}</h5>
@@ -37,7 +37,7 @@ function changeCardContainerProducto(){
                         case "eu":
                             productosArray.forEach((producto) => {
                                 if(producto.idProd === productosId){
-                                    cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" style= "width:40%"> <!-- Tarjeta -->
+                                    cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" id="tarjeta-detalle"> <!-- Tarjeta -->
                                     <div class="card m-md-2 m-sm-1">
                                     <a href="producto.html"><img src=${producto.foto} class="card-img-top" alt=${producto.name}></a>
                                         <div class="card-body">
@@ -58,7 +58,7 @@ function changeCardContainerProducto(){
                 default:
                      productosArray.forEach((producto) => {
                         if(producto.idProd === productosId){
-                            cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" style= "width:40%"> <!-- Tarjeta -->
+                            cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" id="tarjeta-detalle"> <!-- Tarjeta -->
                             <div class="card m-md-2 m-sm-1">
                             <a href="producto.html"><img src=${producto.foto} class="card-img-top" alt=${producto.name}></a>
                                 <div class="card-body">
