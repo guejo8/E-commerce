@@ -1,13 +1,14 @@
 //Escribir la fecha en #date
 let cajaFecha=document.getElementById("date");
 let fechaHoy= new Date();
-console.log(fechaHoy);
+// console.log(fechaHoy);
 cajaFecha.innerText=`Hoy es: ${fechaHoy.toLocaleDateString('es-ES')}`;
 
 
 //poner tarjetas
 let cardContainer=document.getElementById('CardContainer');
 let selectCategory=document.getElementById('categorySelect');
+console.log(selectCategory);
 let changeCategory=selectCategory.addEventListener('change', ()=> {
     changeCardContainer(selectCategory.value);
 });
@@ -42,7 +43,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
 let listCarrito=[]
 let listaProducto= localStorage.getItem('ProductsLS')
 let lista_json=JSON.parse(listaProducto)
-console.log(localStorage.getItem("pedido"));
+//console.log(localStorage.getItem("pedido"));
 if (localStorage.getItem("pedido")==null){ //si no hay pedido, pone uno vacio
     lista_json.forEach(producto => {
         //console.log(producto);
@@ -62,7 +63,7 @@ if (localStorage.getItem("pedido")==null){ //si no hay pedido, pone uno vacio
  let cajaClick = document.getElementById('CardContainer');
  cajaClick.addEventListener('click', (eventoClick)=> {
      let linea_pedido={idProduct:0,cantidad:0};
-     console.log(eventoClick.target.attributes.producto.value);
+     console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1].value);
      linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
      linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[5].childNodes[1].value
     //  console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1]);
