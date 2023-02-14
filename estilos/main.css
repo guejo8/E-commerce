@@ -278,38 +278,38 @@ a.btn3 {
   outline: none;
 }
 
-a.btn6 {
+a.btn6:hover {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
   border: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #ded2cf;
-  width: 22%;
+  width: 60%;
   padding: 0.5rem;
   outline: none;
 }
 
-a.btn6:hover {
+a.btn6 {
   color: #ded2cf;
   height: 2.5rem;
   border-radius: 7px;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
   border: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #69656f;
-  width: 22%;
+  width: 60%;
   padding: 0.6rem;
   outline: none;
 }
@@ -731,10 +731,6 @@ Div política privacidad .checkbox-formulario {
   font-weight: bold;
 }
 
-.footer {
-  background-color: #293249;
-}
-
 #my_popup {
   width: 40rem;
   height: 28rem;
@@ -796,4 +792,37 @@ Div política privacidad .checkbox-formulario {
     width: 15%;
     height: 15%;
   }
+}
+
+.modal-content {
+  background-color: #ded2cf;
+  padding: 1rem;
+  margin: 0 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .modal-content {
+    width: 85%;
+  }
+}
+
+.modal-body p {
+  font-size: 1.5rem;
+  color: #293249;
+}
+@media (max-width: 767px) {
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+
+.btn-close {
+  border-radius: 50%;
+  background-color: #69656f;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

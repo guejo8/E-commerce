@@ -40,10 +40,10 @@
   .dropdown-toggle::after {
     content: none;
 }
-.navbar-toggler {
-  color:$color-cuatro;
-  background-color:$color-cuatro;
-}
+  .navbar-toggler {
+    color:$color-cuatro;
+    background-color:$color-cuatro;
+  }
 
 //---------------------------HOME------------------
 
@@ -168,11 +168,14 @@ a.btn3 {
   @include btn1($color: $color-uno, $colorbackground:white, $font-size: medium, $padding:0.1rem, $margin:0px,$border-radius:0px, $font-weight:200 )
 }
 
-a.btn6{
-  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: medium, $padding:0.5rem, $width:22%)
-}
 a.btn6:hover{
-  @include btn1($color: $color-cuatro, $colorbackground:$color-dos,$font-size: medium, $padding:0.6rem, $width:22%)
+  @include btn1($color: $color-uno, $colorbackground:$color-cuatro,$font-size: large, $padding:0.5rem, $width:60%)
+  // @include mobile {
+
+  // }
+}
+a.btn6{
+  @include btn1($color: $color-cuatro, $colorbackground:$color-dos,$font-size:  large, $padding:0.6rem, $width:60%)
 }
   
 
@@ -660,4 +663,35 @@ a.btn6:hover{
     height: 15%;
   }
 
+}
+
+//---------------------- MODAL ------------------------
+
+.modal-content{
+  background-color: $color-cuatro;
+  padding: 1rem;
+  margin: 0 2rem;
+  text-align: center;
+
+  @include tablet {
+    width: 100%;
+  }
+  @include mobile {
+    width: 85%;
+  }
+}
+
+.modal-body p {
+  font-size: 1.5rem;
+  color: $color-uno;
+
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+
+.btn-close {
+  border-radius: 50%;
+  background-color: $color-dos;
+  opacity: 1;
 }
