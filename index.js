@@ -62,7 +62,7 @@ localStorage.setItem("pedido",listaCarrols)
      let linea_pedido={idProduct:0,cantidad:0};
      linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
      linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[5].childNodes[1].value
-    //  console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1]);
+    console.log(eventoClick.target.parentElement.parentElement.childNodes[1].childNodes[0].attributes.src.nodeValue);
     //  console.log(linea_pedido);
     // console.log(eventoClick);
      listaProducto= localStorage.getItem('pedido')
