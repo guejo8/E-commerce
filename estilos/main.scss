@@ -7,7 +7,7 @@
 *{margin:0px;
   padding:0px;
   box-sizing: border-box;
-  font-family: 'Roboto Slab','Rubik',sans-serif;
+  font-family:'Rubik',sans-serif;
 }
 
 // ---------------------------------HEADER--------------------
@@ -40,7 +40,10 @@
   .dropdown-toggle::after {
     content: none;
 }
-
+.navbar-toggler {
+  color:$color-cuatro;
+  background-color:$color-cuatro;
+}
 
 //---------------------------HOME------------------
 
@@ -173,18 +176,27 @@ a.btn6:hover{
 }
   
 
+//DETALLE PRODUCTO
+ .detalle-producto {
+  background-color:$color-cuatro;
+  padding-bottom: 5rem;
+ }
+ #tarjeta-detalle{
+  width: 40%;
+  @include tablet {
+    width: 80%;
+  }
+
+  @include mobile {
+    width:100%;
+  }
+
+ }
+
+
  //-----------------------------PERFIL----------------------------------
 
- //Esto necesita responsive
-
-//  #contacto{
-//    margin-top: 2rem;
-//    margin-bottom: 2rem;
-//    padding-left: 10rem;
-//    padding-bottom: 2rem;
-//    background-color:$color-cuatro;
-//    width: 80%;
-//  }
+ 
 #contacto {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -203,9 +215,7 @@ a.btn6:hover{
   }
 }
 
-//  #perfil-nombre{
-//   margin-left: 1rem;
-// }
+
 #perfil-nombre {
   margin-left: 1rem;
 
@@ -504,93 +514,7 @@ a.btn6:hover{
   }
 }
 
-//--------------------FOOTER----------------------
-.footer {
-  background-color: $color-uno;
-}
-
-
-//-------------------------------ABOUT US------------------------------------
-
-#aboutus {
-  h3.text-center#aboutustexto {
-    text-align: center;
-  }
-
-  .d-flex.justify-content-center.align-items-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    div {
-      width: calc(20% - 2rem);
-      margin: 1rem;
-
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%; 
-        margin-left: 9rem;       
-      }
-
-      p {
-        text-align: center;
-        margin-top: 1rem;
-      }
-    }
-    @include pc {
-      div {
-        width: calc(33.33% - 4rem);
-      }
-
-      div:nth-child(6) {
-        width: 100%;
-        margin-top: 2rem;
-      }
-    }
-    @include tablet {
-      div {
-        width: calc(33.33% - 2rem);
-      }
-
-      div:nth-child(6) {
-        width: 100%;
-        margin-top: 2rem;
-      }
-
-      img {
-        margin-left: 6rem !important;
-      }
-
-    }
-
-    @include mobile {
-      div {
-        width: 100%;
-      }
-
-      div:nth-child(3),
-      div:nth-child(5) {
-        margin-top: 2rem;
-      }
-
-
-      img {
-        margin-left: 14rem !important;
-      }
-    }
-  }
-}
-
-//--------------------FOOTER----------------------
-.footer {
-  background-color: $color-uno;
-}
-
-
-
-//Formulario de registro
+//------------------------FORMULARIO DE REGISTRO---------------------
 .formulario__grupo-input {
 	position: relative;
 }
@@ -673,4 +597,9 @@ a.btn6:hover{
 .politica h3{
   padding-top: 2rem;
   font-weight: bold;
+}
+
+//--------------------FOOTER----------------------
+.footer {
+  background-color: $color-uno;
 }
