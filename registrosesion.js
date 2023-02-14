@@ -14,9 +14,6 @@ function registroCliente(){
 
     //Crear la bbdd de cliente cuando se registra
 
-    // IMPORTANTE! idUser = id ++ cada vez que se cree un usuario
-
-    // console.log(newUser) 
     let lsUsers = localStorage.getItem("UsersLS"); //recoge LS
     
     let usersArray= JSON.parse(lsUsers); //lo convierte en un array de objetoJS
@@ -45,5 +42,4 @@ function registroCliente(){
    
 
     sessionStorage.setItem("cliente", JSON.stringify(newUser))
-
 }
