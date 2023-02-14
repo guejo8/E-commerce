@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto Slab", "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .bg-image {
@@ -33,6 +33,11 @@ svg {
 
 .dropdown-toggle::after {
   content: none;
+}
+
+.navbar-toggler {
+  color: #ded2cf;
+  background-color: #ded2cf;
 }
 
 #date {
@@ -273,40 +278,59 @@ a.btn3 {
   outline: none;
 }
 
-a.btn6 {
+a.btn6:hover {
   color: #293249;
   height: 2.5rem;
   border-radius: 7px;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
   border: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #ded2cf;
-  width: 22%;
+  width: 60%;
   padding: 0.5rem;
   outline: none;
 }
 
-a.btn6:hover {
+a.btn6 {
   color: #ded2cf;
   height: 2.5rem;
   border-radius: 7px;
   margin: 1rem;
   font-family: "Roboto Slab";
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
   border: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #69656f;
-  width: 22%;
+  width: 60%;
   padding: 0.6rem;
   outline: none;
+}
+
+.detalle-producto {
+  background-color: #ded2cf;
+  padding-bottom: 5rem;
+}
+
+#tarjeta-detalle {
+  width: 40%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #tarjeta-detalle {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #tarjeta-detalle {
+    width: 100%;
+  }
 }
 
 #contacto {
@@ -622,71 +646,6 @@ Div política privacidad .checkbox-formulario {
   }
 }
 
-.footer {
-  background-color: #293249;
-}
-
-#aboutus h3.text-center#aboutustexto {
-  text-align: center;
-}
-#aboutus .d-flex.justify-content-center.align-items-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#aboutus .d-flex.justify-content-center.align-items-center div {
-  width: calc(20% - 2rem);
-  margin: 1rem;
-}
-#aboutus .d-flex.justify-content-center.align-items-center div img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 9rem;
-}
-#aboutus .d-flex.justify-content-center.align-items-center div p {
-  text-align: center;
-  margin-top: 1rem;
-}
-@media (min-width: 1025px) {
-  #aboutus .d-flex.justify-content-center.align-items-center div {
-    width: calc(33.33% - 4rem);
-  }
-  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(6) {
-    width: 100%;
-    margin-top: 2rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  #aboutus .d-flex.justify-content-center.align-items-center div {
-    width: calc(33.33% - 2rem);
-  }
-  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(6) {
-    width: 100%;
-    margin-top: 2rem;
-  }
-  #aboutus .d-flex.justify-content-center.align-items-center img {
-    margin-left: 6rem !important;
-  }
-}
-@media (max-width: 767px) {
-  #aboutus .d-flex.justify-content-center.align-items-center div {
-    width: 100%;
-  }
-  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(3),
-  #aboutus .d-flex.justify-content-center.align-items-center div:nth-child(5) {
-    margin-top: 2rem;
-  }
-  #aboutus .d-flex.justify-content-center.align-items-center img {
-    margin-left: 14rem !important;
-  }
-}
-
-.footer {
-  background-color: #293249;
-}
-
 .formulario__grupo-input {
   position: relative;
 }
@@ -770,4 +729,100 @@ Div política privacidad .checkbox-formulario {
 .politica h3 {
   padding-top: 2rem;
   font-weight: bold;
+}
+
+#my_popup {
+  width: 40rem;
+  height: 28rem;
+  border: 2px solid #ded2cf;
+  box-sizing: border-box;
+  padding: 3rem;
+  text-align: center;
+  background-color: #293249;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup {
+    width: 26rem;
+    height: 18rem;
+    padding: 1.5rem;
+  }
+}
+
+#my_popup h3 {
+  margin: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup h3 {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup h3 {
+    margin: 0.8rem;
+  }
+}
+
+#my_popup svg {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #my_popup svg {
+    width: 20%;
+    height: 20%;
+  }
+}
+@media (max-width: 767px) {
+  #my_popup svg {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+.modal-content {
+  background-color: #ded2cf;
+  padding: 1rem;
+  margin: 0 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .modal-content {
+    width: 85%;
+  }
+}
+
+.modal-body p {
+  font-size: 1.5rem;
+  color: #293249;
+}
+@media (max-width: 767px) {
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+
+.btn-close {
+  border-radius: 50%;
+  background-color: #69656f;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

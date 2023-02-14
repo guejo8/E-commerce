@@ -67,9 +67,9 @@ let listProducts=[
 
     },{
         idProd: 2,
-        name: "Set de 10 rotuladores ecoline brushpen tonos brillantes.",
-        nameeu:"Ekoline pintzel-errotulagailuen multzoa tonu distiratsuetan.",
-        nameen:"Set of 10 ecoline brushpen markers in bright tones.",
+        name: "Set 10 rotuladores",
+        nameeu:"10 errotulagailu multzoa",
+        nameen:"Set of 10 brushpen",
         idCategoria: 0,
         description: "Talens Ecoline Estuche de Brush Pen 10 - Brillante está hecho en base de colorantes y goma arábiga. Los colores de Talens Ecoline son de una transparencia y lucidez impredecible. ",
         descriptioneu:"Ekoline pintzel-errotulagailuen multzoa tonu distiratsuetan.",
@@ -78,9 +78,9 @@ let listProducts=[
         precio: 22.99
     },{
         idProd: 3,
-        name: "Lápices de colores, caja de 12 colores",
-        nameeu:"Koloretako arkatzak, 12 koloreko kaxa.",
-        nameen:"Colored pencils, box of 12 colors.",
+        name: "Lápices 12 colores",
+        nameeu:"12 Koloretako arkatzak",
+        nameen:"12 Colored pencils",
         idCategoria: 0,
         description: "Caja de 12 lápices Alpino Festival. Formato ideal para escuelas. Mina resistente de 3 mm.",
         descriptioneu:"Alpino Festibaleko 12 arkatz kaxa. Ikastetxeetarako formatu aproposa. 3 mm-ko beruna.",
@@ -90,9 +90,9 @@ let listProducts=[
 
     },{
         idProd: 4,
-        name: "Papel expression 90 gr",
-        nameeu:"Adierazpen papera 90 gr.",
-        nameen:"Expression paper 90 gr.",
+        name: "Papel 90 gr",
+        nameeu:"Papera 90 gr.",
+        nameen:"Paper 90 gr.",
         idCategoria: 1,
         description: "Papel estándar, funcionalidad de 90gr, excelente calidad de impresión. No traspasa el papel. Din-A4, Paquete x500 Hojas",
         descriptioneu:"Paper estandarra, 90 gr-ko funtzionaltasuna, inprimatzeko kalitate bikaina. Ez da paperetik pasatzen. Din-A4, paketea x500 orri.",
@@ -102,9 +102,9 @@ let listProducts=[
 
     },{
         idProd: 5,
-        name: "Carpeta de gomas plástico solapas A4 opaco negro",
-        nameeu:"Karpeta plastikozko tapa elastikoekin A4 beltz opakua.",
-        nameen:"Folder with plastic elastic flaps A4 opaque black.",
+        name: "Carpeta plástico A4",
+        nameeu:"Plastikozko karpeta A4.",
+        nameen:"Folder plastic A4.",
         idCategoria: 1,
         description: "Carpeta con cierre de gomas elásticas a juego. 3 solapas. Fabricada de plástico polipropileno de 400 micras opaco y flexible.",
         descriptioneu:"Karpeta bat datorren itxiera elastikoarekin. 3 aleta. 400 mikrako polipropilenozko plastiko opako eta malguz egina.",
@@ -126,9 +126,9 @@ let listProducts=[
 
     },{
         idProd: 7,
-        name: "Libreta Liderpapel 360 A5",
-        nameeu:"Liderpapel 360 A5 koadernoa",
-        nameen:"Liderpapel 360 A5 notebook",
+        name: "Libreta Liderpapel",
+        nameeu:"Liderpapel koadernoa",
+        nameen:"Liderpapel notebook",
         idCategoria: 1,
         description: "Tapa de plastico A5 48hojas 90g/M2. Cuadro 4mm con margen. Colores surtidos",
         descriptioneu:"Plastikozko estalkia A5 48 orri 90g/M2. Marjina duen 4 mm-ko markoa. askotariko koloreak.",
@@ -174,9 +174,9 @@ let listProducts=[
 
     },{
         idProd: 11,
-        name: "Agenda Escolar (2022-23) DOHE SIGMA",
-        nameeu:"Eskola Agenda (2022-23) DOHE SIGMA",
-        nameen:"School Agenda (2022-23) DOHE SIGMA",
+        name: "Agenda Escolar 2022-23",
+        nameeu:"Eskola Agenda 2022-23",
+        nameen:"School Agenda 2022-23",
         idCategoria: 2,
         description: "Agenda Escolar (2022-23) dohe sigma espiral extradura A5",
         descriptioneu:"Eskola Agenda (2022-23) dohe sigma spiral extra hard A5.",

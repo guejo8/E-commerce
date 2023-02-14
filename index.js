@@ -29,7 +29,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
                             <h5 class="card-title">${productObjet.name}</h5>
                             <p class="card-text">${productObjet.precio} €</p>
                             <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
-                            <p href="#" class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
+                            <p class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
                       </div>
                   </div>
               </div>`;
@@ -56,8 +56,6 @@ if (localStorage.getItem("pedido")==null){ //si no hay pedido, pone uno vacio
 
 }
 
-
-
 //modificar
 
  let cajaClick = document.getElementById('CardContainer');
@@ -78,28 +76,15 @@ if (localStorage.getItem("pedido")==null){ //si no hay pedido, pone uno vacio
      let listaCarrols=JSON.stringify(lista_json)
     //  console.log(listaCarrols);
      localStorage.setItem("pedido",listaCarrols)
+
+    //Icono carrito cambio color
+    let iconoCarrito = document.getElementById("icono-carrito")
+    iconoCarrito.style.fill = "red";
  });      
 
-//Cambio Icono carrito
-//Hay elementos
 
-let hayElementos = false;
-lista_json.forEach((item) => {
-    if(item.cantidad > 0){
-        hayElementos = true;
-    }
-})
 
-// Cambiar color
 
-let iconoCarrito = document.getElementById("icono-carrito")
-if(hayElementos = true){
-    //pop-up
-    
-    iconoCarrito.style.fill = "red";
-} else {
-    iconoCarrito
-}
 
 //poner tarjetas
 
@@ -111,4 +96,22 @@ let añadirProducto = cajaClick.addEventListener("click", (eventoClick) => {
     localStorage.setItem("productoAtributo", lineaProducto)
 })
 
+
+
+//POP UP FUNCIONALIDAD
+
+var my_modal = document.getElementById("my_popup")
+
+
+function showModal(){
+    my_modal.style.display = "block";
+}
+
+setTimeout(showModal, 1000)
+
+function closeModal(){
+    my_modal.style.display = "none";
+}
+
+setTimeout(closeModal, 10000)
 

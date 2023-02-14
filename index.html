@@ -115,52 +115,37 @@
 <!-- Pop-Up
     <button type="button" class="mt-5 mx-5 btn btn-primary"data-bs-toggle="modal" data-bs-target="#miModal">mostr</button> -->
     <!--data-bs-backdrop=static hace que al clicsr fuera no se cierre  -->
-  <div class="modal fade" id="miModal" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle" data-bs-backdrop="static">
+  <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true"aria-labelledby="modalTitle" data-bs-backdrop="static">
     <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title"id="modalTitle">Mensaje</h5>
-            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
           </div>
           <div class="modal-body">
              <p>Has añadido productos al carrito</p>
              
-             
           </div> 
           <div class="modal-footer"> 
-             
+            <a href="index.html" class="btn6">Seguir comprando</a>
              <a href="carrito/Carrito.html" class="btn6">Ir al carrito</a>
           </div>          
       </div>
     </div> 
   </div>  
   
-  <!-- segundo modal  -->
-  <div class="modal fade" id="modal2" tabindex="-1"aria-hidden="true"aria-labelledby="modalTitle2" data-bs-backdrop="static">
-    <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"id="modalTitle2">Prueba pop-up</h5>
-            <button type="button" class="btn-close"data-bs-dismiss="modal"aria-label="close"></button>
-          </div>
-          <div class="modal-body">
-             
-              
-             
-          </div> 
-          <div class="modal-footer"> 
-             <!-- <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button> -->
-             <a class="btn btn-primary"href="#miModal"data-bs-toggle="modal"data-bs-dismiss="modal" role="button">regresar</a>
-          </div>          
-      </div>
-    </div> 
-  </div>       
+
+  <!-- POP UP -->
+
+  <div id="my_popup">
+    <img src="./imagenes/logo/logo.png" alt="logo" width="100" >
+    <h3>Gastos de envío gratis a partir de pedidos superiores a 200€</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+      <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+    </svg>
+</div>
+
     
-
-
-
 
     
  <!-- Footer -->
