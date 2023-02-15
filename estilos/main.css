@@ -88,6 +88,20 @@ table input[type=number] {
   max-width: 4em;
 }
 
+#foto-imagen {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#foto-detalle-producto {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn1 {
   color: #293249;
   height: 2.5rem;

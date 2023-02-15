@@ -90,7 +90,7 @@
   
 }
 
-//Botón cantidad de producto 
+// ------------------- BOTÓN CANTIDAD DE PRODUCTO --------------- 
 
 .cantidad{
   margin-right: 1rem;
@@ -100,6 +100,23 @@
 table input[type='number'] {
   max-width: 4em;
 }
+
+
+// ------- IMAGENES CARD --------
+#foto-imagen{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#foto-detalle-producto{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 //-----------------------------BOTONES------------------
 
