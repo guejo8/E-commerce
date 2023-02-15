@@ -81,3 +81,12 @@ function changeCardContainerProducto(){
 
 changeCardContainerProducto()
     
+// document.getElementById("boton-añadir").addEventListener("click", function() {
+//     var producto = JSON.parse(localStorage.getItem("producto"));
+//     var carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+//     carrito.push(producto);
+//     localStorage.setItem("carrito", JSON.stringify(carrito));
+
+//     let iconoCarrito = document.getElementById("icono-carrito")
+//     iconoCarrito.style.fill = "red";
+//  });      
