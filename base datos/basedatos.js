@@ -15,7 +15,7 @@ let listUsers=[
 
     {
         idUser: 1,
-        name: "Usuario1",
+        name: "Usuario",
         email: "usuario@gmail.com",
         phone: "600600600",
         password: "1234",
