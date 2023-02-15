@@ -3,7 +3,7 @@ let listUsers=[
         idUser: 0,
         name: "Administrador",
         email: "admin@papelycosas.com",
-        phone: "+34600600600",
+        phone: "600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "12",
@@ -15,9 +15,9 @@ let listUsers=[
 
     {
         idUser: 1,
-        name: "Usuario1",
+        name: "Usuario",
         email: "usuario@gmail.com",
-        phone: "+34600600600",
+        phone: "600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "10",
@@ -30,7 +30,7 @@ let listUsers=[
         idUser: 2,
         name: "Usuario2",
         email: "usuario@yahoo.com",
-        phone: "+34600600600",
+        phone: "600600600",
         password: "1234",
         street: "Paseo Bolueta",
         portal: "10",
@@ -162,9 +162,9 @@ let listProducts=[
 
     },{
         idProd: 10,
-        name: "Liderpapel Plastilina en Barra 150gr.",
-        nameeu:"Liderpapel Plastilina Barra 150gr",
-        nameen:"Liderpapel Plasticine Bar 150gr.",
+        name: "Liderpapel Plastilina en 150gr.",
+        nameeu:"Liderpapel Plastilina 150gr",
+        nameen:"Liderpapel Clay Bar 150gr.",
         idCategoria: 2,
         description: "La caja de 15 unidades en 15 colores surtidos. La plastilina está hecha de pasta vegetal coloreada muy moldeable, adecuada a partir de los 3 años. Colores que se pueden mezclar entre sí. No mancha ni ensucia y se desmolda con gran facilidad.",
         descriptioneu:"Askotariko 15 koloretako 15 unitateko kutxa. Plastilina oso moldagarria den koloretako landare-pastaz egina dago, 3 urtetik gorakoentzat egokia. Elkarren artean nahas daitezkeen koloreak. Ez du zikintzen edo zikintzen eta oso erraz desmoldeatzen da.",

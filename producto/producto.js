@@ -60,7 +60,7 @@ function changeCardContainerProducto(){
                         if(producto.idProd === productosId){
                             cardContainerProducto.innerHTML =`<div class="col-sm-6 col-md-3 mb-3 mb-sm-0" id="tarjeta-detalle"> <!-- Tarjeta -->
                             <div class="card m-md-2 m-sm-1">
-                            <a href="producto.html"><img src=${producto.foto} class="card-img-top" alt=${producto.name}></a>
+                            <a href="producto.html"><img src=${producto.foto} class="card-img-top" id="foto-detalle-producto" alt=${producto.name}></a>
                                 <div class="card-body">
                                 <h5 class="card-title">${producto.name}</h5>
                                 <p class="card-text">${producto.description}</p>
