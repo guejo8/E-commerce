@@ -195,7 +195,17 @@ a.btn6{
   }
 
  }
+ .titulo-tarjeta {
+  display:grid;
+  position: center;
+ }
+#titulo-detalle {
+  padding-top:1.5rem;
+  padding-left: 5rem;
+  color:$color-dos;
+  
 
+}
 
  //-----------------------------PERFIL----------------------------------
 
