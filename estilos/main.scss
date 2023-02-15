@@ -90,6 +90,23 @@
   
 }
 
+
+//Título categoría
+
+#categoriaProducto{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+#titulo-categorias {
+  text-align: center;
+  color: $color-uno;
+  background-color: white;
+  width: 20%;
+  border-style: inset;
+}
+
 // ------------------- BOTÓN CANTIDAD DE PRODUCTO --------------- 
 
 .cantidad{

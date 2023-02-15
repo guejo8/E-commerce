@@ -80,6 +80,20 @@ svg {
   }
 }
 
+#categoriaProducto {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+#titulo-categorias {
+  text-align: center;
+  color: #293249;
+  background-color: white;
+  width: 20%;
+  border-style: inset;
+}
+
 .cantidad {
   margin-right: 1rem;
 }
