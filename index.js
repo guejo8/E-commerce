@@ -23,7 +23,7 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
     listaEnseñar+=`<div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
-                     <a href="producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
+                     <a href="./producto/producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
                           <div class="card-body">
                             <h5 class="card-title">${productObjet.name}</h5>
                             <p class="card-text">${productObjet.precio} €</p>
@@ -106,11 +106,11 @@ function showModal(){
     my_modal.style.display = "block";
 }
 
-setTimeout(showModal, 1000)
+setTimeout(showModal, 7000)
 
 function closeModal(){
     my_modal.style.display = "none";
 }
 
-setTimeout(closeModal, 10000)
+setTimeout(closeModal, 17000)
 
