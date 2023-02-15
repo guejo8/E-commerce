@@ -209,25 +209,25 @@ let listCategories= [
 ]
 
 let listUsersStringfied = JSON.stringify(listUsers);
-console.log(listUsersStringfied);
+// console.log(listUsersStringfied);
 let listProductsStringfied = JSON.stringify(listProducts);
-console.log(listProductsStringfied);
+// console.log(listProductsStringfied);
 let listCategoriesStringfied = JSON.stringify(listCategories);
-console.log(listCategoriesStringfied);
+// console.log(listCategoriesStringfied);
 
 // si no tiene datos los carga
 let lsUsers = localStorage.getItem("UsersLS")
-        console.log(lsUsers);
+        // console.log(lsUsers);
          if (lsUsers==null){
             localStorage.setItem("UsersLS", listUsersStringfied);
         }
 let lsProducts = localStorage.getItem("ProductsLS")
-    console.log(lsProducts);
+    // console.log(lsProducts);
     if (lsProducts==null){
         localStorage.setItem("ProductsLS", listProductsStringfied);
     }            
 let lsCategories = localStorage.getItem("CategoriesLS")
-    console.log(lsCategories);
+    // console.log(lsCategories);
     if (lsCategories==null){
         localStorage.setItem("CategoriesLS", listCategoriesStringfied);
     }     
