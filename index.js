@@ -8,36 +8,76 @@ cajaFecha.innerText=`Hoy es: ${fechaHoy.toLocaleDateString('es-ES')}`;
 //poner tarjetas
 let cardContainer=document.getElementById('CardContainer');
 let selectCategory=document.getElementById('categorySelect');
-console.log(selectCategory);
-let changeCategory=selectCategory.addEventListener('change', ()=> {
+// console.log(selectCategory);
+let changeCategory = selectCategory.addEventListener('change', ()=> {
     changeCardContainer(selectCategory.value);
+    incluirCategoria(selectCategory.value)
 });
+
 changeCardContainer("all");
+
+//Título Categorías 
+
+let categoriaProducto = document.getElementById("categoriaProducto")
+console.log(categoriaProducto)
+
+let categoriaEscritura = document.getElementById("categoriaEscritura")
+let categoriaCuaderno = document.getElementById("categoriaCuaderno")
+let categoriaEscolar = document.getElementById("categoriaEscolar")
+
+
+function incluirCategoria(seleccionCategoria){
+    let listaCategoria = "";
+    let listaCategoriaEscritura = "";
+    let listaCategoriaCuaderno = "";
+
+    let lsCategorias = localStorage.getItem("CategoriesLS")
+    let categoriasArray = JSON.parse(lsCategorias)
+
+    categoriasArray.forEach((productObjet) => {
+        if(seleccionCategoria == productObjet.idCateg){
+            listaCategoria+=`<h3 id="titulo-categorias">${productObjet.name}</h3>`
+        }
+        categoriaProducto.innerHTML=listaCategoria;   
+    });  
+    
+    if(seleccionCategoria == "all"){
+        listaCategoria+=`<h3 id="titulo-categorias"> Todos los productos </h3>`
+        categoriaProducto.innerHTML+=listaCategoria;  
+    }
+   
+}
+
+incluirCategoria("all")
+
 function changeCardContainer (seleccionCategoria) { //cambiamos la selección de categorias
     
     cardContainer.innerHTML=""; //borra las tarjetas
     let lsProducts = localStorage.getItem("ProductsLS");//recupera de LS la lista de productos
     let productsArray= JSON.parse(lsProducts); //lo convierte en un array de objetoJS
     /* console.log(productsArray); */
-    let listaEnseñar="";
+    let listaEnseñar = "";
+   
     productsArray.forEach((productObjet) => {
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
-    listaEnseñar+=`<div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
-                     <div class="card m-md-2 m-sm-1">
-                     <a href="./producto/producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
-                          <div class="card-body">
-                            <h5 class="card-title">${productObjet.name}</h5>
-                            <p class="card-text">${productObjet.precio} €</p>
-                            <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
-                            <p class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
-                      </div>
-                  </div>
-              </div>`;
-        }
+            listaEnseñar+=`<div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
+                                <div class="card m-md-2 m-sm-1">
+                                <a href="./producto/producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" id="foto-imagen" alt=${productObjet.name} producto=${productObjet.idProd}></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">${productObjet.name}</h5>
+                                        <p class="card-text">${productObjet.precio} €</p>
+                                        <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
+                                        <p class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
+                                    </div>
+                                </div>
+                            </div>`;
+            }
             
         cardContainer.innerHTML=listaEnseñar; //pinta las tarjetas
+
     });
 };
+
 
 //crear carrito
 let listCarrito=[]
@@ -96,22 +136,4 @@ let añadirProducto = cajaClick.addEventListener("click", (eventoClick) => {
     localStorage.setItem("productoAtributo", lineaProducto)
 })
 
-
-
-//POP UP FUNCIONALIDAD
-
-var my_modal = document.getElementById("my_popup")
-
-
-function showModal(){
-    my_modal.style.display = "block";
-}
-
-setTimeout(showModal, 7000)
-
-function closeModal(){
-    my_modal.style.display = "none";
-}
-
-setTimeout(closeModal, 17000)
 

@@ -70,6 +70,7 @@
             else {
                 document.querySelector(".formulario__input-error-loguin").classList.add('formulario__input-error-loguin-activo')
             } // Y sino incluir un mensaje de usuario no registrado o datos no correctos
+            
         }
 
         function ingresar(){

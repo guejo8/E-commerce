@@ -24,6 +24,16 @@ svg {
   fill: #ded2cf;
   margin: 0 2rem;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  svg {
+    margin: 1rem 22rem;
+  }
+}
+@media (max-width: 767px) {
+  svg {
+    margin: 1rem 9rem;
+  }
+}
 
 .dropdown-item img, span img {
   width: 20px;
@@ -61,7 +71,14 @@ svg {
 @media (max-width: 767px) {
   #date {
     margin-left: 2rem;
+    font-size: 0.7rem;
+    width: 8rem;
   }
+}
+
+#encabezadoDeCatalogo {
+  display: flex;
+  align-items: center;
 }
 
 #categorySelect {
@@ -80,12 +97,51 @@ svg {
   }
 }
 
+#categoriaProducto {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+#titulo-categorias {
+  text-align: center;
+  color: #293249;
+  background-color: white;
+  width: 30%;
+  border-style: inset;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titulo-categorias {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  #titulo-categorias {
+    width: 70%;
+  }
+}
+
 .cantidad {
   margin-right: 1rem;
 }
 
 table input[type=number] {
   max-width: 4em;
+}
+
+#foto-imagen {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+#foto-detalle-producto {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn1 {
@@ -330,6 +386,32 @@ a.btn6 {
 @media (max-width: 767px) {
   #tarjeta-detalle {
     width: 100%;
+  }
+}
+
+#titulo-tarjeta {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+#titulo-detalle {
+  text-align: center;
+  color: #69656f;
+  background-color: white;
+  width: 30%;
+  border-style: inset;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titulo-detalle {
+    width: 59%;
+  }
+}
+@media (max-width: 767px) {
+  #titulo-detalle {
+    width: 72%;
   }
 }
 
@@ -732,11 +814,11 @@ Div política privacidad .checkbox-formulario {
 }
 
 #my_popup {
-  width: 40rem;
-  height: 28rem;
+  width: 20rem;
+  height: 16rem;
   border: 2px solid #ded2cf;
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1rem;
   text-align: center;
   background-color: #293249;
   border-radius: 10%;
@@ -748,49 +830,52 @@ Div política privacidad .checkbox-formulario {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #my_popup {
-    width: 30rem;
-    height: 20rem;
-    padding: 1rem;
+    width: 15rem;
+    height: 14rem;
+    padding: 0.6rem;
   }
 }
 @media (max-width: 767px) {
   #my_popup {
-    width: 26rem;
-    height: 18rem;
-    padding: 1.5rem;
+    width: 12rem;
+    height: 10rem;
+    padding: 0.5rem;
   }
 }
 
 #my_popup h3 {
-  margin: 1.5rem;
+  margin: 0.8rem;
   color: white;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #my_popup h3 {
     margin: 1.5rem;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 767px) {
   #my_popup h3 {
     margin: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
 #my_popup svg {
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #my_popup svg {
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: 15%;
   }
 }
 @media (max-width: 767px) {
   #my_popup svg {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
   }
 }
 
