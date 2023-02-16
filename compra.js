@@ -18,12 +18,14 @@ let ivaHTML=document.getElementById('IVA')
 let listaEnseñar="";
 var total=0.0;
 
- let etiquetaCliente=`<div>
-                 <h3>${clienteJSON.name}</h3>
-                 <p>Dirección: ${clienteJSON.street} ${clienteJSON.portal}, ${clienteJSON.CP}  ${clienteJSON.city}</p>
-                 <p>Email: ${clienteJSON.email}</p>
-                 <p>Teléfono: ${clienteJSON.phone}</p>
-             </div>`;
+ let etiquetaCliente=`
+                <h3 class="text-center">${clienteJSON.name} </h3> 
+                    <div class="row">
+                 <p class="col-sm-6 text-center">DNI: ${clienteJSON.dni} </p>
+                 <p class="col-sm-6 text-center">Dirección: ${clienteJSON.street} ${clienteJSON.portal}, ${clienteJSON.CP}  ${clienteJSON.city}</p>
+                 <p class="col-sm-6 text-center">Email: ${clienteJSON.email}</p>
+                 <p class="col-sm-6 text-center">Teléfono: ${clienteJSON.phone}</p>
+                 </div>`;
 
 // etiquetaCliente="Hola " + clienteJSON.name+ " Bienvenido";
 // etiquetaCliente=`Hola ${clienteJSON.name} Bienvenido`;
