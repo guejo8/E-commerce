@@ -349,15 +349,16 @@ a.btn6{
 .avatar{
   width:160% ;
   height: 160% ;
-
+ 
   @include tablet{
     width:200% ;
     height: 200% ;
   }
 
   @include mobile {
-    width: 50% ;
+    width: 60% ;
     height: 50% ;
+    padding-left: 2rem;
   }
 }
 
