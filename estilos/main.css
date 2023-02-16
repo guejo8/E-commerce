@@ -825,4 +825,20 @@ Div política privacidad .checkbox-formulario {
   border-radius: 50%;
   background-color: #69656f;
   opacity: 1;
+}
+
+.bg-uno {
+  background-color: #293249;
+}
+
+.bg-dos {
+  background-color: #69656f;
+}
+
+.bg-tres {
+  background-color: #aca1a1;
+}
+
+.bg-cuatro {
+  background-color: #ded2cf;
 }/*# sourceMappingURL=main.css.map */
