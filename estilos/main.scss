@@ -550,8 +550,40 @@ a.btn6{
 #aboutus {
   h3.text-center#aboutustexto {
     text-align: center;
+    color: $color-uno;
+    background-color: white;
+    border-style: inset;
+    margin: 3rem 20rem ;
+    @include tablet{
+      width: 75%;
+      margin: 2rem 5rem;
+    }
+  
+    @include mobile{
+      width: 73%;
+      margin: 2rem 3.5rem;
+    }
   }
 
+  .texto-sobrenosotros{
+    margin: 3rem 13rem ;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 0.7rem 0rem 0.7rem; 
+    color: $color-uno;
+    @include tablet{
+      width: 75%;
+      padding: 0rem 3rem; 
+      margin: 1rem 5rem;
+    }
+  
+    @include mobile{
+      width: 80%;
+      padding: 0rem; 
+      margin: 2.5rem;
+    }
+  }
   .d-flex.justify-content-center.align-items-center {
     display: flex;
     justify-content: center;
