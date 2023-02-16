@@ -80,6 +80,6 @@
                 window.location.href="intranet.html" //Esta función redirige a la página de perfil del administrador
 
             } else if(rol === "user"){
-                window.location.href= "./perfil/Perfil.html" //Esta función redirige a la página de perfil del usuario 
+                window.location.href= "../perfil/Perfil.html" //Esta función redirige a la página de perfil del usuario 
             }
         }
