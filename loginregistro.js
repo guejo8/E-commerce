@@ -119,6 +119,7 @@ const expresiones = {
 	password:/^(?=(?:.*\d))(?=.*[A-Z])(?=.*[a-z])(?=.*[.,*!?¿¡/#$%&])\S{8,64}$/, // Al menos un número 0-9. Al menos una mayúscula. Al menos una minúscula. Al menos un carácter especial (.,*!?¿¡/#$%&). Longitud mínima de 8 caracteres, 64 máxima. No acepta espacios.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{9}$/, // 9 números   
+    dni: /^\d{8}[A-Z]$/, // Incluye 8 números y una letra
     calle: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     portal: "/^[0-9a-zA-Z]+$/",  // Admite números y letras
     CP: /^\d{5}$/, // 5 numeros.
@@ -130,6 +131,7 @@ const campos = {
 	password: false,
 	email: false,
 	telefono: false,
+    dni: false, 
     calle: false,
     portal:false,
     CP: false,
@@ -149,6 +151,9 @@ const validarFormulario = (e) => {
 		break;
 		case "telefono":
 			validarCampo(expresiones.telefono, e.target, 'telefono');
+		break;
+        case "dni":
+			validarCampo(expresiones.dni, e.target, 'dni');
 		break;
         case "calle":
 			validarCampo(expresiones.calle, e.target, 'calle');
