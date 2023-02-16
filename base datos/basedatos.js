@@ -233,4 +233,3 @@ let lsCategories = localStorage.getItem("CategoriesLS")
     }     
 
 //si tiene datos, los respeta
-
