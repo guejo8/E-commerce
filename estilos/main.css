@@ -415,23 +415,24 @@ a.btn6 {
   }
 }
 
-#contacto {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-left: 10rem;
-  padding-bottom: 2rem;
+.detalle-perfil {
   background-color: #ded2cf;
-  width: 80%;
+  padding: 4rem 0rem;
+}
+
+#contacto {
+  padding-left: 25rem;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #contacto {
-    padding-left: 5rem;
+    padding-left: 12rem;
   }
 }
 @media (max-width: 767px) {
   #contacto {
-    width: 90%;
-    padding-left: 2rem;
+    padding-left: 4rem;
+    margin-top: 2rem;
   }
 }
 
@@ -449,18 +450,24 @@ a.btn6 {
   }
 }
 
-.h4 {
+.form-group h4 {
   font-size: 1.3rem;
+  font-weight: bold;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .h4 {
+  .form-group h4 {
     font-size: medium;
   }
 }
 @media (max-width: 767px) {
-  .h4 {
+  .form-group h4 {
     font-size: smaller;
   }
+}
+
+.form-group span {
+  font-weight: 100;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -475,16 +482,35 @@ a.btn6 {
 }
 
 #formulario-contacto {
-  padding-left: 2rem;
+  padding-left: 11rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #formulario-contacto {
-    padding-left: 5rem;
+    padding-left: 10rem;
   }
 }
 @media (max-width: 767px) {
   #formulario-contacto {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.avatar {
+  width: 160%;
+  height: 160%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .avatar {
+    width: 200%;
+    height: 200%;
+  }
+}
+@media (max-width: 767px) {
+  .avatar {
+    width: 60%;
+    height: 50%;
+    padding-left: 2rem;
   }
 }
 
