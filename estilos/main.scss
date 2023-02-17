@@ -11,15 +11,14 @@
 }
 
 // ---------------------------------HEADER--------------------
-
 .bg-image {
-    background-image: url("../imagenes/producto/fotoportada.png");
-    width: 100%;
-    height: 25vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 10rem; 
-  }
+  background-image: url("../imagenes/producto/fotoportada.png");
+  width: 100%;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10rem;
+}
 
 .container-fluid img {
   width: 25%;
