@@ -1,0 +1,38 @@
+@keyframes camion {
+    0% {
+      
+      position: relative;
+     left: -100px;
+     transform: scaleX(1);
+         /* Primer fotograma */
+    }
+    25% {
+      position: relative;
+      left: 100px;
+      transform: scaleX(1);
+               /* Primer fotograma */
+    }
+    50% {
+      position: relative; 
+      left: 100px;     
+      transform: scaleX(-1);         /* Primer fotograma */
+    }
+    75% {
+      position: relative;
+      left: -100px;
+      transform: scaleX(-1); 
+              /* Primer fotograma */
+    }
+    100% {
+      position: relative;
+     
+      transform: scaleX(1);
+      left: -100px;
+      
+          /* Último fotograma */
+    }
+  }
+  
+  #camion {   
+    animation: camion 4s linear 0s infinite;
+  }

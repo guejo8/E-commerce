@@ -50,17 +50,15 @@
           <!--Selector de idioma-->
               <!-- boton de login -->
             <span class="nav-item">
-              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn1"><img src="./imagenes/lenguajes/España.png" />Acceso</button></a>
-            </span> 
-        
-              
-              <span class="nav-item"> <!--Imagen Carrito-->
-                <a class="nav-link" href="./carrito/Carrito.html">
-                  <svg id="icono-carrito" xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
-                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                  </svg>
-                </a>
-              </span>    
+              <a class="nav-link" href="Loginregistro.html"><button type="button" class="btn1"><img src="./imagenes/lenguajes/España.png"/><span id="nombAcceso">Acceso</span></button></a>
+            </span>             
+            <span class="nav-item"> <!--Imagen Carrito-->
+              <a class="nav-link" href="./carrito/Carrito.html">
+                <svg id="icono-carrito" xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="" class="bi bi-cart4" viewBox="1 1 15 15">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+              </a>
+            </span>    
         </div>
     </div>
   </nav>
@@ -69,25 +67,35 @@
 <!-- Aquí termina el header -->
 
     <main class="container-fluid justify-content-center align-content-center">
-        <div id="encabezadoDeCatalogo" class="row align-items-lg-center"> <!--Encabezado de Catálogo-->
+        <div id="encabezadoDeCatalogo"> <!--Encabezado de Catálogo class="row align-items-lg-center">-->
             <span id="date" class="col-4"></span><!--Escribir la fecha desde index,js-->
             <span class="mb-4 col-8 row align-content-end col-md-offset-3"> <!--Boton Select de Bootstrap-->
-                <select class="form-select form-select-lg col-3 " name="category" id="categorySelect">
-                    <option value="all" selected>Todos</option>
+                <select class="form-select form-select-lg col-3"  name="category" id="categorySelect">
+                    <option disabled selected hidden>Filtro</option>  
+                    <option value="all">Todos</option>
                     <option value="0">Escritura</option>
                     <option value="1">Cuadernos</option>
                     <option value="2">Escolar</option>
                 </select>
             </span>
         </div><!--Encabezado de Catálogo-->
+
+        <div id="categoriaProducto"></div>
+     
+        
         <div class="row cards" style="width: 80%; margin: 5% auto;" id="CardContainer">
+         
         <!--Contenedor de tarjetas -->
           <!--Aqui van las tarjetas-->
         </div>
         <div id="aboutus">
           <h3 class="text-center" id="aboutustexto">Sobre nosotros</h3>
+          <div class="texto-sobrenosotros">
+            <p>Somos un equipo de personas apasionados por los articulos de papelería. Hemos creado este e-commerce para ayudarte a encontrar todos tipo de productos para desarrollar tu creatividad de una manera muy intuitiva.</p>
+          </div>
             <div class="d-flex justify-content-center align-items-center" >
               <div >
+               
                 <img src="../imagenes/avatares/Jorge.png" class="rounded-circle" alt="Jorge Ariznabarreta">
                 <p class="text-center">Jorge Ariznabarreta</p>
               </div>
@@ -128,15 +136,11 @@
           </div> 
           <div class="modal-footer"> 
             <a href="index.html" class="btn6">Seguir comprando</a>
-            <a href="carrito/Carrito.html" class="btn6">Ir al carrito</a>
+             <a href="carrito/Carrito.html" class="btn6">Ir al carrito</a>
           </div>          
       </div>
     </div> 
-  </div>  
-  
-
-  
-    
+  </div>      
 
     
 <!-- Footer -->
@@ -202,10 +206,10 @@
   <!-- Grid container -->
 </footer>
 
-<!-- Código de JavaSCript -->
-<script type="module" src="index.js"></script>
-<script type="module" src="idioma.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+ <!-- Código de JavaSCript -->
+ <script type="module" src="index.js"></script>
+ <script type="module" src="idioma.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

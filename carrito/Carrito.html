@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="../estilos/main.css" />
     <link rel="shortcut icon" href="../logo/logo.png" type="image/png" />
+    <link rel="stylesheet" href="camion.css">
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -55,7 +56,7 @@
           <!--Selector de idioma-->
                <!-- boton de login -->
             <span class="nav-item">
-              <a class="nav-link" href="../Loginregistro.html"><button type="button" class="btn1"><img src="../imagenes/lenguajes/España.png" />login</button></a>
+              <a class="nav-link" href="../Loginregistro.html"><button type="button" class="btn1"><img src="../imagenes/lenguajes/España.png"/><span id="nombAcceso">Acceso</span></button></a>
             </span> 
         
               
@@ -68,12 +69,14 @@
               </span>    
         </div>
       </nav>
-    </header>
+</header>
     <div class="bg-image"></div>
-    <!-- Aquí termina el header -->
+<!-- Aquí termina el header -->
  
-      <div class=" border">      
-          <table class="w-75 h-auto">
+  <div class=" border">
+     <div class="row factura"> 
+       <div class="table-responsive"> 
+          <table class="table">
             <tr>
               <th>Producto</th>
               <th>Cantidad</th>
@@ -83,17 +86,18 @@
             </tr>
             <tbody  id="CardContainer">
              <!--Aqui van las tarjetas-->
-            </tbody>
+            </tbody >
             <tr>
-             
-              <th><a href="../index.html"><button type="button" class="btn1 w-50" >Tienda</button></a></th>
-              <th><button type="button" class="btn1 w-75" id="logueaopaga">Pagar</button></th>
+              <th class="w-25"><a href="../index.html"><button type="button" class="btn1">Tienda</button></a></th>
               <th class="w-25">Total Factura</th>
               <th class="w-25" id="totalFactura"></th>
+              <th class="w-25"><button type="button" class="btn1"id="logueaopaga">Pagar</button></th>
+              <th></th>
             </tr>
           </table>
       </div>
-    </body>
+  </div> 
+</div> 
 
 
     <!-- POP UP -->
@@ -101,7 +105,7 @@
   <div id="my_popup">
     <img src="../imagenes/logo/logo.png" alt="logo" width="50" >
     <h3>Gastos de envío gratis a partir de pedidos superiores a 200€</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+    <svg id='camion' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
       <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
     </svg>
 </div>

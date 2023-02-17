@@ -1,10 +1,11 @@
 let listUsers=[
     {
         idUser: 0,
-        name: "Administrador",
+        name: "Administradora",
         email: "admin@papelycosas.com",
         phone: "600600600",
         password: "1234",
+        dni: "12345678B",
         street: "Paseo Bolueta",
         portal: "12",
         CP: "48002",
@@ -15,10 +16,11 @@ let listUsers=[
 
     {
         idUser: 1,
-        name: "Usuario",
+        name: "Kepa Sakolegi Txakolindegia",
         email: "usuario@gmail.com",
         phone: "600600600",
         password: "1234",
+        dni: "12345678B",
         street: "Paseo Bolueta",
         portal: "10",
         CP: "48002",
@@ -28,15 +30,16 @@ let listUsers=[
     },
     {
         idUser: 2,
-        name: "Usuario2",
+        name: "Miren Ibarguren",
         email: "usuario@yahoo.com",
         phone: "600600600",
         password: "1234",
+        dni: "12345678B",
         street: "Paseo Bolueta",
         portal: "10",
         CP: "48002",
         city: "Bilbao",
-        defaultLang: "es",
+        defaultLang: "eu",
         rol:"user",
     }
 ]
@@ -68,7 +71,7 @@ let listProducts=[
     },{
         idProd: 2,
         name: "Set 10 rotuladores",
-        nameeu:"10 errotulagailu multzoa",
+        nameeu:"Rotulagailu 10 ale",
         nameen:"Set of 10 brushpen",
         idCategoria: 0,
         description: "Talens Ecoline Estuche de Brush Pen 10 - Brillante está hecho en base de colorantes y goma arábiga. Los colores de Talens Ecoline son de una transparencia y lucidez impredecible. ",
@@ -79,7 +82,7 @@ let listProducts=[
     },{
         idProd: 3,
         name: "Lápices 12 colores",
-        nameeu:"12 Koloretako arkatzak",
+        nameeu:"Margoak 12 ale",
         nameen:"12 Colored pencils",
         idCategoria: 0,
         description: "Caja de 12 lápices Alpino Festival. Formato ideal para escuelas. Mina resistente de 3 mm.",
@@ -103,7 +106,7 @@ let listProducts=[
     },{
         idProd: 5,
         name: "Carpeta plástico A4",
-        nameeu:"Plastikozko karpeta A4.",
+        nameeu:"Plastiko karpeta A4.",
         nameen:"Folder plastic A4.",
         idCategoria: 1,
         description: "Carpeta con cierre de gomas elásticas a juego. 3 solapas. Fabricada de plástico polipropileno de 400 micras opaco y flexible.",
@@ -115,8 +118,8 @@ let listProducts=[
     },{
         idProd: 6,
         name: "Oxford cuaderno",
-        nameeu:"Oxford koadernoa.",
-        nameen:"Oxford notebook.",
+        nameeu:"Oxford koadernoa",
+        nameen:"Oxford notebook",
         idCategoria: 1,
         description: "Bloc espiral, tamaño A4, tapa dura, 80 hojas de 90 gr, cuadrícula de 5 mm, sin margen, microperforado.",
         descriptioneu:"Espiral koadernoa, A4 tamaina, azal gogorra, 90 g/m-ko 80 orri, 5 mm-ko sareta, ertz gabekoa, mikrozulatua.",
@@ -127,8 +130,8 @@ let listProducts=[
     },{
         idProd: 7,
         name: "Libreta Liderpapel",
-        nameeu:"Liderpapel koadernoa",
-        nameen:"Liderpapel notebook",
+        nameeu:"Liderp. koadernoa",
+        nameen:"Liderp. notebook",
         idCategoria: 1,
         description: "Tapa de plastico A5 48hojas 90g/M2. Cuadro 4mm con margen. Colores surtidos",
         descriptioneu:"Plastikozko estalkia A5 48 orri 90g/M2. Marjina duen 4 mm-ko markoa. askotariko koloreak.",
@@ -233,4 +236,3 @@ let lsCategories = localStorage.getItem("CategoriesLS")
     }     
 
 //si tiene datos, los respeta
-

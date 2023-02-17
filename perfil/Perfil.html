@@ -30,7 +30,7 @@
                   <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn1">Catalogo</button> </a>  
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#aboutus"><button type="button" class="btn1">Acerca de nosotros</button></a>
+                  <a class="nav-link" href="../index.html#aboutus"><button type="button" class="btn1">Acerca de nosotros</button></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../Loginregistro.html"><button type="button" class="btn1">Registro</button></a>
@@ -50,7 +50,7 @@
               <!--Selector de idioma-->
                    <!-- boton de login -->
                 <span class="nav-item">
-                  <a class="nav-link" href="../Loginregistro.html"><button type="button" class="btn1"><img src="../imagenes/lenguajes/España.png" />Acceso</button></a>
+                  <a class="nav-link" href="../Loginregistro.html"><button type="button" class="btn1"><img src="../imagenes/lenguajes/España.png"/><span id="nombAcceso">Acceso</span></button></a>
                 </span> 
             
                   
@@ -68,18 +68,13 @@
         <div class="bg-image" > </div>
 <!-- Aquí termina el header -->
 
-
-    <div class="container" id="contacto">
+<main class="detalle-perfil">
+    <div class="container m-0" id="contacto">
   		<div class="p-4" id="perfil-nombre"><h1><span id="nombPersona"></span></h1></div>
     <div class="row">
   		<div class="col-sm-3"><!--left col-->
-        <div class="text-center">
-          <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar" id="preview">
-          <h6>Sube tu foto</h6>
-          <form enctype="multipart/form-data">
-            <input id="archivo" name="archivo" class="btn" type="file" class="text-center center-block file-upload" value="">
-            <button class="btn3" type="submit" id="enviar">Enviar</button>
-         </form>
+        <div >
+          <img src="../imagenes/producto/escritorio1.jpg" class="avatar img-circle" alt="avatar-perfil" id="preview">
         </div> 
       </div><!--/col-3-->
     	<div class="col-sm-9"> 
@@ -95,6 +90,11 @@
                               <label for="email"><h4 class="h4">Email: <span id="email-form"></span></h4></label>
                           </div>
                       </div>
+                      <div class="form-group">
+                        <div class="col-xs-6">
+                            <label for="dni"><h4 class="h4">DNI: <span id="dni-form"></span></h4></label>
+                        </div>
+                    </div>
                       <div class="form-group">
                           <div class="col-xs-6">
                               <label for="calle"><h4 class="h4">Calle: <span id="calle-form"></span></h4></label>
@@ -120,7 +120,7 @@
         </div><!--/col-9-->
     </div><!--/row-->
   </div><!--/container-->
-
+</main>
     <!-- Footer -->
     <footer class="text-center" style="background-color: #293249" >
       <!-- Grid container -->
