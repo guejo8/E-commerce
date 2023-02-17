@@ -31,7 +31,7 @@ El equipo que ha trabajado en el proyecto está compuesto por:
 * María Diez: https://www.linkedin.com/in/mariadiezesteve/
 * Jesús Pinto: https://www.linkedin.com/in/jesus-angel-pinto-llantada-049983146/
 * Xabier Iglesias: https://www.linkedin.com/in/xabier-iglesias-astoreca/
-* Jone Guerrero: 
+* Jone Guerrero: https://www.linkedin.com/in/jone-guerrero/
 
 ## Cómo utilizar el proyecto
     1. Acceder a nuestra página web: (Falta la web cuando la pongamos)

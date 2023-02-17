@@ -26,6 +26,7 @@ function registroCliente(){
       email: document.getElementById("Correo Electronico").value,
       phone: document.getElementById("telefono").value,
       password: document.getElementById("passwordCliente").value,
+      dni: document.getElementById("dni").value,
       street: document.getElementById("calle").value,
       portal: document.getElementById("portal").value,
       CP: document.getElementById("cp").value,
