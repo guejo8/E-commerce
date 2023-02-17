@@ -77,6 +77,29 @@
   </div>    
  </main>
 
+<!-- Pop-Up
+    <button type="button" class="mt-5 mx-5 btn btn-primary"data-bs-toggle="modal" data-bs-target="#miModal">mostr</button> -->
+    <!--data-bs-backdrop=static hace que al clicsr fuera no se cierre  -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true"aria-labelledby="modalTitle" data-bs-backdrop="static">
+      <!-- modal-dialog-centered hace centrar el pop-up y el scrollable hace scroll al p-->
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+               <p>Has añadido productos al carrito</p>
+               
+            </div> 
+            <div class="modal-footer"> 
+              <a data-bs-dismiss="modal" class="btn6">Seguir comprando</a>
+               <a href="carrito/Carrito.html" class="btn6">Ir al carrito</a>
+            </div>          
+        </div>
+      </div> 
+    </div>      
+
+
 
   <!-- Footer -->
   <footer class="text-center" style="background-color: #293249" >
@@ -144,5 +167,7 @@
    <!-- Código de JavaSCript -->   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="producto.js"></script>
+    <script src="index.js"></script>
+   
   </body>
 </html>
