@@ -15,15 +15,19 @@
 .bg-image {
     background-image: url("../imagenes/producto/fotoportada.png");
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 10rem;
-    
+    opacity: 10rem; 
   }
+
+.container-fluid img {
+  width: 25%;
+}
   
   nav {
     background-color:$color-uno; 
+    height: 12vh;
   }
   svg{
     fill: $color-cuatro;
