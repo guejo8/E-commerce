@@ -813,3 +813,31 @@ a.btn6{
 .bg-cuatro{
   background-color: $color-cuatro;
 }
+
+
+@keyframes change-color {
+  0% {
+    background: $color-tres;
+    position: relative;
+    top: 0px; 
+       /* Primer fotograma */
+  }
+  50% {
+    position: relative;
+    top: 100px;         /* Primer fotograma */
+  }
+  100% {
+    background: $color-cuatro;
+    position: relative;
+    top: 1000px; 
+    visibility: hidden;
+        /* Último fotograma */
+  }
+}
+
+#secae {
+ 
+  color: #FFF;
+ 
+  animation: change-color 5s ease 0s 1;
+}

@@ -952,4 +952,28 @@ Div política privacidad .checkbox-formulario {
 
 .bg-cuatro {
   background-color: #ded2cf;
+}
+
+@keyframes change-color {
+  0% {
+    background: #aca1a1;
+    position: relative;
+    top: 0px;
+    /* Primer fotograma */
+  }
+  50% {
+    position: relative;
+    top: 100px; /* Primer fotograma */
+  }
+  100% {
+    background: #ded2cf;
+    position: relative;
+    top: 1000px;
+    visibility: hidden;
+    /* Último fotograma */
+  }
+}
+#secae {
+  color: #FFF;
+  animation: change-color 5s ease 0s 1;
 }/*# sourceMappingURL=main.css.map */

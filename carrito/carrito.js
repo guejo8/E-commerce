@@ -132,11 +132,11 @@ function showModal(){
     my_modal.style.display = "block";
 }
 
-setTimeout(showModal, 7000)
+setTimeout(showModal, 3000)
 
 function closeModal(){
     my_modal.style.display = "none";
 }
 
-setTimeout(closeModal, 17000)
+setTimeout(closeModal, 13000)
 

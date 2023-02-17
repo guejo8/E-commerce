@@ -1,7 +1,7 @@
 let listUsers=[
     {
         idUser: 0,
-        name: "Administradora",
+        name: "Cat Boss",
         email: "admin@papelycosas.com",
         phone: "600600600",
         password: "1234",
