@@ -845,3 +845,82 @@ a.btn6{
 .bg-cuatro{
   background-color: $color-cuatro;
 }
+
+
+//-------------------------------carrito----------------------------
+ .border {
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   background-color: $color-cuatro;
+  
+   table {
+     height: auto;
+     margin: 0 auto;
+     border-collapse: collapse;
+
+
+    
+     th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+
+        @include mobile {
+          font-size: smaller;
+          padding: 0px;
+        }
+     
+     }
+    
+     td {
+       text-align: center;
+       padding: 10px;
+       vertical-align: middle;
+
+       p{
+        @include mobile {
+          font-size: smaller;
+        }
+       }
+     }
+    
+     img {
+       max-width: 100%;
+       height: auto;
+
+       @include mobile{
+        max-width: 30%;
+       }
+     }
+
+     tbody {
+      vertical-align: 0px;
+     }
+
+     @include mobile {
+      width:50%;
+     }
+   }
+  
+   #totalFactura {
+    font-weight: bold;
+   }
+ }
+
+
+ .factura {
+  border: 1px solid $color-cuatro !important;
+  width: 80%;
+  background-color: white;
+ }
+
+.tbody {
+  border-style: none !important;
+}
+
+.facturaCompleto{
+  margin-left: 2rem !important;
+}
+
