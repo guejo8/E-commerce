@@ -70,35 +70,9 @@
         </div>
       </nav>
 </header>
-    <div class="bg-image"></div>
-<!-- Aquí termina el header -->
- 
-  <div class=" border">
-     <div class="row factura"> 
-       <div class="table-responsive"> 
-          <table class="table">
-            <tr>
-              <th>Producto</th>
-              <th>Cantidad</th>
-              <th>Precio</th>
-              <th>Eliminar</th>
-              <th>Subtotales</th>
-            </tr>
-            <tbody  id="CardContainer">
-             <!--Aqui van las tarjetas-->
-            </tbody >
-            <tr>
-              <th class="w-25"><a href="../index.html"><button type="button" class="btn1">Tienda</button></a></th>
-              <th class="w-25">Total Factura</th>
-              <th class="w-25" id="totalFactura"></th>
-              <th class="w-25"><button type="button" class="btn1"id="logueaopaga">Pagar</button></th>
-              <th></th>
-            </tr>
-          </table>
-      </div>
-  </div> 
-</div> 
-
+    <div class="bg-image">
+           
+     
 
     <!-- POP UP -->
 
@@ -110,6 +84,46 @@
     </svg>
 </div>
 
+
+
+<div class="container">
+          
+  <div class="row align-content-center align-items-center bg-light ocultarResponsive">
+    <div class="col-3 h3">
+      Producto
+    </div>
+    <div class="col-2 h3">
+      Cantidad
+    </div>
+    <div class="col-2 h3">
+      Precio              </div>
+      <div class="col-2 h3">
+        Eliminar
+      </div>
+    <div class="col-3 h3">
+      Subtotal
+    </div>
+  </div>
+  <div class="h3 text-center bg-light mostrarResponsive"">Detalle del pedido</div>
+
+  <div  id="CardContainer">
+    <!--Aqui van las tarjetas-->
+</div >
+  
+<div class="row align-content-center align-items-center" id="Totales">           
+  <div class="col-sm-3">
+    <a href="../index.html"><button type="button" class="btn1">Tienda</button></a>
+  </div>
+  <div class="col-sm-3" id="IVA">
+    Total Factura</div>
+  <div class="col-sm-3" id="totalFactura">
+    TOTAL FACTURA
+  </div>
+  <div class="col-sm-3">
+    <button type="button" class="btn1"id="logueaopaga">Pagar</button>
+  </div>           
+</div>
+</div>
 
     <!-- Footer -->
     <footer class="text-center" style="background-color: #293249">

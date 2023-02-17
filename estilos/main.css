@@ -978,60 +978,6 @@ Div política privacidad .checkbox-formulario {
   animation: change-color 5s ease 0s 1;
 }
 
-.border {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  background-color: #ded2cf;
-}
-.border table {
-  height: auto;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-.border table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-}
-@media (max-width: 767px) {
-  .border table th {
-    font-size: smaller;
-    padding: 0px;
-  }
-}
-.border table td {
-  text-align: center;
-  padding: 10px;
-  vertical-align: middle;
-}
-@media (max-width: 767px) {
-  .border table td p {
-    font-size: smaller;
-  }
-}
-.border table img {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 767px) {
-  .border table img {
-    max-width: 30%;
-  }
-}
-.border table tbody {
-  vertical-align: 0px;
-}
-@media (max-width: 767px) {
-  .border table {
-    width: 50%;
-  }
-}
-.border #totalFactura {
-  font-weight: bold;
-}
-
 .factura {
   border: 1px solid #ded2cf !important;
   width: 80%;
@@ -1044,4 +990,32 @@ Div política privacidad .checkbox-formulario {
 
 .facturaCompleto {
   margin-left: 2rem !important;
+}
+
+.ocultarResponsive {
+  visibility: visible;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ocultarResponsive {
+    visibility: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .ocultarResponsive {
+    visibility: hidden;
+  }
+}
+
+.mostrarResponsive {
+  visibility: hidden;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mostrarResponsive {
+    visibility: visible;
+  }
+}
+@media (max-width: 767px) {
+  .mostrarResponsive {
+    visibility: visible;
+  }
 }/*# sourceMappingURL=main.css.map */
