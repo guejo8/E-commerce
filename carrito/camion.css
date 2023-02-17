@@ -1,24 +1,38 @@
 @keyframes camion {
     0% {
       
-      position: absolute;
-     left: 0; 
+      position: relative;
+     left: -100px;
+     transform: scaleX(1);
          /* Primer fotograma */
     }
+    25% {
+      position: relative;
+      left: 100px;
+      transform: scaleX(1);
+               /* Primer fotograma */
+    }
     50% {
-      position: absolute;
-      left: 100%;
+      position: relative; 
+      left: 100px;     
       transform: scaleX(-1);         /* Primer fotograma */
     }
+    75% {
+      position: relative;
+      left: -100px;
+      transform: scaleX(-1); 
+              /* Primer fotograma */
+    }
     100% {
-      
-      position: absolute;
-      left: 0%; 
+      position: relative;
+     
+      transform: scaleX(1);
+      left: -100px;
       
           /* Último fotograma */
     }
   }
   
   #camion {   
-    animation: camion 5s ease 0s infinite;
+    animation: camion 4s linear 0s infinite;
   }
