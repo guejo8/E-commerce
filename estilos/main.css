@@ -10,14 +10,19 @@
 .bg-image {
   background-image: url("../imagenes/producto/fotoportada.png");
   width: 100%;
-  height: 15vh;
+  height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10rem;
 }
 
+.container-fluid img {
+  width: 25%;
+}
+
 nav {
   background-color: #293249;
+  height: 12vh;
 }
 
 svg {
@@ -699,6 +704,44 @@ Div política privacidad .checkbox-formulario {
 
 #aboutus h3.text-center#aboutustexto {
   text-align: center;
+  color: #293249;
+  background-color: white;
+  border-style: inset;
+  margin: 3rem 20rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #aboutus h3.text-center#aboutustexto {
+    width: 75%;
+    margin: 2rem 5rem;
+  }
+}
+@media (max-width: 767px) {
+  #aboutus h3.text-center#aboutustexto {
+    width: 73%;
+    margin: 2rem 3.5rem;
+  }
+}
+#aboutus .texto-sobrenosotros {
+  margin: 3rem 13rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 0.7rem 0rem 0.7rem;
+  color: #293249;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #aboutus .texto-sobrenosotros {
+    width: 75%;
+    padding: 0rem 3rem;
+    margin: 1rem 5rem;
+  }
+}
+@media (max-width: 767px) {
+  #aboutus .texto-sobrenosotros {
+    width: 80%;
+    padding: 0rem;
+    margin: 2.5rem;
+  }
 }
 #aboutus .d-flex.justify-content-center.align-items-center {
   display: flex;

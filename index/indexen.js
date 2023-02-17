@@ -35,12 +35,12 @@ function changeCardContainer (seleccionCategoria) { //cambiamos la selección de
         if (seleccionCategoria==productObjet.idCategoria||seleccionCategoria=="all") { //si coincide catSeleccionada y cat del producto, lo escribe
     listaEnseñar+=`<div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-sm-0"> <!-- Tarjeta -->
                      <div class="card m-md-2 m-sm-1">
-                     <a href="../producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
+                     <a href="../producto/producto.html" producto=${productObjet.idProd}><img src=${productObjet.foto} class="card-img-top" alt=${productObjet.name} producto=${productObjet.idProd}></a>
                           <div class="card-body">
                             <h5 class="card-title">${productObjet.nameen}</h5>
                             <p class="card-text">${productObjet.precio} £</p>
-                            <p class="cantidad">Cantidad &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
-                            <p href="#" class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Añadir</p>
+                            <p class="cantidad">Amount &nbsp;&nbsp;<input id="cantidad${productObjet.idProd}" style="width:3rem" type="number" value="1" min="1"/></p>                   
+                            <p href="#" class="btn3" producto=${productObjet.idProd} data-bs-toggle="modal" data-bs-target="#miModal">Add</p>
                       </div>
                   </div>
               </div>`;
@@ -86,28 +86,10 @@ localStorage.setItem("pedido",listaCarrols)
      listaCarrols=JSON.stringify(lista_json)
     //  console.log(listaCarrols);
      localStorage.setItem("pedido",listaCarrols)
+     
  });      
 
-//Cambio Icono carrito
-//Hay elementos
 
-let hayElementos = false;
-lista_json.forEach((item) => {
-    if(item.cantidad > 0){
-        hayElementos = true;
-    }
-})
-
-// Cambiar color
-
-let iconoCarrito = document.getElementById("icono-carrito")
-if(hayElementos = true){
-    //pop-up
-    
-    iconoCarrito.style.fill = "red";
-} else {
-    iconoCarrito
-}
 
 //poner tarjetas
 
