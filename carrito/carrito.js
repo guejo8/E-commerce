@@ -22,20 +22,20 @@ listadopedidoJS.forEach(lineaProducto => {
 if(lineaProducto.cantidad>0){//guarda lista para enseñar
     listaProductosParaEnseñar.push(lineaProducto.idProduct);
     
-    listaEnseñar+= `<tr producto=${listadoProductoJS[lineaProducto.idProduct].idProd} class="flex-shrink-1">
+    listaEnseñar+= `<div producto=${listadoProductoJS[lineaProducto.idProduct].idProd} class="row align-content-center align-items-center border">
 
-    <td class="d-flex flex-column justify-content-center flex-shrink-1" style="width:10rem" >
-        <img class=""  src=${listadoProductoJS[lineaProducto.idProduct].foto} alt="${listadoProductoJS[lineaProducto.idProduct].name}"/>
+    <div class="col-3 .d-flex.justify-content-center.align-items-center" >
+        <img class="border-0 w-50"  src=${listadoProductoJS[lineaProducto.idProduct].foto} alt="${listadoProductoJS[lineaProducto.idProduct].name}"/>
         <p >${listadoProductoJS[lineaProducto.idProduct].name}</p>
-    </td>
-    <td class="align-middle flex-shrink-1">
-        <input class=""  type="number" value=${lineaProducto.cantidad} min="1"/>
-    </td>
-      <td class="align-middle"><p class="card-text ">${listadoProductoJS[lineaProducto.idProduct].precio}</p></td>
-      <td class="align-middle"><a class="btn3" borra="true">Eliminar</a></td>
-      <td class=" align-middle"><p class="card-title"> ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></td>
+    </div>
+    <div class=" col-2 align-middle">
+        <input class="w-50"  type="number" value=${lineaProducto.cantidad} min="1"/>
+    </div>
+      <div class="col-2 align-middle"><p class="card-text ">${listadoProductoJS[lineaProducto.idProduct].precio}</p></div>
+      <div class="col-2 align-middle"><a class="btn3" borra="divue">Eliminar</a></div>
+      <div class=" col-3 align-middle"><p class="card-title"> ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></div>
       
-  </tr>`
+  </div>`
 };
 
 });
@@ -50,7 +50,7 @@ function cambiarCantidad() {
         let nuevaCAntidad=eventoCambio.target.value;
         let precio=eventoCambio.target.parentElement.parentElement.childNodes[5].childNodes[0].innerText;
         let multiplicacion = (nuevaCAntidad*precio).toFixed(2);
-        posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
+        posicion=eventoCambio.target.parentElement.parentElement.atdivibutes[0].value
         console.log(posicion);
         eventoCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText=` ${multiplicacion} €`;
          listaProducto= localStorage.getItem('pedido');
@@ -69,10 +69,10 @@ quitarProducto();
 function quitarProducto() {
    
     cardContainer.addEventListener('click', (eventoCambio)=>{
-        // console.log(eventoCambio.target.attributes[1]);
-         if(eventoCambio.target.attributes.borra.value){
-            // console.log(eventoCambio.target.parentElement.parentElement.attributes[0].value);
-            posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
+        // console.log(eventoCambio.target.atdivibutes[1]);
+         if(eventoCambio.target.atdivibutes.borra.value){
+            // console.log(eventoCambio.target.parentElement.parentElement.atdivibutes[0].value);
+            posicion=eventoCambio.target.parentElement.parentElement.atdivibutes[0].value
              eventoCambio.target.parentElement.parentElement.innerHTML="";
              listaProducto= localStorage.getItem('pedido');
              lista_json=JSON.parse(listaProducto);
@@ -115,7 +115,7 @@ botonPaga.addEventListener('click', ()=>{
  let cliente= JSON.stringify(sessionStorage.getItem('cliente'));
  if (cliente==='null'){
 
-    window.location.href= "../Loginregistro.html" 
+    window.location.href= "../Loginregisdivo.html" 
 }else{
     
     window.location.href= "../compra.html" 
