@@ -84,26 +84,6 @@ localStorage.setItem("pedido",listaCarrols)
      localStorage.setItem("pedido",listaCarrols)
  });      
 
-//Cambio Icono carrito
-//Hay elementos
-
-let hayElementos = false;
-lista_json.forEach((item) => {
-    if(item.cantidad > 0){
-        hayElementos = true;
-    }
-})
-
-// Cambiar color
-
-let iconoCarrito = document.getElementById("icono-carrito")
-if(hayElementos = true){
-    //pop-up
-    
-    iconoCarrito.style.fill = "red";
-} else {
-    iconoCarrito
-}
 
 //poner tarjetas
 
