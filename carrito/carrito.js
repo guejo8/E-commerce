@@ -33,7 +33,7 @@ if(lineaProducto.cantidad>0){//guarda lista para enseñar
     </td>
       <td class="align-middle"><p class="card-text ">${listadoProductoJS[lineaProducto.idProduct].precio}</p></td>
       <td class="align-middle"><a class="btn3" borra="true">Eliminar</a></td>
-      <td class=" align-middle"><p class="card-title  ">Total ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></td>
+      <td class=" align-middle"><p class="card-title"> ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></td>
       
   </tr>`
 };
@@ -52,7 +52,7 @@ function cambiarCantidad() {
         let multiplicacion = (nuevaCAntidad*precio).toFixed(2);
         posicion=eventoCambio.target.parentElement.parentElement.attributes[0].value
         console.log(posicion);
-        eventoCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText=`Total ${multiplicacion} €`;
+        eventoCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText=` ${multiplicacion} €`;
          listaProducto= localStorage.getItem('pedido');
               lista_json=JSON.parse(listaProducto);
                console.log(lista_json[posicion]);
