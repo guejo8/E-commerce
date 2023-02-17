@@ -29,7 +29,7 @@ Además, se ha implementado la funcionalidad de multilingüe, lo que permite que
 El equipo que ha trabajado en el proyecto está compuesto por:
 * Jorge Ariznabarreta: https://www.linkedin.com/in/jorge-ariznabarreta/
 * María Diez: https://www.linkedin.com/in/mariadiezesteve/
-* Jesús Pinto
+* Jesús Pinto: https://www.linkedin.com/in/jesus-angel-pinto-llantada-049983146/
 * Xabier Iglesias: https://www.linkedin.com/in/xabier-iglesias-astoreca/
 * Jone Guerrero: 
 
