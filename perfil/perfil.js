@@ -7,6 +7,8 @@
  let cpForm = document.getElementById("cp-form")
  let ciudadForm = document.getElementById("ciudad-form")
 
+ let nombreAcceso = document.getElementById("nombAcceso")
+
 let usuarioSTring= sessionStorage.getItem("cliente")
 console.log(usuarioSTring);
 let usuarioLogeado = JSON.parse(usuarioSTring)
@@ -22,4 +24,5 @@ console.log(usuarioLogeado)
         cpForm.innerText = usuarioLogeado.CP
         ciudadForm.innerText = usuarioLogeado.city
 
+        nombreAcceso.innerText = usuarioLogeado.name
 
