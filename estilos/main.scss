@@ -136,8 +136,10 @@ nav {
   text-align: center;
   color: $color-uno;
   background-color: white;
+  border: $color-cuatro 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 30%;
-  border-style: inset;
   @include tablet{
     width: 75%;
   }

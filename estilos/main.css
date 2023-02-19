@@ -126,8 +126,10 @@ svg {
   text-align: center;
   color: #293249;
   background-color: white;
+  border: #ded2cf 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 30%;
-  border-style: inset;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #titulo-categorias {
