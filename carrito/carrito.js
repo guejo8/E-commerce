@@ -87,7 +87,7 @@ function quitarProducto() {
          calculaFactura()
     })
     
-}
+};
 
 function calculaFactura() {  
     let listapedidoLS=localStorage.getItem('pedido');
@@ -108,7 +108,7 @@ function calculaFactura() {
         console.log(listadoProductoJS[lineaProducto.idProduct].precio);
         console.log(totalFactura);
     });
-    totalFacturaHTML.innerText= `${totalFactura.toFixed(2)} €`;
+    totalFacturaHTML.innerHTML= `${totalFactura.toFixed(2)} €`;
  
 };
 
