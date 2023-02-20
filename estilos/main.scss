@@ -11,35 +11,47 @@
 }
 
 // ---------------------------------HEADER--------------------
-
 .bg-image {
-    background-image: url("../imagenes/producto/fotoportada.png");
-    width: 100%;
-    height: 25vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 10rem; 
+  background-image: url("../imagenes/producto/fotoportada.png");
+  width: 100%;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10rem;
+}
+
+// .container-fluid img {
+//   width: 25%;
+// }
+  
+nav {
+    background-color:$color-uno;  
   }
 
-.container-fluid img {
-  width: 25%;
-}
-  
-  nav {
-    background-color:$color-uno; 
-    height: 12vh;
-  }
   svg{
     fill: $color-cuatro;
     margin: 0 2rem;
+
     @include tablet {
-     margin: 1rem 22rem;
+     margin: 1rem 25rem;
     }
 
     @include mobile{
-      margin: 1rem 9rem;
+      margin: 1rem 10rem;
     }
   }
+
+ .dropdown-menu{
+
+    @include tablet {
+      width: 20%;
+      margin-left: 40%;
+    }
+     @include mobile{
+       width: 20%;
+       margin-left: 32%;
+     }
+   }
   
   .dropdown-item img, span img {
     width: 20px;
@@ -47,13 +59,21 @@
     margin: 5px;
   }
 
-  .dropdown-toggle::after {
+.dropdown-toggle::after {
     content: none;
 }
-  .navbar-toggler {
-    color:$color-cuatro;
-    background-color:$color-cuatro;
+ .navbar-toggler {
+   color:$color-cuatro;
+   background-color:$color-cuatro;
+
+ }
+
+ .nav-link img {
+      width: 20px;
+      height: 12px;
+      margin: 5px;
   }
+
 
 //---------------------------HOME------------------
 
@@ -76,7 +96,7 @@
     margin-left: 2rem;
   }
   @include mobile {
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 0.7rem;
     width: 8rem;  
   }
@@ -116,8 +136,10 @@
   text-align: center;
   color: $color-uno;
   background-color: white;
+  border: $color-cuatro 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 30%;
-  border-style: inset;
   @include tablet{
     width: 75%;
   }
@@ -160,30 +182,31 @@ table input[type='number'] {
 
 .btn1 {
   @include btn1;
-  @include mobile {
-    width: 80%;
-    font-size: smaller;
-    margin-left: 2rem;
-  }
   @include tablet {
     width: 50%;
     font-size: medium;
     margin-left: 12rem;
   }
+  @include mobile {
+    width: 80%;
+    font-size: smaller;
+    margin-left: 2rem;
+  }
+ 
 }
 
 .btn1:hover {
  @include btn1($color:$color-cuatro, $colorbackground:$color-dos);
- @include mobile {
-  width: 80%;
-  font-size: smaller;
-  margin-left: 2rem;
-}
-@include tablet {
+ @include tablet {
   width: 50%;
   font-size: medium;
   margin-left: 12rem
 
+}
+ @include mobile {
+  width: 80%;
+  font-size: smaller;
+  margin-left: 2rem;
 }
 }
 
