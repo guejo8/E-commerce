@@ -104,7 +104,7 @@ if (localStorage.getItem("pedido")==null){ //si no hay pedido, pone uno vacio
      console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1].value);
      linea_pedido.idProduct=eventoClick.target.attributes.producto.value;
      linea_pedido.cantidad=eventoClick.target.parentElement.childNodes[5].childNodes[1].value
-    //  console.log(eventoClick.target.parentElement.childNodes[5].childNodes[1]);
+   console.log(eventoClick);
     //  console.log(linea_pedido);
     //  console.log(eventoClick);
      listaProducto= localStorage.getItem('pedido')
