@@ -24,16 +24,16 @@ if(lineaProducto.cantidad>0){//guarda lista para enseñar
     
     listaEnseñar+= `<div producto=${listadoProductoJS[lineaProducto.idProduct].idProd} class="row align-content-center align-items-center border">
 
-    <div class="col-3 .d-flex.justify-content-center.align-items-center" >
+    <div class="col-md-3 .d-flex.justify-content-center.align-items-center" >
         <img class="border-0 w-50"  src=${listadoProductoJS[lineaProducto.idProduct].foto} alt="${listadoProductoJS[lineaProducto.idProduct].name}"/>
         <p >${listadoProductoJS[lineaProducto.idProduct].name}</p>
     </div>
-    <div class=" col-2 align-middle">
+    <div class=" col-md-2 align-middle">
         <input class="w-50"  type="number" value=${lineaProducto.cantidad} min="1"/>
     </div>
-      <div class="col-2 align-middle"><p class="card-text ">${listadoProductoJS[lineaProducto.idProduct].precio}</p></div>
-      <div class="col-2 align-middle"><a class="btn3" borra="divue">Eliminar</a></div>
-      <div class=" col-3 align-middle"><p class="card-title"> ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></div>
+      <div class="col-md-2 align-middle"><p class="card-text ">${listadoProductoJS[lineaProducto.idProduct].precio}</p></div>
+      <div class="col-md-2 align-middle"><a class="btn3" borra="divue">Eliminar</a></div>
+      <div class=" col-md-3 align-middle"><p class="card-title"> ${(listadoProductoJS[lineaProducto.idProduct].precio*lineaProducto.cantidad).toFixed(2)} €</p></div>
       
   </div>`
 };
@@ -115,7 +115,7 @@ botonPaga.addEventListener('click', ()=>{
  let cliente= JSON.stringify(sessionStorage.getItem('cliente'));
  if (cliente==='null'){
 
-    window.location.href= "../Loginregisdivo.html" 
+    window.location.href= "../Loginregistro.html" 
 }else{
     
     window.location.href= "../compra.html" 

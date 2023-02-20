@@ -959,19 +959,25 @@ a.btn6{
 }
 .ocultarResponsive{
   visibility: visible;
+  
   @include tablet {
     visibility: hidden;
+    display:none;
   }
   @include mobile {
     visibility: hidden;
+    display:none;
   }
 }
 .mostrarResponsive{
   visibility: hidden;
+  display:none;
   @include tablet {
     visibility: visible;
+    display:inline-block;
   }
   @include mobile {
     visibility: visible;
+    display:inline-block;
   }
 }
